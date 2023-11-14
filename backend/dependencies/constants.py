@@ -13,3 +13,7 @@ class SuperSaverSyncConstants:
         "IDFCFirstBank-FIP": "IDFC Bank",
         "ICICI-FIP": "ICICI Bank",
     }
+
+
+class MockedSuperSaverSyncData:
+    pass
