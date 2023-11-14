@@ -1,0 +1,2479 @@
+{
+    "HDFC-FIP": [
+        {
+            "masked_account": "XXXXXXXXXX3810",
+            "link_ref_num": "2c9db060-7b2c-4a87-8c9a-2897eb6f99c9",
+            "decrypted_data": {
+                "Account": {
+                    "maskedAccNumber": "XXXXXXXXXX3810",
+                    "version": "1.2",
+                    "linkedAccRef": "2c9db060-7b2c-4a87-8c9a-2897eb6f99c9",
+                    "type": "deposit",
+                    "xsi:schemaLocation": "http://api.rebit.org.in/FISchema/deposit https://specifications.rebit.org.in/api_schema/account_aggregator/FISchema/deposit.xsd",
+                    "xmlns": "http://api.rebit.org.in/FISchema/deposit",
+                    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "Profile": {
+                        "Holders": {
+                            "type": "SINGLE",
+                            "Holder": {
+                                "address": "18-8-8,AZAD NAGAR, HINDUPUR,HINDUPUR,HINDUPUR,ANANTHAPUR,ANDHRA PRADESH,INDIA,515201",
+                                "ckycCompliance": "false",
+                                "dob": "1987-08-19",
+                                "email": "GEST.BHANUPRAKASH@GMAIL.COM",
+                                "landline": "",
+                                "mobile": "9640764764",
+                                "name": "BANDI BHANUPRAKASH",
+                                "nominee": "REGISTERED",
+                                "pan": "BAVPB3014K"
+                            }
+                        }
+                    },
+                    "Summary": {
+                        "balanceDateTime": "2023-11-14T21:51:11+05:30",
+                        "branch": "S R NAGAR",
+                        "currency": "INR",
+                        "currentBalance": "50.47",
+                        "currentODLimit": "0",
+                        "drawingLimit": "0",
+                        "exchgeRate": "",
+                        "ifscCode": "HDFC0009087",
+                        "micrCode": "500240102",
+                        "openingDate": "2018-06-18",
+                        "status": "ACTIVE",
+                        "type": "SAVINGS",
+                        "Pending": {
+                            "amount": "0.0"
+                        }
+                    },
+                    "Transactions": {
+                        "endDate": "2023-11-13",
+                        "startDate": "2023-05-01",
+                        "Transaction": [
+                            {
+                                "amount": "236.0",
+                                "currentBalance": "155",
+                                "mode": "OTHERS",
+                                "narration": "454139678-EMI RTN CHARGES-JANUARY 210223-MIR2412300307484",
+                                "reference": "MIR2412300307484",
+                                "transactionTimestamp": "2023-05-03T14:27:18+05:30",
+                                "txnId": "MIR2412300307484",
+                                "type": "DEBIT",
+                                "valueDate": "2023-05-03"
+                            },
+                            {
+                                "amount": "55.37",
+                                "currentBalance": "99.63",
+                                "mode": "OTHERS",
+                                "narration": "454139678-EMI RTN CHARGES-NOVEMBE 270123-MIR2412299756655",
+                                "reference": "MIR2412299756655",
+                                "transactionTimestamp": "2023-05-03T14:27:18+05:30",
+                                "txnId": "MIR2412299756655",
+                                "type": "DEBIT",
+                                "valueDate": "2023-05-03"
+                            },
+                            {
+                                "amount": "99.62",
+                                "currentBalance": "0.01",
+                                "mode": "OTHERS",
+                                "narration": "7403358-EMI RTN CHARGES-DECEMBER- 080223-MIR2412299524147",
+                                "reference": "MIR2412299524147",
+                                "transactionTimestamp": "2023-05-03T14:27:18+05:30",
+                                "txnId": "MIR2412299524147",
+                                "type": "DEBIT",
+                                "valueDate": "2023-05-03"
+                            },
+                            {
+                                "amount": "10043.0",
+                                "currentBalance": "-10042.99",
+                                "mode": "OTHERS",
+                                "narration": "EMI 454139678 CHQ S4541396780091 0523454139678",
+                                "reference": "0000000454139678",
+                                "transactionTimestamp": "2023-05-05T12:29:59+05:30",
+                                "txnId": "0000000454139678",
+                                "type": "DEBIT",
+                                "valueDate": "2023-05-05"
+                            },
+                            {
+                                "amount": "10043.0",
+                                "currentBalance": "0.01",
+                                "mode": "OTHERS",
+                                "narration": "EMI 454139678 CHQ S4541396780091 0523454139678",
+                                "reference": "0000000454139678",
+                                "transactionTimestamp": "2023-05-05T12:29:59+05:30",
+                                "txnId": "0000000454139678",
+                                "type": "CREDIT",
+                                "valueDate": "2023-05-05"
+                            },
+                            {
+                                "amount": "24863.0",
+                                "currentBalance": "24863.01",
+                                "mode": "OTHERS",
+                                "narration": "SALARIES OF INSTITUTE",
+                                "reference": "0000000000318869",
+                                "transactionTimestamp": "2023-05-05T17:38:49+05:30",
+                                "txnId": "0000000000318869",
+                                "type": "CREDIT",
+                                "valueDate": "2023-05-05"
+                            },
+                            {
+                                "amount": "10043.0",
+                                "currentBalance": "14820.01",
+                                "mode": "OTHERS",
+                                "narration": "EMI 454139678 CHQ S4541396780091 0523454139678-454139678",
+                                "reference": "000000000000000 ",
+                                "transactionTimestamp": "2023-05-06T07:09:11+05:30",
+                                "txnId": "000000000000000 ",
+                                "type": "DEBIT",
+                                "valueDate": "2023-05-06"
+                            },
+                            {
+                                "amount": "6000.0",
+                                "currentBalance": "8820.01",
+                                "mode": "OTHERS",
+                                "narration": "NEFT DR-ICIC0001114-BHANU PRAKASH-NETBANK, MUM-N128232450570462-BARROW",
+                                "reference": "N128232450570462",
+                                "transactionTimestamp": "2023-05-08T18:03:25+05:30",
+                                "txnId": "N128232450570462",
+                                "type": "DEBIT",
+                                "valueDate": "2023-05-08"
+                            },
+                            {
+                                "amount": "8800.0",
+                                "currentBalance": "20.01",
+                                "mode": "OTHERS",
+                                "narration": "UPI-PAVANKUMAR K-9985048711@YBL-ICIC0000439-349548547407-PAYMENT FROM PHONE",
+                                "reference": "0000349548547407",
+                                "transactionTimestamp": "2023-05-09T11:46:02+05:30",
+                                "txnId": "0000349548547407",
+                                "type": "DEBIT",
+                                "valueDate": "2023-05-09"
+                            },
+                            {
+                                "amount": "20.01",
+                                "currentBalance": "0",
+                                "mode": "OTHERS",
+                                "narration": "7403358-EMI RTN CHARGES-DECEMBER- 080223-MIR2413012028985",
+                                "reference": "MIR2413012028985",
+                                "transactionTimestamp": "2023-05-12T10:31:40+05:30",
+                                "txnId": "MIR2413012028985",
+                                "type": "DEBIT",
+                                "valueDate": "2023-05-12"
+                            },
+                            {
+                                "amount": "100005.0",
+                                "currentBalance": "100005",
+                                "mode": "OTHERS",
+                                "narration": "IMPS-314316705102-EDUGENE TECHNOLOGIES-IDFB-XXXXXXX8152-IMPSTXN",
+                                "reference": "0000314316705102",
+                                "transactionTimestamp": "2023-05-23T16:24:30+05:30",
+                                "txnId": "0000314316705102",
+                                "type": "CREDIT",
+                                "valueDate": "2023-05-23"
+                            },
+                            {
+                                "amount": "116.38",
+                                "currentBalance": "99888.62",
+                                "mode": "OTHERS",
+                                "narration": "7403358-EMI RTN CHARGES-DECEMBER- 080223-MIR2414557395239",
+                                "reference": "MIR2414557395239",
+                                "transactionTimestamp": "2023-05-26T11:41:49+05:30",
+                                "txnId": "MIR2414557395239",
+                                "type": "DEBIT",
+                                "valueDate": "2023-05-26"
+                            },
+                            {
+                                "amount": "1.42",
+                                "currentBalance": "99887.2",
+                                "mode": "OTHERS",
+                                "narration": "JANMAR23 INSTAALERTCHG 6 SMS 220323-MIR2414658471603",
+                                "reference": "MIR2414658471603",
+                                "transactionTimestamp": "2023-05-26T11:41:57+05:30",
+                                "txnId": "MIR2414658471603",
+                                "type": "DEBIT",
+                                "valueDate": "2023-05-26"
+                            },
+                            {
+                                "amount": "4.48",
+                                "currentBalance": "99882.72",
+                                "mode": "OTHERS",
+                                "narration": "OCTDEC22 INSTAALERTCHG 19 SMS 040123-MIR2414557663583",
+                                "reference": "MIR2414557663583",
+                                "transactionTimestamp": "2023-05-26T11:41:58+05:30",
+                                "txnId": "MIR2414557663583",
+                                "type": "DEBIT",
+                                "valueDate": "2023-05-26"
+                            },
+                            {
+                                "amount": "49843.0",
+                                "currentBalance": "149725.72",
+                                "mode": "OTHERS",
+                                "narration": "SALARIES OF INSTUTIE OF AERONAUTICAL ENGINEERING",
+                                "reference": "0000000000432964",
+                                "transactionTimestamp": "2023-06-05T19:02:04+05:30",
+                                "txnId": "0000000000432964",
+                                "type": "CREDIT",
+                                "valueDate": "2023-06-05"
+                            },
+                            {
+                                "amount": "5000.0",
+                                "currentBalance": "144725.72",
+                                "mode": "OTHERS",
+                                "narration": "UPI-PILLAMETI  BHUPAIAH-GREATCODERTECHNOLOGIESS@OKSBI-SBIN0032391-316817071475-UPI",
+                                "reference": "0000316817071475",
+                                "transactionTimestamp": "2023-06-17T20:21:08+05:30",
+                                "txnId": "0000316817071475",
+                                "type": "DEBIT",
+                                "valueDate": "2023-06-17"
+                            },
+                            {
+                                "amount": "30000.0",
+                                "currentBalance": "174725.72",
+                                "mode": "OTHERS",
+                                "narration": "UPI-BANDI BHANU PRAKASH-EGT.BHANUPRAKASH@OKAXIS-KKBK0007834-317066062533-UPI",
+                                "reference": "0000317066062533",
+                                "transactionTimestamp": "2023-06-19T16:02:18+05:30",
+                                "txnId": "0000317066062533",
+                                "type": "CREDIT",
+                                "valueDate": "2023-06-19"
+                            },
+                            {
+                                "amount": "23000.0",
+                                "currentBalance": "151725.72",
+                                "mode": "OTHERS",
+                                "narration": "UPI-EDUGENE TECHNOLOGIES-PRAKASHBANDI.DATA-1@OKAXIS-IDFB0040101-317325803429-MINI PROJECT PYHTO",
+                                "reference": "0000317325803429",
+                                "transactionTimestamp": "2023-06-22T10:35:27+05:30",
+                                "txnId": "0000317325803429",
+                                "type": "DEBIT",
+                                "valueDate": "2023-06-22"
+                            },
+                            {
+                                "amount": "1593.0",
+                                "currentBalance": "150132.72",
+                                "mode": "OTHERS",
+                                "narration": "2606 OVERDUE LOAN -454139678 RECOVERED",
+                                "reference": "000000000000000 ",
+                                "transactionTimestamp": "2023-06-26T13:30:41+05:30",
+                                "txnId": "000000000000000 ",
+                                "type": "DEBIT",
+                                "valueDate": "2023-06-26"
+                            },
+                            {
+                                "amount": "8000.0",
+                                "currentBalance": "142132.72",
+                                "mode": "OTHERS",
+                                "narration": "UPI-JAYAPRAKASH  R-JP16586@OKHDFCBANK-SBIN0012798-317848206668-UPI",
+                                "reference": "0000317848206668",
+                                "transactionTimestamp": "2023-06-27T11:08:01+05:30",
+                                "txnId": "0000317848206668",
+                                "type": "DEBIT",
+                                "valueDate": "2023-06-27"
+                            },
+                            {
+                                "amount": "20000.0",
+                                "currentBalance": "122132.72",
+                                "mode": "OTHERS",
+                                "narration": "UPI-IBL-DIGIAO@INDUS-INDB0001460-317954829582-IP FUNDING",
+                                "reference": "0000317954829582",
+                                "transactionTimestamp": "2023-06-28T13:41:07+05:30",
+                                "txnId": "0000317954829582",
+                                "type": "DEBIT",
+                                "valueDate": "2023-06-28"
+                            },
+                            {
+                                "amount": "432.0",
+                                "currentBalance": "122564.72",
+                                "mode": "OTHERS",
+                                "narration": "CREDIT INTEREST CAPITALISED",
+                                "reference": "000000000000000 ",
+                                "transactionTimestamp": "2023-07-01T01:11:24+05:30",
+                                "txnId": "000000000000000 ",
+                                "type": "CREDIT",
+                                "valueDate": "2023-06-30"
+                            },
+                            {
+                                "amount": "10000.0",
+                                "currentBalance": "112564.72",
+                                "mode": "OTHERS",
+                                "narration": "UPI-POTHIREDDY BALA KRIS-9110748478@YBL-HDFC0000081-318246196947-UPI",
+                                "reference": "0000318246196947",
+                                "transactionTimestamp": "2023-07-01T10:31:32+05:30",
+                                "txnId": "0000318246196947",
+                                "type": "DEBIT",
+                                "valueDate": "2023-07-01"
+                            },
+                            {
+                                "amount": "24784.0",
+                                "currentBalance": "87780.72",
+                                "mode": "OTHERS",
+                                "narration": "UPI-BANDI BHANU PRAKASH-EGT.BHANUPRAKASH@OKICICI-ICIC0001114-318267273746-UPI",
+                                "reference": "0000318267273746",
+                                "transactionTimestamp": "2023-07-01T20:56:27+05:30",
+                                "txnId": "0000318267273746",
+                                "type": "DEBIT",
+                                "valueDate": "2023-07-01"
+                            },
+                            {
+                                "amount": "6242.0",
+                                "currentBalance": "81538.72",
+                                "mode": "OTHERS",
+                                "narration": "UPI-KAPPALA PAVAN KUMAR-PAVAN8282@OKICICI-SBIN0020575-318267282283-UPI",
+                                "reference": "0000318267282283",
+                                "transactionTimestamp": "2023-07-01T20:57:05+05:30",
+                                "txnId": "0000318267282283",
+                                "type": "DEBIT",
+                                "valueDate": "2023-07-01"
+                            },
+                            {
+                                "amount": "11500.0",
+                                "currentBalance": "70038.72",
+                                "mode": "OTHERS",
+                                "narration": "UPI-BANDI BHANU PRAKASH-PRAKASHBANDI.DATA-2@OKAXIS-IDFB0040101-318398414238-UPI",
+                                "reference": "0000318398414238",
+                                "transactionTimestamp": "2023-07-02T23:43:49+05:30",
+                                "txnId": "0000318398414238",
+                                "type": "DEBIT",
+                                "valueDate": "2023-07-03"
+                            },
+                            {
+                                "amount": "14970.0",
+                                "currentBalance": "55068.72",
+                                "mode": "OTHERS",
+                                "narration": "UPI-BANDI BHANU PRAKASH-EGT.BHANUPRAKASH@OKICICI-ICIC0001114-318402984032-UPI",
+                                "reference": "0000318402984032",
+                                "transactionTimestamp": "2023-07-03T10:24:02+05:30",
+                                "txnId": "0000318402984032",
+                                "type": "DEBIT",
+                                "valueDate": "2023-07-03"
+                            },
+                            {
+                                "amount": "17336.0",
+                                "currentBalance": "37732.72",
+                                "mode": "OTHERS",
+                                "narration": "UPI-CREDCLUB-CREDCLUB@ICICI-ICIC0DC0099-318421680189-UPI",
+                                "reference": "0000318421680189",
+                                "transactionTimestamp": "2023-07-03T20:44:32+05:30",
+                                "txnId": "0000318421680189",
+                                "type": "DEBIT",
+                                "valueDate": "2023-07-03"
+                            },
+                            {
+                                "amount": "36357.0",
+                                "currentBalance": "1375.72",
+                                "mode": "OTHERS",
+                                "narration": "UPI-BANDI BHANU PRAKASH-EGT.BHANUPRAKASH@OKAXIS-KKBK0007834-318421683622-UPI",
+                                "reference": "0000318421683622",
+                                "transactionTimestamp": "2023-07-03T20:45:14+05:30",
+                                "txnId": "0000318421683622",
+                                "type": "DEBIT",
+                                "valueDate": "2023-07-03"
+                            },
+                            {
+                                "amount": "36357.0",
+                                "currentBalance": "37732.72",
+                                "mode": "OTHERS",
+                                "narration": "REV-UPI-50100239883810-PRAKASHBANDI.DATA@OKHDFCBANK-318421683622-UPI",
+                                "reference": "0000318421683622",
+                                "transactionTimestamp": "2023-07-03T20:45:15+05:30",
+                                "txnId": "0000318421683622",
+                                "type": "CREDIT",
+                                "valueDate": "2023-07-03"
+                            },
+                            {
+                                "amount": "36357.0",
+                                "currentBalance": "1375.72",
+                                "mode": "OTHERS",
+                                "narration": "UPI-BANDI BHANU PRAKASH-EGT.BHANUPRAKASH@OKAXIS-KKBK0007834-318421701418-UPI",
+                                "reference": "0000318421701418",
+                                "transactionTimestamp": "2023-07-03T20:45:52+05:30",
+                                "txnId": "0000318421701418",
+                                "type": "DEBIT",
+                                "valueDate": "2023-07-03"
+                            },
+                            {
+                                "amount": "36357.0",
+                                "currentBalance": "37732.72",
+                                "mode": "OTHERS",
+                                "narration": "REV-UPI-50100239883810-PRAKASHBANDI.DATA@OKHDFCBANK-318421701418-UPI",
+                                "reference": "0000318421701418",
+                                "transactionTimestamp": "2023-07-03T20:45:53+05:30",
+                                "txnId": "0000318421701418",
+                                "type": "CREDIT",
+                                "valueDate": "2023-07-03"
+                            },
+                            {
+                                "amount": "36357.0",
+                                "currentBalance": "1375.72",
+                                "mode": "OTHERS",
+                                "narration": "UPI-BANDI BHANU PRAKASH-EGT.BHANUPRAKASH@OKAXIS-KKBK0007834-318421736532-UPI",
+                                "reference": "0000318421736532",
+                                "transactionTimestamp": "2023-07-03T20:46:50+05:30",
+                                "txnId": "0000318421736532",
+                                "type": "DEBIT",
+                                "valueDate": "2023-07-03"
+                            },
+                            {
+                                "amount": "36357.0",
+                                "currentBalance": "37732.72",
+                                "mode": "OTHERS",
+                                "narration": "REV-UPI-50100239883810-PRAKASHBANDI.DATA@OKHDFCBANK-318421736532-UPI",
+                                "reference": "0000318421736532",
+                                "transactionTimestamp": "2023-07-03T20:46:51+05:30",
+                                "txnId": "0000318421736532",
+                                "type": "CREDIT",
+                                "valueDate": "2023-07-03"
+                            },
+                            {
+                                "amount": "35000.0",
+                                "currentBalance": "2732.72",
+                                "mode": "OTHERS",
+                                "narration": "UPI-BANDI BHANU PRAKASH-EGT.BHANUPRAKASH@OKAXIS-KKBK0007834-318421830270-UPI",
+                                "reference": "0000318421830270",
+                                "transactionTimestamp": "2023-07-03T20:49:13+05:30",
+                                "txnId": "0000318421830270",
+                                "type": "DEBIT",
+                                "valueDate": "2023-07-03"
+                            },
+                            {
+                                "amount": "35000.0",
+                                "currentBalance": "37732.72",
+                                "mode": "OTHERS",
+                                "narration": "REV-UPI-50100239883810-PRAKASHBANDI.DATA@OKHDFCBANK-318421830270-UPI",
+                                "reference": "0000318421830270",
+                                "transactionTimestamp": "2023-07-03T20:49:13+05:30",
+                                "txnId": "0000318421830270",
+                                "type": "CREDIT",
+                                "valueDate": "2023-07-03"
+                            },
+                            {
+                                "amount": "16500.0",
+                                "currentBalance": "21232.72",
+                                "mode": "OTHERS",
+                                "narration": "UPI-BANDI BHANU PRAKASH-EGT.BHANUPRAKASH@OKICICI-ICIC0001114-318424007397-UPI",
+                                "reference": "0000318424007397",
+                                "transactionTimestamp": "2023-07-03T21:57:35+05:30",
+                                "txnId": "0000318424007397",
+                                "type": "DEBIT",
+                                "valueDate": "2023-07-03"
+                            },
+                            {
+                                "amount": "16177.67",
+                                "currentBalance": "5055.05",
+                                "mode": "OTHERS",
+                                "narration": "UPI-CREDCLUB-CREDCLUB@ICICI-ICIC0DC0099-318536482767-UPI",
+                                "reference": "0000318536482767",
+                                "transactionTimestamp": "2023-07-04T14:37:02+05:30",
+                                "txnId": "0000318536482767",
+                                "type": "DEBIT",
+                                "valueDate": "2023-07-04"
+                            },
+                            {
+                                "amount": "5055.0",
+                                "currentBalance": "0.05",
+                                "mode": "OTHERS",
+                                "narration": "UPI-BANDI BHANU PRAKASH-EGT.BHANUPRAKASH@OKICICI-ICIC0001114-318660372906-UPI",
+                                "reference": "0000318660372906",
+                                "transactionTimestamp": "2023-07-05T12:19:56+05:30",
+                                "txnId": "0000318660372906",
+                                "type": "DEBIT",
+                                "valueDate": "2023-07-05"
+                            },
+                            {
+                                "amount": "49843.0",
+                                "currentBalance": "49843.05",
+                                "mode": "OTHERS",
+                                "narration": "SALARIES OF INSTUTIES OF AERONATUICAL ENGINEERING",
+                                "reference": "0000000000432964",
+                                "transactionTimestamp": "2023-07-05T17:10:10+05:30",
+                                "txnId": "0000000000432964",
+                                "type": "CREDIT",
+                                "valueDate": "2023-07-05"
+                            },
+                            {
+                                "amount": "50000.0",
+                                "currentBalance": "99843.05",
+                                "mode": "OTHERS",
+                                "narration": "UPI-BANDI BHANU PRAKASH-EGT.BHANUPRAKASH@OKICICI-ICIC0001114-355582556995-UPI",
+                                "reference": "0000355582556995",
+                                "transactionTimestamp": "2023-07-08T17:30:58+05:30",
+                                "txnId": "0000355582556995",
+                                "type": "CREDIT",
+                                "valueDate": "2023-07-08"
+                            },
+                            {
+                                "amount": "236.0",
+                                "currentBalance": "99607.05",
+                                "mode": "OTHERS",
+                                "narration": "454139678-EMI RTN CHARGES-MARCH-2 180523-MIR2418836719580",
+                                "reference": "MIR2418836719580",
+                                "transactionTimestamp": "2023-07-11T15:00:05+05:30",
+                                "txnId": "MIR2418836719580",
+                                "type": "DEBIT",
+                                "valueDate": "2023-07-11"
+                            },
+                            {
+                                "amount": "7500.0",
+                                "currentBalance": "92107.05",
+                                "mode": "OTHERS",
+                                "narration": "UPI-KAPPALA PAVAN KUMAR-PAVAN8282@OKICICI-SBIN0020575-319352698307-UPI",
+                                "reference": "0000319352698307",
+                                "transactionTimestamp": "2023-07-12T14:08:14+05:30",
+                                "txnId": "0000319352698307",
+                                "type": "DEBIT",
+                                "valueDate": "2023-07-12"
+                            },
+                            {
+                                "amount": "12820.0",
+                                "currentBalance": "79287.05",
+                                "mode": "OTHERS",
+                                "narration": "UPI-TONIQUE-PAYTM-52822111@PAYTM-PYTM0123456-319775891134-UPI",
+                                "reference": "0000319775891134",
+                                "transactionTimestamp": "2023-07-16T20:57:22+05:30",
+                                "txnId": "0000319775891134",
+                                "type": "DEBIT",
+                                "valueDate": "2023-07-16"
+                            },
+                            {
+                                "amount": "20000.0",
+                                "currentBalance": "59287.05",
+                                "mode": "OTHERS",
+                                "narration": "UPI-EDUGENE TECHNOLOGIES-PRAKASHBANDI.DATA-1@OKAXIS-IDFB0040101-319897747091-UPI",
+                                "reference": "0000319897747091",
+                                "transactionTimestamp": "2023-07-17T18:59:33+05:30",
+                                "txnId": "0000319897747091",
+                                "type": "DEBIT",
+                                "valueDate": "2023-07-17"
+                            },
+                            {
+                                "amount": "59000.0",
+                                "currentBalance": "287.05",
+                                "mode": "OTHERS",
+                                "narration": "UPI-EDUGENE TECHNOLOGIES-PRAKASHBANDI.DATA-1@OKAXIS-IDFB0040101-320164326768-UPI",
+                                "reference": "0000320164326768",
+                                "transactionTimestamp": "2023-07-20T12:31:13+05:30",
+                                "txnId": "0000320164326768",
+                                "type": "DEBIT",
+                                "valueDate": "2023-07-20"
+                            },
+                            {
+                                "amount": "2.6",
+                                "currentBalance": "284.45",
+                                "mode": "OTHERS",
+                                "narration": "APRJUN23 INSTAALERTCHG 11 SMS 220523-MIR2419954849294",
+                                "reference": "MIR2419954849294",
+                                "transactionTimestamp": "2023-07-20T16:44:27+05:30",
+                                "txnId": "MIR2419954849294",
+                                "type": "DEBIT",
+                                "valueDate": "2023-07-20"
+                            },
+                            {
+                                "amount": "284.45",
+                                "currentBalance": "0",
+                                "mode": "OTHERS",
+                                "narration": "AMBCHARGE FOR APR23 310523-MIR2420882926996",
+                                "reference": "MIR2420882926996",
+                                "transactionTimestamp": "2023-07-28T11:58:39+05:30",
+                                "txnId": "MIR2420882926996",
+                                "type": "DEBIT",
+                                "valueDate": "2023-07-28"
+                            },
+                            {
+                                "amount": "15943.0",
+                                "currentBalance": "15943",
+                                "mode": "OTHERS",
+                                "narration": "SALARIES OF INSTITUTE OF AERONAUTICAL ENGINEERING",
+                                "reference": "0000000000390898",
+                                "transactionTimestamp": "2023-08-05T12:57:38+05:30",
+                                "txnId": "0000000000390898",
+                                "type": "CREDIT",
+                                "valueDate": "2023-08-05"
+                            },
+                            {
+                                "amount": "10000.0",
+                                "currentBalance": "5943",
+                                "mode": "OTHERS",
+                                "narration": "UPI-GOWNI  VAISHNAV-GOWNIVAISHNAV2003@OKHDFCBANK-SBIN0000845-322133212379-UPI",
+                                "reference": "0000322133212379",
+                                "transactionTimestamp": "2023-08-09T20:38:27+05:30",
+                                "txnId": "0000322133212379",
+                                "type": "DEBIT",
+                                "valueDate": "2023-08-09"
+                            },
+                            {
+                                "amount": "560.0",
+                                "currentBalance": "5383",
+                                "mode": "OTHERS",
+                                "narration": "POS 517725XXXXXX7359 MADHU RESTAURANT",
+                                "reference": "0000000000006538",
+                                "transactionTimestamp": "2023-08-09T21:25:08+05:30",
+                                "txnId": "0000000000006538",
+                                "type": "DEBIT",
+                                "valueDate": "2023-08-09"
+                            },
+                            {
+                                "amount": "590.0",
+                                "currentBalance": "4793",
+                                "mode": "OTHERS",
+                                "narration": "UPI-SHAIK SAMAD-BHARATPE.90065900558@FBPE-FDRL0001382-322247187830-PAY TO BHARATPE ME",
+                                "reference": "0000322247187830",
+                                "transactionTimestamp": "2023-08-10T13:22:17+05:30",
+                                "txnId": "0000322247187830",
+                                "type": "DEBIT",
+                                "valueDate": "2023-08-10"
+                            },
+                            {
+                                "amount": "236.0",
+                                "currentBalance": "4557",
+                                "mode": "OTHERS",
+                                "narration": "454139678-EMI RTN CHARGES-APRIL-2 230523-MIR2422111823244",
+                                "reference": "MIR2422111823244",
+                                "transactionTimestamp": "2023-08-10T13:26:19+05:30",
+                                "txnId": "MIR2422111823244",
+                                "type": "DEBIT",
+                                "valueDate": "2023-08-10"
+                            },
+                            {
+                                "amount": "236.0",
+                                "currentBalance": "4321",
+                                "mode": "OTHERS",
+                                "narration": "454139678-EMI RTN CHARGES-MAY-202 250523-MIR2422111856036",
+                                "reference": "MIR2422111856036",
+                                "transactionTimestamp": "2023-08-10T13:26:19+05:30",
+                                "txnId": "MIR2422111856036",
+                                "type": "DEBIT",
+                                "valueDate": "2023-08-10"
+                            },
+                            {
+                                "amount": "2000.0",
+                                "currentBalance": "2321",
+                                "mode": "OTHERS",
+                                "narration": "UPI-ADMALA SAMYUKTHA-SAMYUKTHA35ADMALA@OKHDFCBANK-UBIN0805289-322255086126-UPI",
+                                "reference": "0000322255086126",
+                                "transactionTimestamp": "2023-08-10T17:59:01+05:30",
+                                "txnId": "0000322255086126",
+                                "type": "DEBIT",
+                                "valueDate": "2023-08-10"
+                            },
+                            {
+                                "amount": "25.0",
+                                "currentBalance": "2296",
+                                "mode": "OTHERS",
+                                "narration": "UPI-CAFE CASTLE-MAB0451256A0124917@YESBANK-YESB0000419-322259683874-UPI",
+                                "reference": "0000322259683874",
+                                "transactionTimestamp": "2023-08-10T19:45:03+05:30",
+                                "txnId": "0000322259683874",
+                                "type": "DEBIT",
+                                "valueDate": "2023-08-10"
+                            },
+                            {
+                                "amount": "600.0",
+                                "currentBalance": "1696",
+                                "mode": "OTHERS",
+                                "narration": "UPI-CHENNABOINA SAI PAVA-SAIPAVANYADAV62-3@OKHDFCBANK-PYTM0123456-322260229562-UPI",
+                                "reference": "0000322260229562",
+                                "transactionTimestamp": "2023-08-10T20:04:52+05:30",
+                                "txnId": "0000322260229562",
+                                "type": "DEBIT",
+                                "valueDate": "2023-08-10"
+                            },
+                            {
+                                "amount": "600.0",
+                                "currentBalance": "1096",
+                                "mode": "OTHERS",
+                                "narration": "POS 517725XXXXXX7359 NOODLE KING",
+                                "reference": "0000000000003795",
+                                "transactionTimestamp": "2023-08-11T23:24:34+05:30",
+                                "txnId": "0000000000003795",
+                                "type": "DEBIT",
+                                "valueDate": "2023-08-11"
+                            },
+                            {
+                                "amount": "290.0",
+                                "currentBalance": "806",
+                                "mode": "OTHERS",
+                                "narration": "UPI-BANDI BHANU PRAKASH-PRAKASHBANDI.DATA-2@OKHDFCBANK-FDRL0005555-322710572635-UPI",
+                                "reference": "0000322710572635",
+                                "transactionTimestamp": "2023-08-15T20:42:53+05:30",
+                                "txnId": "0000322710572635",
+                                "type": "DEBIT",
+                                "valueDate": "2023-08-15"
+                            },
+                            {
+                                "amount": "310.0",
+                                "currentBalance": "496",
+                                "mode": "OTHERS",
+                                "narration": "POS 517725XXXXXX7359 SPI CINEMAS PVT",
+                                "reference": "0000000000006097",
+                                "transactionTimestamp": "2023-08-17T00:49:23+05:30",
+                                "txnId": "0000000000006097",
+                                "type": "DEBIT",
+                                "valueDate": "2023-08-17"
+                            },
+                            {
+                                "amount": "423.54",
+                                "currentBalance": "72.46",
+                                "mode": "OTHERS",
+                                "narration": "AMBCHARGE FOR APR23 310523-MIR2423143054071",
+                                "reference": "MIR2423143054071",
+                                "transactionTimestamp": "2023-08-19T18:15:17+05:30",
+                                "txnId": "MIR2423143054071",
+                                "type": "DEBIT",
+                                "valueDate": "2023-08-19"
+                            },
+                            {
+                                "amount": "72.46",
+                                "currentBalance": "0",
+                                "mode": "OTHERS",
+                                "narration": "AMBCHARGE FOR FEB23 310523-MIR2423143431532",
+                                "reference": "MIR2423143431532",
+                                "transactionTimestamp": "2023-08-19T18:15:17+05:30",
+                                "txnId": "MIR2423143431532",
+                                "type": "DEBIT",
+                                "valueDate": "2023-08-19"
+                            },
+                            {
+                                "amount": "1.0",
+                                "currentBalance": "1",
+                                "mode": "OTHERS",
+                                "narration": "IMPS-324217347931-PHONEPEPRIVATELIMI-UTIB-XXXXXXXXXXX8981-IMPS",
+                                "reference": "0000324217347931",
+                                "transactionTimestamp": "2023-08-30T17:04:11+05:30",
+                                "txnId": "0000324217347931",
+                                "type": "CREDIT",
+                                "valueDate": "2023-08-30"
+                            },
+                            {
+                                "amount": "18000.0",
+                                "currentBalance": "18001",
+                                "mode": "OTHERS",
+                                "narration": "UPI-PHONEPE PRIVATE LIMI-PHONEPE-PAYOUTS@YESBANK-YESB0000022-324441947005-F07 CREDIT BY PHON",
+                                "reference": "0000324441947005",
+                                "transactionTimestamp": "2023-09-01T20:07:03+05:30",
+                                "txnId": "0000324441947005",
+                                "type": "CREDIT",
+                                "valueDate": "2023-09-01"
+                            },
+                            {
+                                "amount": "14960.0",
+                                "currentBalance": "3041",
+                                "mode": "OTHERS",
+                                "narration": "UPI-CREDCLUB-CREDCLUB@ICICI-ICIC0DC0099-324403646677-UPI",
+                                "reference": "0000324403646677",
+                                "transactionTimestamp": "2023-09-01T20:09:03+05:30",
+                                "txnId": "0000324403646677",
+                                "type": "DEBIT",
+                                "valueDate": "2023-09-01"
+                            },
+                            {
+                                "amount": "3000.0",
+                                "currentBalance": "41",
+                                "mode": "OTHERS",
+                                "narration": "UPI-KAPPALA PAVAN KUMAR-PAVAN8282@OKICICI-SBIN0020575-324403925182-UPI",
+                                "reference": "0000324403925182",
+                                "transactionTimestamp": "2023-09-01T20:16:19+05:30",
+                                "txnId": "0000324403925182",
+                                "type": "DEBIT",
+                                "valueDate": "2023-09-01"
+                            },
+                            {
+                                "amount": "41.0",
+                                "currentBalance": "0",
+                                "mode": "OTHERS",
+                                "narration": "AMBCHARGE FOR JAN23 310523-MIR2425188484833",
+                                "reference": "MIR2425188484833",
+                                "transactionTimestamp": "2023-09-11T13:27:14+05:30",
+                                "txnId": "MIR2425188484833",
+                                "type": "DEBIT",
+                                "valueDate": "2023-09-11"
+                            },
+                            {
+                                "amount": "409000.0",
+                                "currentBalance": "409000",
+                                "mode": "OTHERS",
+                                "narration": "IMPS-326821054504-BANDI BHANU PRAKASH-AUBL-XXXXXXXXXXXX8332-MONEY TRANSFER",
+                                "reference": "0000326821054504",
+                                "transactionTimestamp": "2023-09-25T21:35:35+05:30",
+                                "txnId": "0000326821054504",
+                                "type": "CREDIT",
+                                "valueDate": "2023-09-25"
+                            },
+                            {
+                                "amount": "3000.0",
+                                "currentBalance": "412000",
+                                "mode": "OTHERS",
+                                "narration": "UPI-EDUGENE TECHNOLOGIES-PRAKASHBANDI.DATA-1@OKAXIS-IDFB0040101-326912865472-UPI",
+                                "reference": "0000326912865472",
+                                "transactionTimestamp": "2023-09-26T19:37:41+05:30",
+                                "txnId": "0000326912865472",
+                                "type": "CREDIT",
+                                "valueDate": "2023-09-26"
+                            },
+                            {
+                                "amount": "2135.0",
+                                "currentBalance": "409865",
+                                "mode": "OTHERS",
+                                "narration": "UPI-PIRATLA VENKATA SATY-SAKETHPIRATLA207@OKSBI-BKID0005650-327377127229-UPI",
+                                "reference": "0000327377127229",
+                                "transactionTimestamp": "2023-09-30T11:30:42+05:30",
+                                "txnId": "0000327377127229",
+                                "type": "DEBIT",
+                                "valueDate": "2023-09-30"
+                            },
+                            {
+                                "amount": "321.0",
+                                "currentBalance": "410186",
+                                "mode": "OTHERS",
+                                "narration": "CREDIT INTEREST CAPITALISED",
+                                "reference": "000000000000000 ",
+                                "transactionTimestamp": "2023-10-01T04:51:31+05:30",
+                                "txnId": "000000000000000 ",
+                                "type": "CREDIT",
+                                "valueDate": "2023-09-30"
+                            },
+                            {
+                                "amount": "3495.01",
+                                "currentBalance": "406690.99",
+                                "mode": "OTHERS",
+                                "narration": "POS 517725XXXXXX7359 YOUSTA",
+                                "reference": "0000000000001608",
+                                "transactionTimestamp": "2023-10-01T16:59:18+05:30",
+                                "txnId": "0000000000001608",
+                                "type": "DEBIT",
+                                "valueDate": "2023-10-01"
+                            },
+                            {
+                                "amount": "4689.0",
+                                "currentBalance": "402001.99",
+                                "mode": "OTHERS",
+                                "narration": "POS 517725XXXXXX7359 FIRE FLY",
+                                "reference": "0000000000547606",
+                                "transactionTimestamp": "2023-10-01T23:35:37+05:30",
+                                "txnId": "0000000000547606",
+                                "type": "DEBIT",
+                                "valueDate": "2023-10-02"
+                            },
+                            {
+                                "amount": "500.0",
+                                "currentBalance": "401501.99",
+                                "mode": "OTHERS",
+                                "narration": "UPI-ASWINI HIMIRIKA-ASWINIHIMIRIKA2015@OKICICI-SBIN0009347-327437119076-UPI",
+                                "reference": "0000327437119076",
+                                "transactionTimestamp": "2023-10-01T23:36:31+05:30",
+                                "txnId": "0000327437119076",
+                                "type": "DEBIT",
+                                "valueDate": "2023-10-02"
+                            },
+                            {
+                                "amount": "1000.0",
+                                "currentBalance": "400501.99",
+                                "mode": "OTHERS",
+                                "narration": "UPI-BANDI BHANU PRAKASH-BBANDI2@YBL-IDFB0040101-327671702126-UPI",
+                                "reference": "0000327671702126",
+                                "transactionTimestamp": "2023-10-03T01:53:03+05:30",
+                                "txnId": "0000327671702126",
+                                "type": "DEBIT",
+                                "valueDate": "2023-10-03"
+                            },
+                            {
+                                "amount": "635.53",
+                                "currentBalance": "399866.46",
+                                "mode": "OTHERS",
+                                "narration": "AMBCHARGE FOR FEB23 310523-MIR2427548862040",
+                                "reference": "MIR2427548862040",
+                                "transactionTimestamp": "2023-10-03T13:23:42+05:30",
+                                "txnId": "MIR2427548862040",
+                                "type": "DEBIT",
+                                "valueDate": "2023-10-03"
+                            },
+                            {
+                                "amount": "666.99",
+                                "currentBalance": "399199.47",
+                                "mode": "OTHERS",
+                                "narration": "AMBCHARGE FOR JAN23 310523-MIR2427549236118",
+                                "reference": "MIR2427549236118",
+                                "transactionTimestamp": "2023-10-03T13:23:42+05:30",
+                                "txnId": "MIR2427549236118",
+                                "type": "DEBIT",
+                                "valueDate": "2023-10-03"
+                            },
+                            {
+                                "amount": "708.0",
+                                "currentBalance": "398491.47",
+                                "mode": "OTHERS",
+                                "narration": "AMBCHARGE FOR MAR23 310523-MIR2427549637149",
+                                "reference": "MIR2427549637149",
+                                "transactionTimestamp": "2023-10-03T13:23:43+05:30",
+                                "txnId": "MIR2427549637149",
+                                "type": "DEBIT",
+                                "valueDate": "2023-10-03"
+                            },
+                            {
+                                "amount": "234.32",
+                                "currentBalance": "398257.15",
+                                "mode": "OTHERS",
+                                "narration": "454139678-EMI RTN CHARGES-SEPTEMB 151222-MIR2427542607654",
+                                "reference": "MIR2427542607654",
+                                "transactionTimestamp": "2023-10-04T13:08:29+05:30",
+                                "txnId": "MIR2427542607654",
+                                "type": "DEBIT",
+                                "valueDate": "2023-10-04"
+                            },
+                            {
+                                "amount": "3050.0",
+                                "currentBalance": "395207.15",
+                                "mode": "OTHERS",
+                                "narration": "UPI-ECHOBOOOM MANAGEMENT-0791351A0113039.BQR@KOTAK-KKBK0001351-328027864807-1898536A",
+                                "reference": "0000328027864807",
+                                "transactionTimestamp": "2023-10-07T16:33:16+05:30",
+                                "txnId": "0000328027864807",
+                                "type": "DEBIT",
+                                "valueDate": "2023-10-07"
+                            },
+                            {
+                                "amount": "88000.0",
+                                "currentBalance": "307207.15",
+                                "mode": "OTHERS",
+                                "narration": "UPI-BANDI BHANU PRAKASH-BBANDI2@AXL-IDFB0040101-328486940458-PAYMENT FROM PHONE",
+                                "reference": "0000328486940458",
+                                "transactionTimestamp": "2023-10-11T10:30:04+05:30",
+                                "txnId": "0000328486940458",
+                                "type": "DEBIT",
+                                "valueDate": "2023-10-11"
+                            },
+                            {
+                                "amount": "7000.0",
+                                "currentBalance": "300207.15",
+                                "mode": "OTHERS",
+                                "narration": "UPI-BANDI BHANU PRAKASH-PRAKASHBANDI25065@AXL-AUBL0002493-328647590274-UPI",
+                                "reference": "0000328647590274",
+                                "transactionTimestamp": "2023-10-13T19:46:54+05:30",
+                                "txnId": "0000328647590274",
+                                "type": "DEBIT",
+                                "valueDate": "2023-10-13"
+                            },
+                            {
+                                "amount": "24000.0",
+                                "currentBalance": "276207.15",
+                                "mode": "OTHERS",
+                                "narration": "UPI-PADALA KIRAN REDDY-KIRAN26524@OKHDFCBANK-HDFC0003739-328802854772-UPI",
+                                "reference": "0000328802854772",
+                                "transactionTimestamp": "2023-10-15T11:13:17+05:30",
+                                "txnId": "0000328802854772",
+                                "type": "DEBIT",
+                                "valueDate": "2023-10-15"
+                            },
+                            {
+                                "amount": "11200.0",
+                                "currentBalance": "265007.15",
+                                "mode": "OTHERS",
+                                "narration": "UPI-PAVANKUMAR K-PAVAN8282-1@OKICICI-ICIC0000439-329088773665-UPI",
+                                "reference": "0000329088773665",
+                                "transactionTimestamp": "2023-10-17T18:03:45+05:30",
+                                "txnId": "0000329088773665",
+                                "type": "DEBIT",
+                                "valueDate": "2023-10-17"
+                            },
+                            {
+                                "amount": "5000.0",
+                                "currentBalance": "260007.15",
+                                "mode": "OTHERS",
+                                "narration": "UPI-PAVANKUMAR K-PAVAN8282-1@OKICICI-ICIC0000439-329094130219-UPI",
+                                "reference": "0000329094130219",
+                                "transactionTimestamp": "2023-10-17T19:49:28+05:30",
+                                "txnId": "0000329094130219",
+                                "type": "DEBIT",
+                                "valueDate": "2023-10-17"
+                            },
+                            {
+                                "amount": "5102.0",
+                                "currentBalance": "254905.15",
+                                "mode": "OTHERS",
+                                "narration": "UPI-THE FISHERMANS WHARF-Q256899234@YBL-YESB0YBLUPI-329418228424-UPI",
+                                "reference": "0000329418228424",
+                                "transactionTimestamp": "2023-10-21T14:38:27+05:30",
+                                "txnId": "0000329418228424",
+                                "type": "DEBIT",
+                                "valueDate": "2023-10-21"
+                            },
+                            {
+                                "amount": "100000.0",
+                                "currentBalance": "154905.15",
+                                "mode": "OTHERS",
+                                "narration": "IMPS-329418378650-BHANU PRAKASH-ICIC-XXXXXXXX0841-GOLF",
+                                "reference": "0000329418378650",
+                                "transactionTimestamp": "2023-10-21T18:09:10+05:30",
+                                "txnId": "0000329418378650",
+                                "type": "DEBIT",
+                                "valueDate": "2023-10-21"
+                            },
+                            {
+                                "amount": "6710.0",
+                                "currentBalance": "148195.15",
+                                "mode": "OTHERS",
+                                "narration": "POS 517725XXXXXX7359 TONIQUE",
+                                "reference": "0000000000545317",
+                                "transactionTimestamp": "2023-10-21T19:17:05+05:30",
+                                "txnId": "0000000000545317",
+                                "type": "DEBIT",
+                                "valueDate": "2023-10-21"
+                            },
+                            {
+                                "amount": "48195.0",
+                                "currentBalance": "100000.15",
+                                "mode": "OTHERS",
+                                "narration": "UPI-BANDI BHANU  PRAKASH-PRAKASHBANDI2506-5@OKAXIS-SBIN0000845-329546076370-UPI",
+                                "reference": "0000329546076370",
+                                "transactionTimestamp": "2023-10-22T11:35:24+05:30",
+                                "txnId": "0000329546076370",
+                                "type": "DEBIT",
+                                "valueDate": "2023-10-22"
+                            },
+                            {
+                                "amount": "25000.0",
+                                "currentBalance": "75000.15",
+                                "mode": "OTHERS",
+                                "narration": "UPI-BANDI BHANU PRAKASH-EGT.BHANUPRAKASH@OKICICI-ICIC0001114-330600102139-UPI",
+                                "reference": "0000330600102139",
+                                "transactionTimestamp": "2023-11-02T00:57:49+05:30",
+                                "txnId": "0000330600102139",
+                                "type": "DEBIT",
+                                "valueDate": "2023-11-02"
+                            },
+                            {
+                                "amount": "20000.0",
+                                "currentBalance": "55000.15",
+                                "mode": "OTHERS",
+                                "narration": "UPI-BANDI BHANU PRAKASH-EGT.BHANUPRAKASH@OKICICI-ICIC0001114-330601927150-UPI",
+                                "reference": "0000330601927150",
+                                "transactionTimestamp": "2023-11-02T08:00:03+05:30",
+                                "txnId": "0000330601927150",
+                                "type": "DEBIT",
+                                "valueDate": "2023-11-02"
+                            },
+                            {
+                                "amount": "1000.0",
+                                "currentBalance": "54000.15",
+                                "mode": "OTHERS",
+                                "narration": "UPI-BANDI BHANU PRAKASH-EGT.BHANUPRAKASH@OKICICI-ICIC0001114-330603412838-UPI",
+                                "reference": "0000330603412838",
+                                "transactionTimestamp": "2023-11-02T09:01:16+05:30",
+                                "txnId": "0000330603412838",
+                                "type": "DEBIT",
+                                "valueDate": "2023-11-02"
+                            },
+                            {
+                                "amount": "11210.0",
+                                "currentBalance": "42790.15",
+                                "mode": "OTHERS",
+                                "narration": "UPI-BANDI BHANU PRAKASH-BBANDI2@AXL-IDFB0040101-330787037732-PAYMENT FROM PHONE",
+                                "reference": "0000330787037732",
+                                "transactionTimestamp": "2023-11-03T09:36:04+05:30",
+                                "txnId": "0000330787037732",
+                                "type": "DEBIT",
+                                "valueDate": "2023-11-03"
+                            },
+                            {
+                                "amount": "1.66",
+                                "currentBalance": "42788.49",
+                                "mode": "OTHERS",
+                                "narration": "JULSEP23 INSTAALERTCHG 7 SMS 031023-MIR2430534982289",
+                                "reference": "MIR2430534982289",
+                                "transactionTimestamp": "2023-11-04T13:31:50+05:30",
+                                "txnId": "MIR2430534982289",
+                                "type": "DEBIT",
+                                "valueDate": "2023-11-04"
+                            },
+                            {
+                                "amount": "1410.12",
+                                "currentBalance": "41378.37",
+                                "mode": "OTHERS",
+                                "narration": "UPI-LAZYPAY PRIVATE-LAZYPAYPRIVATE901.RZP@ICICI-ICIC0DC0099-331058965408-LAZYPAY REPAYMENT",
+                                "reference": "0000331058965408",
+                                "transactionTimestamp": "2023-11-06T14:50:27+05:30",
+                                "txnId": "0000331058965408",
+                                "type": "DEBIT",
+                                "valueDate": "2023-11-06"
+                            },
+                            {
+                                "amount": "5.9",
+                                "currentBalance": "41372.47",
+                                "mode": "OTHERS",
+                                "narration": ".IMPS P2P 329418378650#21/10/2023 211023-MIR2431143112794",
+                                "reference": "MIR2431143112794",
+                                "transactionTimestamp": "2023-11-07T13:43:26+05:30",
+                                "txnId": "MIR2431143112794",
+                                "type": "DEBIT",
+                                "valueDate": "2023-11-07"
+                            },
+                            {
+                                "amount": "3395.0",
+                                "currentBalance": "37977.47",
+                                "mode": "OTHERS",
+                                "narration": "UPI-MOHAMMED GHOUSE UDDI-SHAIKFAIIZANYAHOO@OKSBI-PYTM0123456-331198859289-UPI",
+                                "reference": "0000331198859289",
+                                "transactionTimestamp": "2023-11-07T17:05:20+05:30",
+                                "txnId": "0000331198859289",
+                                "type": "DEBIT",
+                                "valueDate": "2023-11-07"
+                            },
+                            {
+                                "amount": "13635.0",
+                                "currentBalance": "24342.47",
+                                "mode": "OTHERS",
+                                "narration": "UPI-KRAZYBEE-CF.KRAZYBEE@KOTAK-KKBK0000958-331226955503-KREDITBEEPAYMENT",
+                                "reference": "0000331226955503",
+                                "transactionTimestamp": "2023-11-08T13:23:32+05:30",
+                                "txnId": "0000331226955503",
+                                "type": "DEBIT",
+                                "valueDate": "2023-11-08"
+                            },
+                            {
+                                "amount": "5000.0",
+                                "currentBalance": "19342.47",
+                                "mode": "OTHERS",
+                                "narration": "UPI-BANDI BHANU PRAKASH-EGT.BHANUPRAKASH-2@OKICICI-KKBK0007834-331495371281-UPI",
+                                "reference": "0000331495371281",
+                                "transactionTimestamp": "2023-11-10T10:53:57+05:30",
+                                "txnId": "0000331495371281",
+                                "type": "DEBIT",
+                                "valueDate": "2023-11-10"
+                            },
+                            {
+                                "amount": "10000.0",
+                                "currentBalance": "9342.47",
+                                "mode": "OTHERS",
+                                "narration": "UPI-BANDI BHANU  PRAKASH-PRAKASHBANDI2506-2@OKSBI-SBIN0000845-331532324089-UPI",
+                                "reference": "0000331532324089",
+                                "transactionTimestamp": "2023-11-11T10:01:28+05:30",
+                                "txnId": "0000331532324089",
+                                "type": "DEBIT",
+                                "valueDate": "2023-11-11"
+                            },
+                            {
+                                "amount": "387.0",
+                                "currentBalance": "8955.47",
+                                "mode": "OTHERS",
+                                "narration": "UPI-BANDI BHANU  PRAKASH-PRAKASHBANDI2506-2@OKSBI-SBIN0000845-331532342883-UPI",
+                                "reference": "0000331532342883",
+                                "transactionTimestamp": "2023-11-11T10:01:49+05:30",
+                                "txnId": "0000331532342883",
+                                "type": "DEBIT",
+                                "valueDate": "2023-11-11"
+                            },
+                            {
+                                "amount": "2390.0",
+                                "currentBalance": "6565.47",
+                                "mode": "OTHERS",
+                                "narration": "UPI-BANDI BHANU  PRAKASH-PRAKASHBANDI2506-2@OKSBI-SBIN0000845-331532680521-UPI",
+                                "reference": "0000331532680521",
+                                "transactionTimestamp": "2023-11-11T10:10:40+05:30",
+                                "txnId": "0000331532680521",
+                                "type": "DEBIT",
+                                "valueDate": "2023-11-11"
+                            },
+                            {
+                                "amount": "6500.0",
+                                "currentBalance": "65.47",
+                                "mode": "OTHERS",
+                                "narration": "UPI-BANDI BHANU  PRAKASH-PRAKASHBANDI2506-2@OKSBI-SBIN0000845-331693313747-UPI",
+                                "reference": "0000331693313747",
+                                "transactionTimestamp": "2023-11-12T19:22:51+05:30",
+                                "txnId": "0000331693313747",
+                                "type": "DEBIT",
+                                "valueDate": "2023-11-12"
+                            },
+                            {
+                                "amount": "15.0",
+                                "currentBalance": "50.47",
+                                "mode": "OTHERS",
+                                "narration": "UPI-M RAHUL KRISHNA REDD-Q817613863@YBL-YESB0YBLUPI-368234735202-NA",
+                                "reference": "0000368234735202",
+                                "transactionTimestamp": "2023-11-12T19:23:35+05:30",
+                                "txnId": "0000368234735202",
+                                "type": "DEBIT",
+                                "valueDate": "2023-11-12"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    ],
+    "AXIS001": [
+        {
+            "masked_account": "XXXXXXXXXXX7046",
+            "link_ref_num": "2e94f812-6a17-4987-91a8-f4358087710e",
+            "decrypted_data": {
+                "Account": {
+                    "maskedAccNumber": "XXXXXXXXXXX7046",
+                    "version": "1.2",
+                    "linkedAccRef": "2e94f812-6a17-4987-91a8-f4358087710e",
+                    "type": "deposit",
+                    "xsi:schemaLocation": "http://api.rebit.org.in/FISchema/deposit https://specifications.rebit.org.in/api_schema/account_aggregator/FISchema/deposit.xsd",
+                    "xmlns": "http://api.rebit.org.in/FISchema/deposit",
+                    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "Profile": {
+                        "Holders": {
+                            "type": "SINGLE",
+                            "Holder": {
+                                "address": "A 105 SURYA TOWERS, NEAR ADITHYASUNSHINE LANE, ,KONDAOUR,HYDERABAD,TELANGANA,INDIA,500084",
+                                "ckycCompliance": "false",
+                                "dob": "1987-08-19",
+                                "email": "PRAKASHBANDI2506@GMAIL.COM",
+                                "landline": "",
+                                "mobile": "00919640764764",
+                                "name": "BANDI BHANU PRAKASH",
+                                "nominee": "REGISTERED",
+                                "pan": "BAVPB3014K"
+                            }
+                        }
+                    },
+                    "Summary": {
+                        "balanceDateTime": "2023-11-14T21:51:11.182+05:30",
+                        "branch": "PRAKASH NAGAR, HYDERABAD",
+                        "currency": "INR",
+                        "currentBalance": "0",
+                        "currentODLimit": "",
+                        "drawingLimit": "0",
+                        "exchgeRate": "",
+                        "ifscCode": "UTIB0001454",
+                        "micrCode": "",
+                        "openingDate": "2016-11-16",
+                        "status": "ACTIVE",
+                        "type": "SAVINGS"
+                    },
+                    "Transactions": {
+                        "endDate": "2023-11-14",
+                        "startDate": "2023-05-01",
+                        "Transaction": [
+                            {
+                                "amount": "17.0",
+                                "currentBalance": "315.48",
+                                "mode": "OTHERS",
+                                "narration": "UPI/P2A/312346947143/BANDI BHA/Axis Bank/UPI",
+                                "reference": "",
+                                "transactionTimestamp": "2023-05-03T00:00:00+05:30",
+                                "txnId": "",
+                                "type": "DEBIT",
+                                "valueDate": "2023-05-03"
+                            },
+                            {
+                                "amount": "315.0",
+                                "currentBalance": "0.48",
+                                "mode": "OTHERS",
+                                "narration": "UPI/P2A/312569001811/EDUGENE T/IDFC FIRS/UPI",
+                                "reference": "",
+                                "transactionTimestamp": "2023-05-05T00:00:00+05:30",
+                                "txnId": "",
+                                "type": "DEBIT",
+                                "valueDate": "2023-05-05"
+                            },
+                            {
+                                "amount": "25704.0",
+                                "currentBalance": "25704.48",
+                                "mode": "OTHERS",
+                                "narration": "IMPS/P2A/313011914078/POONAWAL/ICICIBAN/Disbursa",
+                                "reference": "",
+                                "transactionTimestamp": "2023-05-10T00:00:00+05:30",
+                                "txnId": "",
+                                "type": "CREDIT",
+                                "valueDate": "2023-05-10"
+                            },
+                            {
+                                "amount": "5005.9",
+                                "currentBalance": "20698.58",
+                                "mode": "OTHERS",
+                                "narration": "IMPS/P2A/313012714725/BandiB/AUSMALL/X588332/",
+                                "reference": "",
+                                "transactionTimestamp": "2023-05-10T00:00:00+05:30",
+                                "txnId": "",
+                                "type": "DEBIT",
+                                "valueDate": "2023-05-10"
+                            },
+                            {
+                                "amount": "20000.0",
+                                "currentBalance": "698.58",
+                                "mode": "OTHERS",
+                                "narration": "UPI/P2A/313065870245/EDUGENE T/IDFC FIRS/UPI",
+                                "reference": "",
+                                "transactionTimestamp": "2023-05-10T00:00:00+05:30",
+                                "txnId": "",
+                                "type": "DEBIT",
+                                "valueDate": "2023-05-10"
+                            },
+                            {
+                                "amount": "507.0",
+                                "currentBalance": "191.58",
+                                "mode": "OTHERS",
+                                "narration": "UPI/P2M/314054269544/TSSPDCL E/Paytm Pay/Oid2110",
+                                "reference": "",
+                                "transactionTimestamp": "2023-05-20T00:00:00+05:30",
+                                "txnId": "",
+                                "type": "DEBIT",
+                                "valueDate": "2023-05-20"
+                            },
+                            {
+                                "amount": "80.0",
+                                "currentBalance": "111.58",
+                                "mode": "OTHERS",
+                                "narration": "UPI/P2M/350645775487/BharatPe /YesBank_Y/Pay to",
+                                "reference": "",
+                                "transactionTimestamp": "2023-05-20T00:00:00+05:30",
+                                "txnId": "",
+                                "type": "DEBIT",
+                                "valueDate": "2023-05-20"
+                            },
+                            {
+                                "amount": "192130.0",
+                                "currentBalance": "192241.58",
+                                "mode": "OTHERS",
+                                "narration": "IMPS/P2A/314219272357/KRAZYBEE/ICICIBAN/Disbursa",
+                                "reference": "",
+                                "transactionTimestamp": "2023-05-22T00:00:00+05:30",
+                                "txnId": "",
+                                "type": "CREDIT",
+                                "valueDate": "2023-05-22"
+                            },
+                            {
+                                "amount": "108.0",
+                                "currentBalance": "192133.58",
+                                "mode": "OTHERS",
+                                "narration": "GST @18% on MAB Charge",
+                                "reference": "",
+                                "transactionTimestamp": "2023-05-22T00:00:00+05:30",
+                                "txnId": "",
+                                "type": "DEBIT",
+                                "valueDate": "2023-05-22"
+                            },
+                            {
+                                "amount": "600.0",
+                                "currentBalance": "191533.58",
+                                "mode": "OTHERS",
+                                "narration": "Non-Maint Avg bal chgs Mar2023",
+                                "reference": "",
+                                "transactionTimestamp": "2023-05-22T00:00:00+05:30",
+                                "txnId": "",
+                                "type": "DEBIT",
+                                "valueDate": "2023-05-22"
+                            },
+                            {
+                                "amount": "21502.04",
+                                "currentBalance": "170031.54",
+                                "mode": "OTHERS",
+                                "narration": "UPI/P2M/314497335632/Simpl/Axis Bank/UPI Inte",
+                                "reference": "",
+                                "transactionTimestamp": "2023-05-24T00:00:00+05:30",
+                                "txnId": "",
+                                "type": "DEBIT",
+                                "valueDate": "2023-05-24"
+                            },
+                            {
+                                "amount": "4100.0",
+                                "currentBalance": "165931.54",
+                                "mode": "OTHERS",
+                                "narration": "UPI/P2M/314831151873/S SUBHA L/Yes Bank /UPI",
+                                "reference": "",
+                                "transactionTimestamp": "2023-05-28T00:00:00+05:30",
+                                "txnId": "",
+                                "type": "DEBIT",
+                                "valueDate": "2023-05-28"
+                            },
+                            {
+                                "amount": "30000.0",
+                                "currentBalance": "195931.54",
+                                "mode": "OTHERS",
+                                "narration": "UPI/P2A/315374179381/BANDI BHA/Kotak Mah/UPI",
+                                "reference": "",
+                                "transactionTimestamp": "2023-06-02T00:00:00+05:30",
+                                "txnId": "",
+                                "type": "CREDIT",
+                                "valueDate": "2023-06-02"
+                            },
+                            {
+                                "amount": "20000.0",
+                                "currentBalance": "175931.54",
+                                "mode": "OTHERS",
+                                "narration": "UPI/P2M/315374414654/CredClub/ICICI Ban/UPI",
+                                "reference": "",
+                                "transactionTimestamp": "2023-06-02T00:00:00+05:30",
+                                "txnId": "",
+                                "type": "DEBIT",
+                                "valueDate": "2023-06-02"
+                            },
+                            {
+                                "amount": "5189.73",
+                                "currentBalance": "170741.81",
+                                "mode": "OTHERS",
+                                "narration": "UPI/P2M/315374429294/CredClub/ICICI Ban/UPI",
+                                "reference": "",
+                                "transactionTimestamp": "2023-06-02T00:00:00+05:30",
+                                "txnId": "",
+                                "type": "DEBIT",
+                                "valueDate": "2023-06-02"
+                            },
+                            {
+                                "amount": "4000.0",
+                                "currentBalance": "166741.81",
+                                "mode": "OTHERS",
+                                "narration": "UPI/P2A/315378503238/JAYAPRAKA/State Ban/UPI",
+                                "reference": "",
+                                "transactionTimestamp": "2023-06-02T00:00:00+05:30",
+                                "txnId": "",
+                                "type": "DEBIT",
+                                "valueDate": "2023-06-02"
+                            },
+                            {
+                                "amount": "2500.0",
+                                "currentBalance": "164241.81",
+                                "mode": "OTHERS",
+                                "narration": "MOB/TPFT/922020064925269/922020064925269",
+                                "reference": "",
+                                "transactionTimestamp": "2023-06-02T00:00:00+05:30",
+                                "txnId": "",
+                                "type": "DEBIT",
+                                "valueDate": "2023-06-02"
+                            },
+                            {
+                                "amount": "60000.0",
+                                "currentBalance": "104241.81",
+                                "mode": "OTHERS",
+                                "narration": "NEFT/MB/AXMB231531220732/Bandi Bh/AU SMAL/",
+                                "reference": "",
+                                "transactionTimestamp": "2023-06-02T00:00:00+05:30",
+                                "txnId": "",
+                                "type": "DEBIT",
+                                "valueDate": "2023-06-02"
+                            },
+                            {
+                                "amount": "2926.26",
+                                "currentBalance": "101315.55",
+                                "mode": "OTHERS",
+                                "narration": "UPI/P2M/315551529747/LAZYPAY P/ICICI Ban/LazyPay",
+                                "reference": "",
+                                "transactionTimestamp": "2023-06-04T00:00:00+05:30",
+                                "txnId": "",
+                                "type": "DEBIT",
+                                "valueDate": "2023-06-04"
+                            },
+                            {
+                                "amount": "100000.0",
+                                "currentBalance": "1315.55",
+                                "mode": "OTHERS",
+                                "narration": "NEFT/MB/AXMB231562605425/Greatcod/INDUSIN/",
+                                "reference": "",
+                                "transactionTimestamp": "2023-06-05T00:00:00+05:30",
+                                "txnId": "",
+                                "type": "DEBIT",
+                                "valueDate": "2023-06-05"
+                            },
+                            {
+                                "amount": "300.0",
+                                "currentBalance": "1015.55",
+                                "mode": "OTHERS",
+                                "narration": "UPI/P2A/315728623739/KAPPALA P/State Ban/UPI",
+                                "reference": "",
+                                "transactionTimestamp": "2023-06-06T00:00:00+05:30",
+                                "txnId": "",
+                                "type": "DEBIT",
+                                "valueDate": "2023-06-06"
+                            },
+                            {
+                                "amount": "800.0",
+                                "currentBalance": "215.55",
+                                "mode": "OTHERS",
+                                "narration": "UPI/P2A/316769596406/Chennaboi/IDFC FIRS/UPI",
+                                "reference": "",
+                                "transactionTimestamp": "2023-06-16T00:00:00+05:30",
+                                "txnId": "",
+                                "type": "DEBIT",
+                                "valueDate": "2023-06-16"
+                            },
+                            {
+                                "amount": "209.0",
+                                "currentBalance": "424.55",
+                                "mode": "OTHERS",
+                                "narration": "916010067697046:Int.Pd:01-04-2023 to 30-06-2023",
+                                "reference": "",
+                                "transactionTimestamp": "2023-07-01T00:00:00+05:30",
+                                "txnId": "",
+                                "type": "CREDIT",
+                                "valueDate": "2023-07-01"
+                            },
+                            {
+                                "amount": "424.0",
+                                "currentBalance": "0.55",
+                                "mode": "OTHERS",
+                                "narration": "UPI/P2A/318620983729/BANDI BHA/ICICI Ban/UPI",
+                                "reference": "",
+                                "transactionTimestamp": "2023-07-05T00:00:00+05:30",
+                                "txnId": "",
+                                "type": "DEBIT",
+                                "valueDate": "2023-07-05"
+                            },
+                            {
+                                "amount": "186000.0",
+                                "currentBalance": "186000.55",
+                                "mode": "OTHERS",
+                                "narration": "IMPS/P2A/327722104358/EDUGENET/IDFCBank/IMPSTXN",
+                                "reference": "",
+                                "transactionTimestamp": "2023-10-04T00:00:00+05:30",
+                                "txnId": "",
+                                "type": "CREDIT",
+                                "valueDate": "2023-10-04"
+                            },
+                            {
+                                "amount": "77479.0",
+                                "currentBalance": "263479.55",
+                                "mode": "OTHERS",
+                                "narration": "UPI/P2A/327754182522/BANDI BHA/State Ban/UPI",
+                                "reference": "",
+                                "transactionTimestamp": "2023-10-04T00:00:00+05:30",
+                                "txnId": "",
+                                "type": "CREDIT",
+                                "valueDate": "2023-10-04"
+                            },
+                            {
+                                "amount": "1.0",
+                                "currentBalance": "263480.55",
+                                "mode": "OTHERS",
+                                "narration": "UPI/P2A/364330573437/BANDI BHA/Federal B/UPI",
+                                "reference": "",
+                                "transactionTimestamp": "2023-10-04T00:00:00+05:30",
+                                "txnId": "",
+                                "type": "CREDIT",
+                                "valueDate": "2023-10-04"
+                            },
+                            {
+                                "amount": "263469.87",
+                                "currentBalance": "10.68",
+                                "mode": "OTHERS",
+                                "narration": "CreditCard Payment XXXX 4912 Ref#0K64M0F49FCQ2I",
+                                "reference": "",
+                                "transactionTimestamp": "2023-10-04T00:00:00+05:30",
+                                "txnId": "",
+                                "type": "DEBIT",
+                                "valueDate": "2023-10-04"
+                            },
+                            {
+                                "amount": "10.68",
+                                "currentBalance": "0.0",
+                                "mode": "OTHERS",
+                                "narration": "SMS Alerts Chrgs Incl GST",
+                                "reference": "",
+                                "transactionTimestamp": "2023-10-22T00:00:00+05:30",
+                                "txnId": "",
+                                "type": "DEBIT",
+                                "valueDate": "2023-10-22"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    ],
+    "IDFCFirstBank-FIP": [
+        {
+            "masked_account": "XXXXXXX1324",
+            "link_ref_num": "6fa26884-695b-4deb-b3a3-b5721c2635d7",
+            "decrypted_data": {
+                "Account": {
+                    "maskedAccNumber": "XXXXXXX1324",
+                    "version": "1.2",
+                    "linkedAccRef": "6fa26884-695b-4deb-b3a3-b5721c2635d7",
+                    "type": "deposit",
+                    "xsi:schemaLocation": "http://api.rebit.org.in/FISchema/deposit https://specifications.rebit.org.in/api_schema/account_aggregator/FISchema/deposit.xsd",
+                    "xmlns": "http://api.rebit.org.in/FISchema/deposit",
+                    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "Profile": {
+                        "Holders": {
+                            "type": "SINGLE",
+                            "Holder": {
+                                "address": "F no 204, 2nd floor, ,Boppana towers,nea,r Happy mobiles,Madhapur,Madhapur,Hydera,bad,Hyderabad,500033",
+                                "ckycCompliance": "false",
+                                "dob": "1987-08-19",
+                                "email": "Prakashbandi2506@gmail.com",
+                                "landline": "",
+                                "mobile": "919640764764",
+                                "name": "Mr. BANDI BHANU PRAKASH",
+                                "nominee": "REGISTERED",
+                                "pan": "BAVPB3014K"
+                            }
+                        }
+                    },
+                    "Summary": {
+                        "balanceDateTime": "2023-11-14T16:21:09.814Z",
+                        "branch": "80204",
+                        "currency": "INR",
+                        "currentBalance": "158.8",
+                        "currentODLimit": "0.00",
+                        "drawingLimit": "0.00",
+                        "exchgeRate": "",
+                        "facility": "OD",
+                        "ifscCode": "IDFB0080204",
+                        "micrCode": "500751005",
+                        "openingDate": "2022-03-16",
+                        "status": "ACTIVE",
+                        "type": "SAVINGS",
+                        "Pending": {
+                            "amount": "0.0"
+                        }
+                    },
+                    "Transactions": {
+                        "endDate": "2023-11-14",
+                        "startDate": "2023-05-01",
+                        "Transaction": [
+                            {
+                                "amount": "150000.0",
+                                "currentBalance": "150113.8",
+                                "mode": "OTHERS",
+                                "narration": "IFT/10051528152/EDUGENE TECHNOLOGIES/5036007/April Month Salary",
+                                "reference": "0",
+                                "transactionTimestamp": "2023-05-22T11:22:15+05:30",
+                                "txnId": "20231428281966",
+                                "type": "CREDIT",
+                                "valueDate": "2023-05-22"
+                            },
+                            {
+                                "amount": "1.0",
+                                "currentBalance": "150114.8",
+                                "mode": "OTHERS",
+                                "narration": "IMPS-INET/Fund Trf/314617803008/INES/916020009768905/Authentication1432823096",
+                                "reference": "0",
+                                "transactionTimestamp": "2023-05-26T17:25:50+05:30",
+                                "txnId": "314617803008",
+                                "type": "CREDIT",
+                                "valueDate": "2023-05-26"
+                            },
+                            {
+                                "amount": "50000.0",
+                                "currentBalance": "200114.8",
+                                "mode": "OTHERS",
+                                "narration": "IFT/10112258836/EARLYSALARY INCRED D/13612918",
+                                "reference": "0",
+                                "transactionTimestamp": "2023-05-26T17:34:31+05:30",
+                                "txnId": "AP23052617494418",
+                                "type": "CREDIT",
+                                "valueDate": "2023-05-26"
+                            },
+                            {
+                                "amount": "5000.0",
+                                "currentBalance": "195114.8",
+                                "mode": "OTHERS",
+                                "narration": "IMPS-RIB/Fund Trf/314618466692/Bandi Bhanu Prakash/100024619170ESFB/",
+                                "reference": "0",
+                                "transactionTimestamp": "2023-05-26T18:24:48+05:30",
+                                "txnId": "314618466692",
+                                "type": "DEBIT",
+                                "valueDate": "2023-05-26"
+                            },
+                            {
+                                "amount": "20000.0",
+                                "currentBalance": "175114.8",
+                                "mode": "OTHERS",
+                                "narration": "UPI/MOB/314627264329/UPI",
+                                "reference": "0",
+                                "transactionTimestamp": "2023-05-26T18:26:14+05:30",
+                                "txnId": "314618539145",
+                                "type": "DEBIT",
+                                "valueDate": "2023-05-26"
+                            },
+                            {
+                                "amount": "25000.0",
+                                "currentBalance": "150114.8",
+                                "mode": "OTHERS",
+                                "narration": "IMPS-RIB/Fund Trf/314618482352/Bandi Bhanu Prakash/100024619170ESFB/",
+                                "reference": "0",
+                                "transactionTimestamp": "2023-05-26T18:57:46+05:30",
+                                "txnId": "314618482352",
+                                "type": "DEBIT",
+                                "valueDate": "2023-05-26"
+                            },
+                            {
+                                "amount": "164.0",
+                                "currentBalance": "150278.8",
+                                "mode": "OTHERS",
+                                "narration": "MONTHLY SAVINGS INTEREST CREDIT",
+                                "reference": "0",
+                                "transactionTimestamp": "2023-05-31T02:06:37+05:30",
+                                "txnId": "0",
+                                "type": "CREDIT",
+                                "valueDate": "2023-05-31"
+                            },
+                            {
+                                "amount": "80.0",
+                                "currentBalance": "150198.8",
+                                "mode": "OTHERS",
+                                "narration": "UPI/MOB/315226546883/Pay to BharatPe Merchant",
+                                "reference": "0",
+                                "transactionTimestamp": "2023-06-01T15:20:19+05:30",
+                                "txnId": "315215376247",
+                                "type": "DEBIT",
+                                "valueDate": "2023-06-01"
+                            },
+                            {
+                                "amount": "20000.0",
+                                "currentBalance": "130198.8",
+                                "mode": "OTHERS",
+                                "narration": "IMPS-RIB/Fund Trf/315320623798/Ms K  SRAVANI/38288183947SBIN/",
+                                "reference": "0",
+                                "transactionTimestamp": "2023-06-02T20:05:38+05:30",
+                                "txnId": "315320623798",
+                                "type": "DEBIT",
+                                "valueDate": "2023-06-02"
+                            },
+                            {
+                                "amount": "20000.0",
+                                "currentBalance": "110198.8",
+                                "mode": "OTHERS",
+                                "narration": "IMPS-RIB/Fund Trf/315610686696/Ms K  SRAVANI/38288183947SBIN/",
+                                "reference": "0",
+                                "transactionTimestamp": "2023-06-05T10:23:17+05:30",
+                                "txnId": "315610686696",
+                                "type": "DEBIT",
+                                "valueDate": "2023-06-05"
+                            },
+                            {
+                                "amount": "4700.0",
+                                "currentBalance": "105498.8",
+                                "mode": "OTHERS",
+                                "narration": "UPI/MOB/316645008454/UPI",
+                                "reference": "0",
+                                "transactionTimestamp": "2023-06-15T15:46:30+05:30",
+                                "txnId": "316615824656",
+                                "type": "DEBIT",
+                                "valueDate": "2023-06-15"
+                            },
+                            {
+                                "amount": "9590.0",
+                                "currentBalance": "95908.8",
+                                "mode": "OTHERS",
+                                "narration": "NACH/CTRAZORPAY/EARLYSALARM2M5pevdTCQXPp",
+                                "reference": "0",
+                                "transactionTimestamp": "2023-06-16T10:16:04+05:30",
+                                "txnId": "0",
+                                "type": "DEBIT",
+                                "valueDate": "2023-06-16"
+                            },
+                            {
+                                "amount": "5000.0",
+                                "currentBalance": "90908.8",
+                                "mode": "OTHERS",
+                                "narration": "UPI/MOB/316839135813/UPI",
+                                "reference": "0",
+                                "transactionTimestamp": "2023-06-17T20:20:51+05:30",
+                                "txnId": "316820170425",
+                                "type": "DEBIT",
+                                "valueDate": "2023-06-17"
+                            },
+                            {
+                                "amount": "3000.0",
+                                "currentBalance": "87908.8",
+                                "mode": "OTHERS",
+                                "narration": "IMPS-RIB/Fund Trf/316908907318/BANDI BHANU PRAKASH/111401000841ICIC/",
+                                "reference": "0",
+                                "transactionTimestamp": "2023-06-18T08:52:05+05:30",
+                                "txnId": "316908907318",
+                                "type": "DEBIT",
+                                "valueDate": "2023-06-18"
+                            },
+                            {
+                                "amount": "16000.0",
+                                "currentBalance": "71908.8",
+                                "mode": "OTHERS",
+                                "narration": "UPI/MOB/316969256320/UPI",
+                                "reference": "0",
+                                "transactionTimestamp": "2023-06-18T17:48:55+05:30",
+                                "txnId": "316917251071",
+                                "type": "DEBIT",
+                                "valueDate": "2023-06-18"
+                            },
+                            {
+                                "amount": "20000.0",
+                                "currentBalance": "51908.8",
+                                "mode": "OTHERS",
+                                "narration": "UPI/MOB/317131761296/UPI",
+                                "reference": "0",
+                                "transactionTimestamp": "2023-06-20T12:08:59+05:30",
+                                "txnId": "317112896468",
+                                "type": "DEBIT",
+                                "valueDate": "2023-06-20"
+                            },
+                            {
+                                "amount": "20000.0",
+                                "currentBalance": "31908.8",
+                                "mode": "OTHERS",
+                                "narration": "UPI/MOB/317131771376/UPI",
+                                "reference": "0",
+                                "transactionTimestamp": "2023-06-20T12:09:18+05:30",
+                                "txnId": "317112897971",
+                                "type": "DEBIT",
+                                "valueDate": "2023-06-20"
+                            },
+                            {
+                                "amount": "7200.0",
+                                "currentBalance": "24708.8",
+                                "mode": "OTHERS",
+                                "narration": "UPI/MOB/317393308413/UPI",
+                                "reference": "0",
+                                "transactionTimestamp": "2023-06-22T00:45:10+05:30",
+                                "txnId": "317300674642",
+                                "type": "DEBIT",
+                                "valueDate": "2023-06-22"
+                            },
+                            {
+                                "amount": "8800.0",
+                                "currentBalance": "15908.8",
+                                "mode": "OTHERS",
+                                "narration": "UPI/MOB/317393322457/UPI",
+                                "reference": "0",
+                                "transactionTimestamp": "2023-06-22T00:48:31+05:30",
+                                "txnId": "317300678045",
+                                "type": "DEBIT",
+                                "valueDate": "2023-06-22"
+                            },
+                            {
+                                "amount": "2000.0",
+                                "currentBalance": "13908.8",
+                                "mode": "OTHERS",
+                                "narration": "UPI/MOB/317399515784/UPI",
+                                "reference": "0",
+                                "transactionTimestamp": "2023-06-22T10:43:00+05:30",
+                                "txnId": "317310702043",
+                                "type": "DEBIT",
+                                "valueDate": "2023-06-22"
+                            },
+                            {
+                                "amount": "8000.0",
+                                "currentBalance": "5908.8",
+                                "mode": "OTHERS",
+                                "narration": "UPI/MOB/317742141225/UPI",
+                                "reference": "0",
+                                "transactionTimestamp": "2023-06-26T13:20:36+05:30",
+                                "txnId": "317713960645",
+                                "type": "DEBIT",
+                                "valueDate": "2023-06-26"
+                            },
+                            {
+                                "amount": "4200.0",
+                                "currentBalance": "1708.8",
+                                "mode": "OTHERS",
+                                "narration": "UPI/MOB/317742402675/UPI",
+                                "reference": "0",
+                                "transactionTimestamp": "2023-06-26T13:27:25+05:30",
+                                "txnId": "317713990799",
+                                "type": "DEBIT",
+                                "valueDate": "2023-06-26"
+                            },
+                            {
+                                "amount": "241.0",
+                                "currentBalance": "1949.8",
+                                "mode": "OTHERS",
+                                "narration": "MONTHLY SAVINGS INTEREST CREDIT",
+                                "reference": "0",
+                                "transactionTimestamp": "2023-06-30T01:52:29+05:30",
+                                "txnId": "0",
+                                "type": "CREDIT",
+                                "valueDate": "2023-06-30"
+                            },
+                            {
+                                "amount": "1000.0",
+                                "currentBalance": "2949.8",
+                                "mode": "OTHERS",
+                                "narration": "UPI/MOB/319547613624/UPI",
+                                "reference": "0",
+                                "transactionTimestamp": "2023-07-14T09:34:04+05:30",
+                                "txnId": "319509789368",
+                                "type": "CREDIT",
+                                "valueDate": "2023-07-14"
+                            },
+                            {
+                                "amount": "2000.0",
+                                "currentBalance": "949.8",
+                                "mode": "OTHERS",
+                                "narration": "UPI/MOB/319555060157/UPI",
+                                "reference": "0",
+                                "transactionTimestamp": "2023-07-14T09:34:53+05:30",
+                                "txnId": "319509793169",
+                                "type": "DEBIT",
+                                "valueDate": "2023-07-14"
+                            },
+                            {
+                                "amount": "10000.0",
+                                "currentBalance": "10949.8",
+                                "mode": "OTHERS",
+                                "narration": "UPI/MOB/319720908068/UPI",
+                                "reference": "0",
+                                "transactionTimestamp": "2023-07-16T01:26:34+05:30",
+                                "txnId": "319701363167",
+                                "type": "CREDIT",
+                                "valueDate": "2023-07-16"
+                            },
+                            {
+                                "amount": "9590.0",
+                                "currentBalance": "1359.8",
+                                "mode": "OTHERS",
+                                "narration": "NACH/CTRAZORPAY/EARLYSALARMEE6n8zJJ9UXai",
+                                "reference": "0",
+                                "transactionTimestamp": "2023-07-16T10:32:57+05:30",
+                                "txnId": "0",
+                                "type": "DEBIT",
+                                "valueDate": "2023-07-16"
+                            },
+                            {
+                                "amount": "1.0",
+                                "currentBalance": "1360.8",
+                                "mode": "OTHERS",
+                                "narration": "IFT/10044514002/A/C VALIDATION BY ME/6728404/bankAccountVerificationTransactionBankAccountValidation",
+                                "reference": "0",
+                                "transactionTimestamp": "2023-07-20T12:11:27+05:30",
+                                "txnId": "16898352865483924647",
+                                "type": "CREDIT",
+                                "valueDate": "2023-07-20"
+                            },
+                            {
+                                "amount": "100.0",
+                                "currentBalance": "1260.8",
+                                "mode": "OTHERS",
+                                "narration": "UPI/MOB/321053595640/UPI",
+                                "reference": "0",
+                                "transactionTimestamp": "2023-07-29T19:33:12+05:30",
+                                "txnId": "307297822372852372",
+                                "type": "DEBIT",
+                                "valueDate": "2023-07-29"
+                            },
+                            {
+                                "amount": "150.0",
+                                "currentBalance": "1110.8",
+                                "mode": "OTHERS",
+                                "narration": "UPI/MOB/321185007471/UPI",
+                                "reference": "0",
+                                "transactionTimestamp": "2023-07-30T19:43:04+05:30",
+                                "txnId": "307305772575687060",
+                                "type": "DEBIT",
+                                "valueDate": "2023-07-30"
+                            },
+                            {
+                                "amount": "1000.0",
+                                "currentBalance": "110.8",
+                                "mode": "OTHERS",
+                                "narration": "UPI/MOB/321192195896/UPI",
+                                "reference": "0",
+                                "transactionTimestamp": "2023-07-30T22:51:35+05:30",
+                                "txnId": "307309216263362411",
+                                "type": "DEBIT",
+                                "valueDate": "2023-07-30"
+                            },
+                            {
+                                "amount": "5.0",
+                                "currentBalance": "115.8",
+                                "mode": "OTHERS",
+                                "narration": "MONTHLY SAVINGS INTEREST CREDIT",
+                                "reference": "0",
+                                "transactionTimestamp": "2023-07-31T02:06:57+05:30",
+                                "txnId": "0",
+                                "type": "CREDIT",
+                                "valueDate": "2023-07-31"
+                            },
+                            {
+                                "amount": "9190.0",
+                                "currentBalance": "9305.8",
+                                "mode": "OTHERS",
+                                "narration": "UPI/MOB/322798500720/UPI",
+                                "reference": "0",
+                                "transactionTimestamp": "2023-08-15T14:47:09+05:30",
+                                "txnId": "308158792806975697",
+                                "type": "CREDIT",
+                                "valueDate": "2023-08-15"
+                            },
+                            {
+                                "amount": "290.0",
+                                "currentBalance": "9595.8",
+                                "mode": "OTHERS",
+                                "narration": "UPI/MOB/322798560268/UPI",
+                                "reference": "0",
+                                "transactionTimestamp": "2023-08-15T14:49:32+05:30",
+                                "txnId": "308159019047130951",
+                                "type": "CREDIT",
+                                "valueDate": "2023-08-15"
+                            },
+                            {
+                                "amount": "9590.0",
+                                "currentBalance": "5.8",
+                                "mode": "OTHERS",
+                                "narration": "NACH/CTRAZORPAY/EARLYSALARMQUe63x7LHo4Ki",
+                                "reference": "0",
+                                "transactionTimestamp": "2023-08-16T10:34:09+05:30",
+                                "txnId": "0",
+                                "type": "DEBIT",
+                                "valueDate": "2023-08-16"
+                            },
+                            {
+                                "amount": "1.0",
+                                "currentBalance": "6.8",
+                                "mode": "OTHERS",
+                                "narration": "MONTHLY SAVINGS INTEREST CREDIT",
+                                "reference": "0",
+                                "transactionTimestamp": "2023-08-31T01:54:45+05:30",
+                                "txnId": "0",
+                                "type": "CREDIT",
+                                "valueDate": "2023-08-31"
+                            },
+                            {
+                                "amount": "150000.0",
+                                "currentBalance": "150006.8",
+                                "mode": "OTHERS",
+                                "narration": "IFT/10051528152/EDUGENE TECHNOLOGIES/4389893/June Month Salary",
+                                "reference": "0",
+                                "transactionTimestamp": "2023-09-08T09:58:46+05:30",
+                                "txnId": "20232514762707",
+                                "type": "CREDIT",
+                                "valueDate": "2023-09-08"
+                            },
+                            {
+                                "amount": "150000.0",
+                                "currentBalance": "6.8",
+                                "mode": "OTHERS",
+                                "narration": "IMPS-RIB/Fund Trf/325110384073/BANDI BHANU PRAKASH/111401000841ICIC/",
+                                "reference": "0",
+                                "transactionTimestamp": "2023-09-08T10:00:43+05:30",
+                                "txnId": "325110384073",
+                                "type": "DEBIT",
+                                "valueDate": "2023-09-08"
+                            },
+                            {
+                                "amount": "10000.0",
+                                "currentBalance": "10006.8",
+                                "mode": "OTHERS",
+                                "narration": "UPI/MOB/325936719337/UPI",
+                                "reference": "0",
+                                "transactionTimestamp": "2023-09-16T08:38:46+05:30",
+                                "txnId": "232590000075855451",
+                                "type": "CREDIT",
+                                "valueDate": "2023-09-16"
+                            },
+                            {
+                                "amount": "9590.0",
+                                "currentBalance": "416.8",
+                                "mode": "OTHERS",
+                                "narration": "NACH/CTRAZORPAY/EARLYSALARMclDsopHg2kLDM",
+                                "reference": "0",
+                                "transactionTimestamp": "2023-09-16T10:37:54+05:30",
+                                "txnId": "0",
+                                "type": "DEBIT",
+                                "valueDate": "2023-09-16"
+                            },
+                            {
+                                "amount": "200000.0",
+                                "currentBalance": "200416.8",
+                                "mode": "OTHERS",
+                                "narration": "IFT/10051528152/EDUGENE TECHNOLOGIES/23044549/August Month Salary",
+                                "reference": "0",
+                                "transactionTimestamp": "2023-09-30T23:18:40+05:30",
+                                "txnId": "20232739989931",
+                                "type": "CREDIT",
+                                "valueDate": "2023-09-30"
+                            },
+                            {
+                                "amount": "200000.0",
+                                "currentBalance": "416.8",
+                                "mode": "OTHERS",
+                                "narration": "FD 10153655313 Mr. BANDI BHANU PRAKASH booked via Internet Banking",
+                                "reference": "0",
+                                "transactionTimestamp": "2023-09-30T23:24:53+05:30",
+                                "txnId": "0",
+                                "type": "DEBIT",
+                                "valueDate": "2023-09-30"
+                            },
+                            {
+                                "amount": "1.0",
+                                "currentBalance": "417.8",
+                                "mode": "OTHERS",
+                                "narration": "MONTHLY SAVINGS INTEREST CREDIT",
+                                "reference": "0",
+                                "transactionTimestamp": "2023-09-30T02:07:25+05:30",
+                                "txnId": "0",
+                                "type": "CREDIT",
+                                "valueDate": "2023-09-30"
+                            },
+                            {
+                                "amount": "9590.0",
+                                "currentBalance": "10007.8",
+                                "mode": "OTHERS",
+                                "narration": "UPI/MOB/328992654070/Payment from PhonePe",
+                                "reference": "0",
+                                "transactionTimestamp": "2023-10-16T00:30:46+05:30",
+                                "txnId": "232890000198764060",
+                                "type": "CREDIT",
+                                "valueDate": "2023-10-16"
+                            },
+                            {
+                                "amount": "9590.0",
+                                "currentBalance": "417.8",
+                                "mode": "OTHERS",
+                                "narration": "NACH/CTRAZORPAY/EARLYSALARModEs67ij8Un5n",
+                                "reference": "0",
+                                "transactionTimestamp": "2023-10-16T10:47:16+05:30",
+                                "txnId": "0",
+                                "type": "DEBIT",
+                                "valueDate": "2023-10-16"
+                            },
+                            {
+                                "amount": "400.0",
+                                "currentBalance": "17.8",
+                                "mode": "OTHERS",
+                                "narration": "UPI/MOB/329422805155/Payment from PhonePe",
+                                "reference": "0",
+                                "transactionTimestamp": "2023-10-21T18:01:19+05:30",
+                                "txnId": "232940000221028836",
+                                "type": "DEBIT",
+                                "valueDate": "2023-10-21"
+                            },
+                            {
+                                "amount": "17.0",
+                                "currentBalance": "0.8",
+                                "mode": "OTHERS",
+                                "narration": "UPI/MOB/329564779507/Payment from PhonePe",
+                                "reference": "0",
+                                "transactionTimestamp": "2023-10-22T11:44:35+05:30",
+                                "txnId": "232950000223381439",
+                                "type": "DEBIT",
+                                "valueDate": "2023-10-22"
+                            },
+                            {
+                                "amount": "1.0",
+                                "currentBalance": "1.8",
+                                "mode": "OTHERS",
+                                "narration": "MONTHLY SAVINGS INTEREST CREDIT",
+                                "reference": "0",
+                                "transactionTimestamp": "2023-10-31T01:44:30+05:30",
+                                "txnId": "0",
+                                "type": "CREDIT",
+                                "valueDate": "2023-10-31"
+                            },
+                            {
+                                "amount": "1.0",
+                                "currentBalance": "2.8",
+                                "mode": "OTHERS",
+                                "narration": "IMPS-MOB/Fund Trf/330713314136/BYRAMALATEJA/50100488619841/Test",
+                                "reference": "0",
+                                "transactionTimestamp": "2023-11-03T13:49:31+05:30",
+                                "txnId": "330713314136",
+                                "type": "CREDIT",
+                                "valueDate": "2023-11-03"
+                            },
+                            {
+                                "amount": "49999.0",
+                                "currentBalance": "50001.8",
+                                "mode": "OTHERS",
+                                "narration": "IMPS-MOB/Fund Trf/330713312386/BYRAMALATEJA/50100488619841/Money",
+                                "reference": "0",
+                                "transactionTimestamp": "2023-11-03T13:51:36+05:30",
+                                "txnId": "330713312386",
+                                "type": "CREDIT",
+                                "valueDate": "2023-11-03"
+                            },
+                            {
+                                "amount": "50000.0",
+                                "currentBalance": "1.8",
+                                "mode": "OTHERS",
+                                "narration": "IMPS-RIB/Fund Trf/330719728438/K PAVAN KUMAR/62487816987SBIN/",
+                                "reference": "0",
+                                "transactionTimestamp": "2023-11-03T19:30:58+05:30",
+                                "txnId": "330719728438",
+                                "type": "DEBIT",
+                                "valueDate": "2023-11-03"
+                            },
+                            {
+                                "amount": "200607.0",
+                                "currentBalance": "200608.8",
+                                "mode": "OTHERS",
+                                "narration": "FD/RD 10153655313 maturity :Account credited/Principal:200000/Gross Interest:607/TDS:0/Mr. BANDI BHANU PRAKASH 06/11/2023",
+                                "reference": "0",
+                                "transactionTimestamp": "2023-11-06T11:18:19+05:30",
+                                "txnId": "0",
+                                "type": "CREDIT",
+                                "valueDate": "2023-11-06"
+                            },
+                            {
+                                "amount": "200000.0",
+                                "currentBalance": "608.8",
+                                "mode": "OTHERS",
+                                "narration": "IMPS-RIB/Fund Trf/331217957753/BANDI BHANU PRAKASH/111401000841ICIC/",
+                                "reference": "0",
+                                "transactionTimestamp": "2023-11-08T17:41:07+05:30",
+                                "txnId": "331217957753",
+                                "type": "DEBIT",
+                                "valueDate": "2023-11-08"
+                            },
+                            {
+                                "amount": "200000.0",
+                                "currentBalance": "200608.8",
+                                "mode": "OTHERS",
+                                "narration": "IFT/10051528152/EDUGENE TECHNOLOGIES/4657467/October Month Salary",
+                                "reference": "0",
+                                "transactionTimestamp": "2023-11-09T11:18:13+05:30",
+                                "txnId": "20233139038908",
+                                "type": "CREDIT",
+                                "valueDate": "2023-11-09"
+                            },
+                            {
+                                "amount": "200000.0",
+                                "currentBalance": "608.8",
+                                "mode": "OTHERS",
+                                "narration": "IMPS-RIB/Fund Trf/331311316382/BANDI BHANU PRAKASH/111401000841ICIC/",
+                                "reference": "0",
+                                "transactionTimestamp": "2023-11-09T11:18:55+05:30",
+                                "txnId": "331311316382",
+                                "type": "DEBIT",
+                                "valueDate": "2023-11-09"
+                            },
+                            {
+                                "amount": "300.0",
+                                "currentBalance": "308.8",
+                                "mode": "OTHERS",
+                                "narration": "UPI/MOB/331662958330/Payment from PhonePe",
+                                "reference": "0",
+                                "transactionTimestamp": "2023-11-12T19:32:32+05:30",
+                                "txnId": "233160000313638531",
+                                "type": "DEBIT",
+                                "valueDate": "2023-11-12"
+                            },
+                            {
+                                "amount": "150.0",
+                                "currentBalance": "158.8",
+                                "mode": "OTHERS",
+                                "narration": "UPI/MOB/331695153784/Payment from PhonePe",
+                                "reference": "0",
+                                "transactionTimestamp": "2023-11-12T19:42:09+05:30",
+                                "txnId": "233160000313672252",
+                                "type": "DEBIT",
+                                "valueDate": "2023-11-12"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    ],
+    "ICICI-FIP": [
+        {
+            "masked_account": "XXXXXXXX7193",
+            "link_ref_num": "d27a346c-ad1a-4d04-912e-8b75196b6a78",
+            "decrypted_data": {
+                "Account": {
+                    "maskedAccNumber": "XXXXXXXX7193",
+                    "version": "1.2",
+                    "linkedAccRef": "d27a346c-ad1a-4d04-912e-8b75196b6a78",
+                    "type": "deposit",
+                    "xsi:schemaLocation": "http://api.rebit.org.in/FISchema/deposit https://specifications.rebit.org.in/api_schema/account_aggregator/FISchema/deposit.xsd",
+                    "xmlns": "http://api.rebit.org.in/FISchema/deposit",
+                    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+                    "Profile": {
+                        "Holders": {
+                            "type": "SINGLE",
+                            "Holder": {
+                                "address": "H.NO 8-3-162/A/83,SANJAYNAGAR,SRIRAMNAGAR,,YOUSUFGUDA,,HYDERABAD,TELANGANA,500045",
+                                "ckycCompliance": "false",
+                                "dob": "1987-08-19",
+                                "email": "PRAKASHBANDI2506@GMAIL.COM",
+                                "landline": "",
+                                "mobile": "9640764764",
+                                "name": "MR.BANDI BHANU PRAKASH",
+                                "nominee": "REGISTERED",
+                                "pan": "BAVPB3014K"
+                            }
+                        }
+                    },
+                    "Summary": {
+                        "balanceDateTime": "2023-11-14T21:51:10.826+05:30",
+                        "branch": "SR Nagar",
+                        "currency": "INR",
+                        "currentBalance": "0.00",
+                        "currentODLimit": "0.00",
+                        "drawingLimit": "0.00",
+                        "ifscCode": "ICIC0000075",
+                        "micrCode": "500229006",
+                        "openingDate": "2019-08-22",
+                        "status": "ACTIVE",
+                        "type": "SAVINGS",
+                        "Pending": {
+                            "amount": "0.0",
+                            "transactionType": "DEBIT"
+                        }
+                    },
+                    "Transactions": {
+                        "endDate": "2023-11-14",
+                        "startDate": "2023-05-01",
+                        "Transaction": [
+                            {
+                                "amount": "10.0",
+                                "currentBalance": "65.39",
+                                "mode": "OTHERS",
+                                "narration": "UPI/350187650810/Payment from Ph/Q010575475@ybl/Ye",
+                                "reference": "",
+                                "transactionTimestamp": "2023-05-15T00:00:00.0",
+                                "txnId": "S869698",
+                                "type": "DEBIT",
+                                "valueDate": "2023-05-15"
+                            },
+                            {
+                                "amount": "65.38",
+                                "currentBalance": "0.01",
+                                "mode": "OTHERS",
+                                "narration": "MABchgs-Mar23+GST",
+                                "reference": "",
+                                "transactionTimestamp": "2023-05-20T00:00:00.0",
+                                "txnId": "S50757600",
+                                "type": "DEBIT",
+                                "valueDate": "2023-05-20"
+                            },
+                            {
+                                "amount": "0.01",
+                                "currentBalance": "0.00",
+                                "mode": "OTHERS",
+                                "narration": "MABchgs-Apr23+GST",
+                                "reference": "",
+                                "transactionTimestamp": "2023-05-20T00:00:00.0",
+                                "txnId": "S53463826",
+                                "type": "DEBIT",
+                                "valueDate": "2023-05-20"
+                            },
+                            {
+                                "amount": "1.0",
+                                "currentBalance": "1.00",
+                                "mode": "OTHERS",
+                                "narration": "007501607193:Int.Pd:30-03-2023 to 29-06-2023",
+                                "reference": "",
+                                "transactionTimestamp": "2023-06-30T00:00:00.0",
+                                "txnId": "S60553646",
+                                "type": "CREDIT",
+                                "valueDate": "2023-06-30"
+                            },
+                            {
+                                "amount": "0.99",
+                                "currentBalance": "0.01",
+                                "mode": "OTHERS",
+                                "narration": "MABchgs-Jun23+GST",
+                                "reference": "",
+                                "transactionTimestamp": "2023-07-13T00:00:00.0",
+                                "txnId": "S14624411",
+                                "type": "DEBIT",
+                                "valueDate": "2023-07-13"
+                            },
+                            {
+                                "amount": "0.01",
+                                "currentBalance": "0.00",
+                                "mode": "OTHERS",
+                                "narration": "MABchgs-Jul23+GST",
+                                "reference": "",
+                                "transactionTimestamp": "2023-08-14T00:00:00.0",
+                                "txnId": "S28979880",
+                                "type": "DEBIT",
+                                "valueDate": "2023-08-14"
+                            },
+                            {
+                                "amount": "98000.0",
+                                "currentBalance": "98000.00",
+                                "mode": "OTHERS",
+                                "narration": "MMT/IMPS/324717189976/PaidviaCRED/DREAMPLUGP/Axis",
+                                "reference": "",
+                                "transactionTimestamp": "2023-09-04T00:00:00.0",
+                                "txnId": "S24687105",
+                                "type": "CREDIT",
+                                "valueDate": "2023-09-04"
+                            },
+                            {
+                                "amount": "28656.0",
+                                "currentBalance": "69344.00",
+                                "mode": "OTHERS",
+                                "narration": "UPI/361326326041/UPI/credclub@icici/ICICI Bank/MNO",
+                                "reference": "",
+                                "transactionTimestamp": "2023-09-04T00:00:00.0",
+                                "txnId": "S24460134",
+                                "type": "DEBIT",
+                                "valueDate": "2023-09-04"
+                            },
+                            {
+                                "amount": "69334.0",
+                                "currentBalance": "10.00",
+                                "mode": "OTHERS",
+                                "narration": "BIL/INFT/CI41473936/NA/",
+                                "reference": "",
+                                "transactionTimestamp": "2023-09-04T00:00:00.0",
+                                "txnId": "S24780171",
+                                "type": "DEBIT",
+                                "valueDate": "2023-09-04"
+                            },
+                            {
+                                "amount": "35000.0",
+                                "currentBalance": "35010.00",
+                                "mode": "OTHERS",
+                                "narration": "MMT/IMPS/325519315468/PaidviaCRED/DREAMPLUGP/Axis",
+                                "reference": "",
+                                "transactionTimestamp": "2023-09-12T00:00:00.0",
+                                "txnId": "S8100603",
+                                "type": "CREDIT",
+                                "valueDate": "2023-09-12"
+                            },
+                            {
+                                "amount": "35000.0",
+                                "currentBalance": "10.00",
+                                "mode": "OTHERS",
+                                "narration": "UPI/325539676563/UPI/prakashbandi.da/Federal Bank/",
+                                "reference": "",
+                                "transactionTimestamp": "2023-09-12T00:00:00.0",
+                                "txnId": "S8098472",
+                                "type": "DEBIT",
+                                "valueDate": "2023-09-12"
+                            },
+                            {
+                                "amount": "9.99",
+                                "currentBalance": "0.01",
+                                "mode": "OTHERS",
+                                "narration": "MABchgs-Aug23+GST",
+                                "reference": "",
+                                "transactionTimestamp": "2023-09-14T00:00:00.0",
+                                "txnId": "S20292001",
+                                "type": "DEBIT",
+                                "valueDate": "2023-09-14"
+                            },
+                            {
+                                "amount": "18000.0",
+                                "currentBalance": "18000.01",
+                                "mode": "OTHERS",
+                                "narration": "MMT/IMPS/328410918222/PaidviaCRED/DREAMPLUGP/Axis",
+                                "reference": "",
+                                "transactionTimestamp": "2023-10-11T00:00:00.0",
+                                "txnId": "S79759296",
+                                "type": "CREDIT",
+                                "valueDate": "2023-10-11"
+                            },
+                            {
+                                "amount": "18000.0",
+                                "currentBalance": "0.01",
+                                "mode": "OTHERS",
+                                "narration": "BIL/INFT/CJF0120540/NA/",
+                                "reference": "",
+                                "transactionTimestamp": "2023-10-11T00:00:00.0",
+                                "txnId": "S79770617",
+                                "type": "DEBIT",
+                                "valueDate": "2023-10-11"
+                            },
+                            {
+                                "amount": "0.01",
+                                "currentBalance": "0.00",
+                                "mode": "OTHERS",
+                                "narration": "MABchgs-Sep23+GST",
+                                "reference": "",
+                                "transactionTimestamp": "2023-10-11T00:00:00.0",
+                                "txnId": "S81170424",
+                                "type": "DEBIT",
+                                "valueDate": "2023-10-11"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    ]
+}
