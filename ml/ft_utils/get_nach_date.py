@@ -1,18 +1,7 @@
 import pandas as pd
 import json
-from time import time
-import os
 import warnings
 warnings.filterwarnings('ignore')
-from datetime import datetime
-from dateutil import relativedelta
-import openpyxl
-from openpyxl import load_workbook
-from openpyxl.styles import PatternFill
-from openpyxl.utils.dataframe import dataframe_to_rows
-import xlsxwriter
-
-
 
 def get_final_bin(pivot_df):
     '''
@@ -226,19 +215,6 @@ def get_nach_date_report(report_json):
         raise e
         print('Error in funcion get_nach_date : ', e)
         return None
-
-
-
-
-
-
-with open("/home/ramnaryanpanda/Downloads/with_category_vars_data_dafaf20 (1).json") as file:
-    report_json = json.load(file)
-print(get_nach_date_report(report_json))
-
-
-
-
 
 
 
