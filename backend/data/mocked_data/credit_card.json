@@ -1,0 +1,58 @@
+[
+  {
+    "credit_card_name": "Flipkart Axis Card",
+    "target_vendor": "flipkart",
+    "alternate_vendors": ["amazon", "meesho", "nykaa", "snapdeal"],
+    "minimum_credit_score": 600,
+    "description": ""
+  },
+  {
+    "credit_card_name": "Amazon ICICI Privilege Card",
+    "target_vendor": "amazon",
+    "alternate_vendors": ["flipkart", "meesho", "nykaa", "snapdeal"],
+    "minimum_credit_score": 600,
+    "description": ""
+  },
+  {
+    "credit_card_name": "Swiggy HDFC Privilege Card",
+    "target_vendor": "swiggy",
+    "alternate_vendors": ["zomato", "dominos", "kfc"],
+    "minimum_credit_score": 500,
+    "description": ""
+  },
+  {
+    "credit_card_name": "ICICI Coral Gem Card",
+    "target_vendor": "practo",
+    "alternate_vendors": [],
+    "minimum_credit_score": 500,
+    "description": ""
+  },
+  {
+    "credit_card_name": "HDFC Privilege Saver Card",
+    "target_vendor": "dream11",
+    "alternate_vendors": ["amazon", "zomato", "dominos", "netflix"],
+    "minimum_credit_score": 700,
+    "description": ""
+  },
+  {
+    "credit_card_name": "Canara Common Man Credit Card",
+    "target_vendor": "rapido",
+    "alternate_vendors": ["uber", "ola"],
+    "minimum_credit_score": 600,
+    "description": ""
+  },
+  {
+    "credit_card_name": "SBI Yono Saving Card",
+    "target_vendor": "netflix",
+    "alternate_vendors": ["primevideo", "hotstar", "altbalaji"],
+    "minimum_credit_score": 650,
+    "description": ""
+  },
+  {
+    "credit_card_name": "IDFC Smart Citizen Card",
+    "target_vendor": "uber",
+    "alternate_vendors": ["rapido", "ola"],
+    "minimum_credit_score": 700,
+    "description": ""
+  }
+]

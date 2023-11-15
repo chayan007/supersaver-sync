@@ -1,16 +1,49 @@
-# This is a sample Python script.
+from datetime import datetime
 
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
+from fastapi import FastAPI
+
+from mangum import Mangum
+from starlette.middleware.cors import CORSMiddleware
+from starlette.requests import Request
+
+from routes.dashboard_routes import dashboard_router
+from routes.offering_routes import offering_router
+from routes.profile_routes import profile_router
+
+app = FastAPI()
+
+origins = ["*"]
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=origins,
+    allow_headers=origins,
+)
+
+app.include_router(dashboard_router, prefix="/dashboard")
+app.include_router(profile_router, prefix="/profile")
+app.include_router(offering_router, prefix="/offerings")
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
+@app.api_route("/{path_name:path}", methods=[
+    "GET", "POST", "OPTIONS",
+    "PATCH", "PUT", "DELETE"
+])
+async def catch_all(request: Request, path_name: str):
+    return {
+        "base_url": request.base_url,
+        "available_routes": [
+            {
+                "path": route.path,
+                "name": route.name
+            }
+            for route in request.app.routes
+        ],
+        "request_method": request.method,
+        "path_name": path_name,
+        "message": "Request Received",
+        "time": datetime.now()
+    }
 
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+handler = Mangum(app)
