@@ -12,4 +12,4 @@ app.include_router(dashboard_router, prefix="/dashboard")
 app.include_router(profile_router, prefix="/profile")
 app.include_router(offering_router, prefix="/offerings")
 
-# handler = Mangum(app)
+handler = Mangum(app)

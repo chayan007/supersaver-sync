@@ -27,7 +27,7 @@ def get_coupons(mobile: str):
 @offering_router.get("/credit_cards")
 def get_credit_cards(mobile: str):
     try:
-        cc_file = open(f"data/mocked_data/coupon.json", mode='rb')
+        cc_file = open(f"data/mocked_data/credit_card.json", mode='rb')
         cc_list = json.load(cc_file)
         return cc_list
 
