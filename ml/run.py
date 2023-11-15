@@ -22,10 +22,15 @@ with open('./ft_utils/category_mapping_credit.json', 'r') as fp:
     ft_to_orig_mapping_credit = json.load(fp)
 with open('./ft_utils/category_mapping_debit.json', 'r') as fp:
     ft_to_orig_mapping_debit = json.load(fp)
-
 ft_to_orig_mapping = {}
 ft_to_orig_mapping.update(ft_to_orig_mapping_credit)
 ft_to_orig_mapping.update(ft_to_orig_mapping_debit)
+
+
+with open('./ft_utils/credit_asset.json', 'r') as fp:
+    asset_json = json.load(fp)
+with open('./ft_utils/debit_liability.json', 'r') as fp:
+    liab_json = json.load(fp)
 
 
 def process_json_file(data):
@@ -142,12 +147,12 @@ class Categorise:
         df_out['category'] = df_out[['narration', 'category']].apply(sender_info, axis=1)
         df_out['category'] = df_out[['narration', 'category']].apply(receiver_info, axis=1)
 
-        df_out['vendor'] = df_out[['narration', 'category']].apply(sender_info, axis=1)
-        df_out['vendor'] = df_out[['narration', 'category']].apply(receiver_info, axis=1)
-
-        mask = (df_out['vendor'].str.startswith("Transfer to") | df_out['vendor'].str.startswith("Transfer from"))
-        df_out.loc[~mask, 'vendor'] = ""
-        df_out['vendor'] = df_out['vendor'].str.replace("Transfer to ", "").str.replace("Transfer from ", "").str.strip()
+        # df_out['vendor'] = df_out[['narration', 'category']].apply(sender_info, axis=1)
+        # df_out['vendor'] = df_out[['narration', 'category']].apply(receiver_info, axis=1)
+        #
+        # mask = (df_out['vendor'].str.startswith("Transfer to") | df_out['vendor'].str.startswith("Transfer from"))
+        # df_out.loc[~mask, 'vendor'] = ""
+        # df_out['vendor'] = df_out['vendor'].str.replace("Transfer to ", "").str.replace("Transfer from ", "").str.strip()
 
         return df_out
 
@@ -223,15 +228,16 @@ class Categorise:
             return None
 
 
-def bankCategorization(data, account_type='', sub_categorization=False, upi_id=False, upi_sub_category_data_df=None):
+def bankCategorization(data, account_type='', sub_categorization=False, upi_sub_category_data_df=None):
     start_time = time()
+    cols_to_return = ['narration', 'type', 'date', 'amount', 'category', 'balance', 'masked_acc', 'upi_id', 'sub_category', 'vendor', 'liab_or_asset']
 
     try:
         bankdata = process_json_file(data)
 
         print(bankdata.columns)
         input_cols = bankdata.columns.tolist()
-        output_cols = ['category', 'employer', 'vendor']
+        output_cols = ['category', 'employer', 'vendor', 'merchant_name', 'upi_id']
         print(bankdata.shape)
         bankdata['preproc_narration'] = bankdata['narration'].map(eval('clean_narration1'))
         bankdata['function'] = ''
@@ -296,26 +302,28 @@ def bankCategorization(data, account_type='', sub_categorization=False, upi_id=F
         # get sub category
         sub_category_obj = SubCategory()
         df_out = sub_category_obj.get_sub_category(df_out)
-
-        # this will be set only when sub_category is off, when sub_category is on we can not do this
-        if upi_id and not sub_categorization:
-            df_out['upi_id'] = df_out['narration'].map(get_upi_id)
-            df_out.loc[df_out['upi_id'].isna(), 'upi_id'] = ''
+        df_out.rename(columns={'sub_category':'sub_category_soft'}, inplace=True)
 
         # upi sub categorisation
-        if sub_categorization and not upi_id:
-            output_cols.extend(['merchant_name', 'upi_id', 'result_code'])
-            formated_cols = df_out.columns.tolist() + ['merchant_name', 'upi_id', 'result_code']
-            df_out_debit = get_upi_details(df_out[df_out['amount']<0], upi_sub_category_data_df)
-            df_out_credit = df_out[df_out['amount']>=0]
-            df_out = pd.concat((df_out_debit, df_out_credit), axis=0)[formated_cols]
+        if sub_categorization:
+            df_out_debit = get_upi_details(df_out[df_out['type']=='DEBIT'], upi_sub_category_data_df)
+            df_out_credit = df_out[df_out['type']=='CREDIT']
+            df_out_credit['merchant_name'] = ""
+            df_out_credit['sub_category'] = ""
+            df_out_credit['upi_id'] = ""
+            df_out = pd.concat((df_out_debit, df_out_credit), axis=0)
             df_out.loc[df_out['sub_category'].isna(), 'sub_category'] = ''
             df_out.loc[df_out['merchant_name'].isna(), 'merchant_name'] = ''
             df_out.loc[df_out['upi_id'].isna(), 'upi_id'] = ''
-            df_out.loc[df_out['result_code'].isna(), 'result_code'] = ''
+            df_out['sub_category1'] = df_out['sub_category']
 
-        mask = ~(df_out['sub_category'].isin(['', 'Others']))
-        df_out.loc[mask, 'category'] = df_out.loc[mask, 'sub_category']
+        mask = ~(df_out['sub_category_soft'].isin(['', 'Others']))
+        df_out.loc[mask, 'category'] = df_out.loc[mask, 'sub_category_soft']
+
+        mask = ((df_out['sub_category_soft']=='') | (df_out['sub_category_soft'].isna()) | (df_out['sub_category_soft']=='Others'))
+        df_out.loc[mask, "sub_category_soft"] = df_out.loc[mask, "sub_category"]
+        df_out.drop(columns=['sub_category'], inplace=True)
+        df_out.rename(columns={'sub_category_soft': 'sub_category', 'merchant_name':'vendor'}, inplace=True)
 
         assert df_out.shape[0] == bankdata.shape[0]
         df_out = df_out.sort_values(by='seq_id')
@@ -328,22 +336,34 @@ def bankCategorization(data, account_type='', sub_categorization=False, upi_id=F
         df_out.loc[df_out['category'].str.startswith("Transfer to"), "category"] = "Transfer out"
         df_out['date'] = pd.to_datetime(df_out['date'])
         df_out['vendor1'] = df_out['vendor']
+        df_out['liab_or_asset'] = ""
+        df_out.loc[df_out['type'] == 'CREDIT', 'liab_or_asset'] = df_out.loc[df_out['type'] == 'CREDIT', 'category'].map(asset_json).fillna("")
+        df_out.loc[df_out['type'] == 'DEBIT', 'liab_or_asset'] = df_out.loc[df_out['type'] == 'DEBIT', 'category'].map(liab_json).fillna("")
+        df_asset = df_out.loc[df_out['liab_or_asset'] == 'Asset']
+        df_liab = df_out.loc[df_out['liab_or_asset'] == 'Liability']
+        df_neg_event = df_out.loc[df_out['liab_or_asset'] == 'Negative event']
 
-        df_out1 = df_out[['amount', 'date', 'category1', 'category']].groupby('category').agg({'amount': 'sum', 'category1': 'size', 'date': lambda x: list(x)}).reset_index()
-        df_out2 = df_out[['amount', 'date', 'vendor1', 'vendor']].groupby('vendor').agg({'amount': 'sum', 'vendor1': 'size', 'date': lambda x: list(x)}).reset_index()
+        # categ_agg_df = df_out[['amount', 'date', 'category1', 'category']].groupby('category').agg({'amount': 'sum', 'category1': 'size'}).reset_index()
+        # categ_agg_df.rename(columns={'amount': 'sum of amount', 'category1': 'count', 'date': 'date_lst'}, inplace=True)
+        vendor_mask = ((df_out['vendor'].notna()) & (df_out['vendor']!='') & (df_out['sub_category']!='INDIVIDUAL'))
+        vendor_agg_df = df_out[vendor_mask][['amount', 'date', 'vendor1', 'vendor', 'sub_category']].groupby('vendor').agg({'sub_category': lambda x: x.iloc[0], 'amount': 'sum', 'vendor1': 'size'}).reset_index()
+        vendor_agg_df.rename(columns={'amount': 'sum of amount', 'vendor1': 'count', 'date': 'date_lst'}, inplace=True)
 
-        df_out1 = df_out[['amount', 'date', 'category1', 'category']].groupby('category').agg({'amount': 'sum', 'category1': 'size'}).reset_index()
-        df_out2 = df_out[['amount', 'date', 'vendor1', 'vendor']].groupby('vendor').agg({'amount': 'sum', 'vendor1': 'size'}).reset_index()
+        asset_agg_df = df_asset[['amount', 'date', 'category1', 'category']].groupby('category').agg({'amount': 'sum', 'category1': 'size'}).reset_index()
+        asset_agg_df.rename(columns={'amount': 'sum of amount', 'category1': 'count'}, inplace=True)
+
+        liab_agg_df = df_liab[['amount', 'date', 'category1', 'category']].groupby('category').agg({'amount': 'sum', 'category1': 'size'}).reset_index()
+        liab_agg_df.rename(columns={'amount': 'sum of amount', 'category1': 'count'}, inplace=True)
+
+        neg_event_agg_df = df_neg_event[['amount', 'date', 'category1', 'category']].groupby('category').agg({'amount': 'sum', 'category1': 'size'}).reset_index()
+        neg_event_agg_df.rename(columns={'amount': 'sum of amount', 'category1': 'count'}, inplace=True)
 
     except Exception as e:
-        # raise e
-        df_out = None
+        raise e
+        df_out, categ_agg_df, vendor_agg_df, df_asset, df_liab, df_neg_event = None, None, None, None, None, None
 
-    df_out = df_out[input_cols + output_cols]
-    df_out1.rename(columns={'amount':'sum of amount', 'category1':'count', 'date':'date_lst'}, inplace=True)
-    df_out2.rename(columns={'amount': 'sum of amount', 'vendor1': 'count', 'date': 'date_lst'}, inplace=True)
     print(f"Total time for Version 3.0={time() - start_time}")
-    return df_out, df_out1, df_out2
+    return df_out[cols_to_return], vendor_agg_df, asset_agg_df, liab_agg_df, neg_event_agg_df
 
 
 
