@@ -7,7 +7,8 @@
     "discount_rate": 20,
     "discount_amount": 0,
     "discount_limit": 5000,
-    "description": ""
+    "description": "",
+    "coupon_he_xcode": "2098AE"
   },
   {
     "coupon_name": "Flipkart Saver Bonanza",
@@ -17,7 +18,8 @@
     "discount_rate": 0,
     "discount_amount": 1000,
     "discount_limit": 1000,
-    "description": ""
+    "description": "",
+    "coupon_hex_code":  "2098AE"
   },
   {
     "coupon_name": "Amazon Buy More Coupon",
@@ -27,7 +29,8 @@
     "discount_rate": 10,
     "discount_amount": 0,
     "discount_limit": 1000,
-    "description": ""
+    "description": "",
+    "coupon_hex_code":  "ffe135"
   },
   {
     "coupon_name": "Amazon Grand Customer Coupon",
@@ -37,7 +40,8 @@
     "discount_rate": 0,
     "discount_amount": 5000,
     "discount_limit": 5000,
-    "description": ""
+    "description": "",
+    "coupon_hex_code":  "ffe135"
   },
   {
     "coupon_name": "Meesho Customer Coupon",
@@ -47,7 +51,8 @@
     "discount_rate": 0,
     "discount_amount": 2000,
     "discount_limit": 2000,
-    "description": ""
+    "description": "",
+    "coupon_hex_code":  "de3163"
   },
   {
     "coupon_name": "Meesho Clearance Sale Coupon",
@@ -57,7 +62,8 @@
     "discount_rate": 30,
     "discount_amount": 0,
     "discount_limit": 6000,
-    "description": ""
+    "description": "",
+    "coupon_hex_code":  "de3163"
   },
   {
     "coupon_name": "Zomato Food Delight Coupon",
@@ -67,7 +73,8 @@
     "discount_rate": 20,
     "discount_amount": 0,
     "discount_limit": 500,
-    "description": ""
+    "description": "",
+    "coupon_hex_code":  "c90913"
   },
   {
     "coupon_name": "Zomato Foodie Vlogger Coupon",
@@ -77,7 +84,8 @@
     "discount_rate": 10,
     "discount_amount": 0,
     "discount_limit": 200,
-    "description": ""
+    "description": "",
+    "coupon_hex_code":  "c90913"
   },
   {
     "coupon_name": "Swiggy Foodie Bonanza Coupon",
@@ -87,7 +95,8 @@
     "discount_rate": 20,
     "discount_amount": 0,
     "discount_limit": 500,
-    "description": ""
+    "description": "",
+    "coupon_hex_code":  "FFA500"
   },
   {
     "coupon_name": "Swiggy Tasters Paradise Coupon",
@@ -97,7 +106,8 @@
     "discount_rate": 10,
     "discount_amount": 0,
     "discount_limit": 1000,
-    "description": ""
+    "description": "",
+    "coupon_hex_code":  "FFA500"
   },
   {
     "coupon_name": "Practo Regular Customer Coupon",
@@ -107,7 +117,8 @@
     "discount_rate": 10,
     "discount_amount": 0,
     "discount_limit": 500,
-    "description": ""
+    "description": "",
+    "coupon_hex_code":  "0048ba"
   },
   {
     "coupon_name": "1mg Medical Supplier Coupon",
@@ -117,7 +128,8 @@
     "discount_rate": 0,
     "discount_amount": 500,
     "discount_limit": 500,
-    "description": ""
+    "description": "",
+    "coupon_hex_code":  "848ba7"
   },
   {
     "coupon_name": "Dream11 High Stakes Coupon",
@@ -127,7 +139,8 @@
     "discount_rate": 10,
     "discount_amount": 0,
     "discount_limit": 100,
-    "description": ""
+    "description": "",
+    "coupon_hex_code":  "660000"
   },
   {
     "coupon_name": "Dream11 WC Fever Coupon",
@@ -137,7 +150,8 @@
     "discount_rate": 0,
     "discount_amount": 1000,
     "discount_limit": 1000,
-    "description": ""
+    "description": "",
+    "coupon_hex_code":  "660000"
   },
   {
     "coupon_name": "99Games Gamble Coupon",
@@ -147,7 +161,8 @@
     "discount_rate": 10,
     "discount_amount": 0,
     "discount_limit": 1000,
-    "description": ""
+    "description": "",
+    "coupon_hex_code":  "de3163"
   },
   {
     "coupon_name": "Rapido Daily Rider Coupon",
@@ -157,7 +172,8 @@
     "discount_rate": 10,
     "discount_amount": 0,
     "discount_limit": 50,
-    "description": ""
+    "description": "",
+    "coupon_hex_code":  "ffe135"
   },
   {
     "coupon_name": "Rapido Privilege Coupon",
@@ -167,7 +183,8 @@
     "discount_rate": 20,
     "discount_amount": 0,
     "discount_limit": 80,
-    "description": ""
+    "description": "",
+    "coupon_hex_code":  "ffe135"
   },
   {
     "coupon_name": "Uber India Ride Coupon",
@@ -177,7 +194,8 @@
     "discount_rate": 10,
     "discount_amount": 0,
     "discount_limit": 50,
-    "description": ""
+    "description": "",
+    "coupon_hex_code":  "848ba7"
   },
   {
     "coupon_name": "Netflix Christmas Super Sale",
@@ -187,7 +205,8 @@
     "discount_rate": 40,
     "discount_amount": 0,
     "discount_limit": 400,
-    "description": ""
+    "description": "",
+    "coupon_hex_code":  "c90913"
   },
   {
     "coupon_name": "Amazon Prime Customers Delight Coupon",
@@ -197,7 +216,8 @@
     "discount_rate": 10,
     "discount_amount": 0,
     "discount_limit": 200,
-    "description": ""
+    "description": "",
+    "coupon_hex_code":  "067084"
   },
   {
     "coupon_name": "Amazon Prime Full Benefit Coupon",
@@ -207,6 +227,7 @@
     "discount_rate": 0,
     "discount_amount": 299,
     "discount_limit": 299,
-    "description": ""
+    "description": "",
+    "coupon_hex_code":  "067084"
   }
 ]
