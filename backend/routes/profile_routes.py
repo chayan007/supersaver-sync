@@ -42,7 +42,7 @@ def get_liabilities(mobile: str):
 @dashboard_router.get("/emi")
 def get_liabilities(mobile: str):
     try:
-        cc_file = open(f"data/ml_data/{mobile}/category/liabilities.json", mode='rb')
+        cc_file = open(f"data/ml_data/{mobile}/category/emi.json", mode='rb')
         cc_list = json.load(cc_file)
         return cc_list
 
