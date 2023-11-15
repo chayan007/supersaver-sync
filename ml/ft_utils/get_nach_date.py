@@ -1,18 +1,7 @@
 import pandas as pd
 import json
-from time import time
-import os
 import warnings
 warnings.filterwarnings('ignore')
-from datetime import datetime
-from dateutil import relativedelta
-import openpyxl
-from openpyxl import load_workbook
-from openpyxl.styles import PatternFill
-from openpyxl.utils.dataframe import dataframe_to_rows
-import xlsxwriter
-
-
 
 def get_final_bin(pivot_df):
     '''

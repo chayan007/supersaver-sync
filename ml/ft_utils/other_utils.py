@@ -1,13 +1,7 @@
 import re
 import pandas as pd
-import requests
 import json
 import time
-# from utils import prod_config
-import basicauth
-import asyncio
-import aiohttp
-import requests
 
 with open('./ft_utils/category_mapping_credit.json', 'r') as fp:
     ft_to_orig_mapping_credit = json.load(fp)
