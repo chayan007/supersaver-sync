@@ -1,7 +1,13 @@
 import re
 import pandas as pd
+import requests
 import json
 import time
+# from utils import prod_config
+import basicauth
+import asyncio
+import aiohttp
+import requests
 
 with open('./ft_utils/category_mapping_credit.json', 'r') as fp:
     ft_to_orig_mapping_credit = json.load(fp)
@@ -200,81 +206,81 @@ def get_upi_id_only(df):
       
 
 
-def get_upi_details(df, response_df):
-    t1 = time.time()
-    try:
-        df['upi_id'] = df['narration'].map(get_upi_id)
-        if response_df is None or response_df.empty:
-            raise ValueError("Response df is empty")
-
-        # if sub category is already present, then convert it to another column and over ride the sub category at the end
-        if 'sub_category' in df.columns:
-            df.rename(columns={'sub_category':'sub_category_from_soft_logic'}, inplace=True)
-
-        # do some formatting with the input data
-        # req_cols = ['vpa', 'entity_type', 'account_holder_name', 'merchant_category', 'result_code']
-        req_cols = ['vpa', 'account_holder_name', 'entity_type', 'merchant_details.code.mcc', 'merchant_details.code.sub_code', 'merchant_details.code.merchant_code', 'result_code']
-        for col in req_cols:
-            if col not in response_df.columns.tolist():
-                raise KeyError(f"Column '{col}' is not present in the DataFrame.")
-
-        response_df = response_df[req_cols]
-        response_df.rename(columns={'vpa':'upi_id', 'account_holder_name':'merchant_name', 'merchant_category':'MWT Cat Mapping'}, inplace=True)
-        response_df['merchant_details.code.mcc'] = pd.to_numeric(response_df['merchant_details.code.mcc'], errors='coerce')
-        response_df['merchant_details.code.sub_code'] = pd.to_numeric(response_df['merchant_details.code.sub_code'], errors='coerce')
-        response_df['merchant_details.code.merchant_code'] = pd.to_numeric(response_df['merchant_details.code.merchant_code'], errors='coerce')
-
-        # if the mcc code is 5411 - GROCERY STORES OR SUPERMARKETS, and the mcc and sub_code is not matching and sub_code is not null
-        # then overwrite mcc with subcode
-        response_df.loc[(response_df['merchant_details.code.mcc']==5411) &
-                        (response_df['merchant_details.code.sub_code'].notna()), 'merchant_details.code.mcc'] = \
-        response_df.loc[(response_df['merchant_details.code.mcc']==5411) &
-                        (response_df['merchant_details.code.sub_code'].notna()), 'merchant_details.code.sub_code']
-
-        upi_cat_mapping_df = pd.read_csv("./ft_utils/upi_categorisation_mapping.csv")
-        response_df = pd.merge(response_df, upi_cat_mapping_df, left_on='merchant_details.code.mcc', right_on='MCC', how='left')
-        cols_to_take = df.columns.tolist()
-        df = pd.merge(df, response_df, on='upi_id', how='left')
-
-        # update master category with upi category
-        df.loc[(df['Master Category'].isin(ft_to_orig_mapping_credit.values())) & (df['amount']>=0), 'category'] = \
-            df.loc[(df['Master Category'].isin(ft_to_orig_mapping_credit.values())) & (df['amount']>=0), 'Master Category']
-        df.loc[(df['Master Category'].isin(ft_to_orig_mapping_debit.values())) & (df['amount']<0) & (df['category'].str.startswith('Transfer')), 'category'] = \
-            df.loc[(df['Master Category'].isin(ft_to_orig_mapping_debit.values())) & (df['amount']<0) & (df['category'].str.startswith('Transfer')), 'Master Category']
-
-        # if some category is coming which is not present in our category list then make it as transfer
-        df.loc[(~df['Master Category'].isin(ft_to_orig_mapping_credit.values())) & (~df['Master Category'].isna()) & (df['Master Category'].str.strip()!='') & (df['amount']>=0), 'category'] = \
-            "Transfer from " + df.loc[(~df['Master Category'].isin(ft_to_orig_mapping_credit.values())) & (~df['Master Category'].isna()) & (df['Master Category'].str.strip()!='') & (df['amount']>=0), 'merchant_name']
-        df.loc[(~df['Master Category'].isin(ft_to_orig_mapping_debit.values())) & (~df['Master Category'].isna()) & (df['Master Category'].str.strip()!='') & (df['amount']<0), 'category'] = \
-            "Transfer to " + df.loc[(~df['Master Category'].isin(ft_to_orig_mapping_debit.values())) & (~df['Master Category'].isna()) & (df['Master Category'].str.strip()!='') & (df['amount']<0), 'merchant_name']
-
-        df.loc[( (df['entity_type']=='INDIVIDUAL') | ((df['category']=='Transfer in')&(df['merchant_name'].notna())&(df['merchant_name'] != '')) ) & (df['amount']>=0), 'category'] = \
-            "Transfer from " + df.loc[((df['entity_type']=='INDIVIDUAL') | ((df['category']=='Transfer in') & (df['merchant_name'].notna())&(df['merchant_name'] != ''))) & (df['amount']>=0), 'merchant_name']
-        df.loc[((df['entity_type']=='INDIVIDUAL') | ((df['category']=='Transfer out')&(df['merchant_name'].notna())&(df['merchant_name'] != '')) ) & (df['amount']<0), 'category'] = \
-            "Transfer to " + df.loc[((df['entity_type']=='INDIVIDUAL') | ((df['category']=='Transfer out')&(df['merchant_name'].notna())&(df['merchant_name'] != '')) ) & (df['amount']<0), 'merchant_name']
-        df.loc[(df['entity_type'] == 'INDIVIDUAL'), 'sub_category'] = 'INDIVIDUAL'
-        df.loc[(df['entity_type'] == 'MERCHANT') & ((df['sub_category'].isna()) | (df['sub_category']=='')) & (df['merchant_name'].notna()) & (df['merchant_name'] != ''), 'sub_category'] = 'Others'
-
-        df = df[cols_to_take + ['merchant_name', 'sub_category', 'result_code']]
-
-        if 'sub_category_from_soft_logic' in df.columns:
-            df.loc[(df['sub_category_from_soft_logic'].notna()) & (~(df['sub_category_from_soft_logic']=='')) , 'sub_category'] = \
-                df.loc[(df['sub_category_from_soft_logic'].notna()) & (~(df['sub_category_from_soft_logic']=='')) , 'sub_category_from_soft_logic']
-            df.drop(columns=['sub_category_from_soft_logic'], inplace=True)
-
-    except Exception as e:
-        print("Final Exception in function get_upi_details is: ", e)
-        # raise e
-        df['merchant_name'] = ''
-        df['sub_category'] = ''
-        df['result_code'] = ''
-
-    # handle null cases for null
-    if 'upi_id' in df.columns.tolist():
-        df['upi_id'].fillna("", inplace=True)
-
-    print("UPI details time taken: ", time.time() - t1)
-    return df
+# def get_upi_details(df, response_df):
+#     t1 = time.time()
+#     try:
+#         df['upi_id'] = df['narration'].map(get_upi_id)
+#         if response_df is None or response_df.empty:
+#             raise ValueError("Response df is empty")
+#
+#         # if sub category is already present, then convert it to another column and over ride the sub category at the end
+#         if 'sub_category' in df.columns:
+#             df.rename(columns={'sub_category':'sub_category_from_soft_logic'}, inplace=True)
+#
+#         # do some formatting with the input data
+#         # req_cols = ['vpa', 'entity_type', 'account_holder_name', 'merchant_category', 'result_code']
+#         req_cols = ['vpa', 'account_holder_name', 'entity_type', 'merchant_details.code.mcc', 'merchant_details.code.sub_code', 'merchant_details.code.merchant_code', 'result_code']
+#         for col in req_cols:
+#             if col not in response_df.columns.tolist():
+#                 raise KeyError(f"Column '{col}' is not present in the DataFrame.")
+#
+#         response_df = response_df[req_cols]
+#         response_df.rename(columns={'vpa':'upi_id', 'account_holder_name':'merchant_name', 'merchant_category':'MWT Cat Mapping'}, inplace=True)
+#         response_df['merchant_details.code.mcc'] = pd.to_numeric(response_df['merchant_details.code.mcc'], errors='coerce')
+#         response_df['merchant_details.code.sub_code'] = pd.to_numeric(response_df['merchant_details.code.sub_code'], errors='coerce')
+#         response_df['merchant_details.code.merchant_code'] = pd.to_numeric(response_df['merchant_details.code.merchant_code'], errors='coerce')
+#
+#         # if the mcc code is 5411 - GROCERY STORES OR SUPERMARKETS, and the mcc and sub_code is not matching and sub_code is not null
+#         # then overwrite mcc with subcode
+#         response_df.loc[(response_df['merchant_details.code.mcc']==5411) &
+#                         (response_df['merchant_details.code.sub_code'].notna()), 'merchant_details.code.mcc'] = \
+#         response_df.loc[(response_df['merchant_details.code.mcc']==5411) &
+#                         (response_df['merchant_details.code.sub_code'].notna()), 'merchant_details.code.sub_code']
+#
+#         upi_cat_mapping_df = pd.read_csv("./ft_utils/upi_categorisation_mapping.csv")
+#         response_df = pd.merge(response_df, upi_cat_mapping_df, left_on='merchant_details.code.mcc', right_on='MCC', how='left')
+#         cols_to_take = df.columns.tolist()
+#         df = pd.merge(df, response_df, on='upi_id', how='left')
+#
+#         # update master category with upi category
+#         df.loc[(df['Master Category'].isin(ft_to_orig_mapping_credit.values())) & (df['amount']>=0), 'category'] = \
+#             df.loc[(df['Master Category'].isin(ft_to_orig_mapping_credit.values())) & (df['amount']>=0), 'Master Category']
+#         df.loc[(df['Master Category'].isin(ft_to_orig_mapping_debit.values())) & (df['amount']<0) & (df['category'].str.startswith('Transfer')), 'category'] = \
+#             df.loc[(df['Master Category'].isin(ft_to_orig_mapping_debit.values())) & (df['amount']<0) & (df['category'].str.startswith('Transfer')), 'Master Category']
+#
+#         # if some category is coming which is not present in our category list then make it as transfer
+#         df.loc[(~df['Master Category'].isin(ft_to_orig_mapping_credit.values())) & (~df['Master Category'].isna()) & (df['Master Category'].str.strip()!='') & (df['amount']>=0), 'category'] = \
+#             "Transfer from " + df.loc[(~df['Master Category'].isin(ft_to_orig_mapping_credit.values())) & (~df['Master Category'].isna()) & (df['Master Category'].str.strip()!='') & (df['amount']>=0), 'merchant_name']
+#         df.loc[(~df['Master Category'].isin(ft_to_orig_mapping_debit.values())) & (~df['Master Category'].isna()) & (df['Master Category'].str.strip()!='') & (df['amount']<0), 'category'] = \
+#             "Transfer to " + df.loc[(~df['Master Category'].isin(ft_to_orig_mapping_debit.values())) & (~df['Master Category'].isna()) & (df['Master Category'].str.strip()!='') & (df['amount']<0), 'merchant_name']
+#
+#         df.loc[( (df['entity_type']=='INDIVIDUAL') | ((df['category']=='Transfer in')&(df['merchant_name'].notna())&(df['merchant_name'] != '')) ) & (df['amount']>=0), 'category'] = \
+#             "Transfer from " + df.loc[((df['entity_type']=='INDIVIDUAL') | ((df['category']=='Transfer in') & (df['merchant_name'].notna())&(df['merchant_name'] != ''))) & (df['amount']>=0), 'merchant_name']
+#         df.loc[((df['entity_type']=='INDIVIDUAL') | ((df['category']=='Transfer out')&(df['merchant_name'].notna())&(df['merchant_name'] != '')) ) & (df['amount']<0), 'category'] = \
+#             "Transfer to " + df.loc[((df['entity_type']=='INDIVIDUAL') | ((df['category']=='Transfer out')&(df['merchant_name'].notna())&(df['merchant_name'] != '')) ) & (df['amount']<0), 'merchant_name']
+#         df.loc[(df['entity_type'] == 'INDIVIDUAL'), 'sub_category'] = 'INDIVIDUAL'
+#         df.loc[(df['entity_type'] == 'MERCHANT') & ((df['sub_category'].isna()) | (df['sub_category']=='')) & (df['merchant_name'].notna()) & (df['merchant_name'] != ''), 'sub_category'] = 'Others'
+#
+#         df = df[cols_to_take + ['merchant_name', 'sub_category', 'result_code']]
+#
+#         if 'sub_category_from_soft_logic' in df.columns:
+#             df.loc[(df['sub_category_from_soft_logic'].notna()) & (~(df['sub_category_from_soft_logic']=='')) , 'sub_category'] = \
+#                 df.loc[(df['sub_category_from_soft_logic'].notna()) & (~(df['sub_category_from_soft_logic']=='')) , 'sub_category_from_soft_logic']
+#             df.drop(columns=['sub_category_from_soft_logic'], inplace=True)
+#
+#     except Exception as e:
+#         print("Final Exception in function get_upi_details is: ", e)
+#         # raise e
+#         df['merchant_name'] = ''
+#         df['sub_category'] = ''
+#         df['result_code'] = ''
+#
+#     # handle null cases for null
+#     if 'upi_id' in df.columns.tolist():
+#         df['upi_id'].fillna("", inplace=True)
+#
+#     print("UPI details time taken: ", time.time() - t1)
+#     return df
 
 
 
@@ -379,122 +385,133 @@ def get_bank_ref_id(row):
 
 
 
+def get_upi_details(df, upi_response_lst, bank_data_id=""):
+
+    batch_size = 25
+
+    async def call_api(session, upi_response_lst):
+        client_id = '42165571'
+        client_secret = 'lZ9MQS0HrbFdkmeYW4Fr5o79jTsaFVbK'
+        url = 'https://svcstage.digitap.work/validation/bank/v1/upi-categorization'
+
+        # client_id = prod_config.upi_client_id
+        # client_secret = prod_config.upi_client_secret
+        # url = prod_config.upi_url
+
+        encoded_authorization = basicauth.encode(client_id, client_secret)
+        headers = {
+            "Authorization": encoded_authorization,
+            "Content-Type": "application/json"
+        }
+
+        async with session.post(url, headers=headers, data=payload) as response:
+            return await response.text()
+
+    async def main():
+        upi_response_lst = []
+        async with aiohttp.ClientSession() as session:
+            tasks = [call_api(session, payload) for payload in payloads]
+            responses = await asyncio.gather(*tasks)
+
+            for i, response_text in enumerate(responses):
+                print(i)
+                try:
+                    # print(response_text)
+                    response_dict = json.loads(response_text)
+                    if response_dict['http_response_code'] == 200:
+                        result_lst = response_dict['result']['vpa_details']
+                        for dct in result_lst:
+                            if dct["result_code"] == 101:
+                                upi_response_lst.append((dct['vpa'], dct['entity_type'],
+                                                         dct['account_holder_name'], dct['merchant_category'],
+                                                         response_dict['request_id'], response_dict['client_ref_num'],
+                                                         dct['result_code'], response_dict['http_response_code']))
+                            else:
+                                upi_response_lst.append((dct['vpa'], '', '', '',
+                                                         response_dict['request_id'], response_dict['client_ref_num'],
+                                                         dct['result_code'], response_dict['http_response_code']))
+                    else:
+                        raise Exception(str(response_dict['error']))
+                except Exception as e:
+                    upi_response_lst.extend([(vpa, '', '', '', response_dict['request_id'], response_dict['client_ref_num'],
+                                              '', response_dict['http_response_code'])
+                                             for vpa in unique_vpa_list[i*batch_size : (i+1)*batch_size]])
+                    print("Got error: ", e)
+                    print(response_text)
+                    print(unique_vpa_list[i*batch_size : (i+1)*batch_size], "\n\n")
+
+        return pd.DataFrame(upi_response_lst, columns=['upi_id', 'entity_type', 'merchant_name', 'MWT Cat Mapping',
+                                                       'request_id', 'client_ref_num', 'result_code', 'http_response_code'])
+
+    t1 = time.time()
+    try:
+        df['upi_id'] = df['narration'].map(get_upi_id)
+        unique_vpa_list = df['upi_id'].dropna().unique().tolist()
+        # unique_vpa_list = unique_vpa_list[:20]
+        print(f"Unique VPAs found {len(unique_vpa_list)}")
+        payloads = []
+        for i in range(0, len(unique_vpa_list), batch_size):
+            payload = json.dumps({
+                "client_ref_num": bank_data_id + "_" + str(i),
+                "vpa": unique_vpa_list[i:i + batch_size],
+                "strategy":"2"   # 1->fetch from db,  2->using external api
+            })
+            payloads.append(payload)
+
+        # loop = asyncio.get_event_loop()
+        # upi_response_lst = loop.run_until_complete(main())
+        # upi_response_lst.to_csv("./inp_data/1_fip_processed_da1b9b784_upi_response.csv")
+
+        # upi_response_lst = pd.read_csv("./inp_data/1_fip_processed_da1b9b784_upi_response.csv")
+        upi_cat_mapping_df = pd.read_csv("./ft_utils/upi_categorisation_mapping.csv").drop(columns=['MCC']).drop_duplicates()
+        response_df = pd.DataFrame(upi_response_lst, columns=['upi_id', 'entity_type', 'merchant_name', 'MWT Cat Mapping',
+                                                              'request_id', 'client_ref_num', 'result_code', 'http_response_code'])
+        response_df['MWT Cat Mapping_proc'] = response_df['MWT Cat Mapping'].str.lower().str.replace(' ', '')
+        upi_cat_mapping_df['MWT Cat Mapping_proc'] = upi_cat_mapping_df['MWT Cat Mapping'].str.lower().str.replace(' ', '')
+        response_df = pd.merge(response_df, upi_cat_mapping_df, on='MWT Cat Mapping_proc', how='left')
+        # print(response_df.columns)
+        cols_to_take = df.columns.tolist()
+        df = pd.merge(df, response_df, on='upi_id', how='left')
+        df.loc[(df['Master Category'].isin(ft_to_orig_mapping_credit.values())) & (df['amount']>=0), 'category'] = df.loc[(df['Master Category'].isin(ft_to_orig_mapping_credit.values())) & (df['amount']>=0), 'Master Category']
+        df.loc[(df['Master Category'].isin(ft_to_orig_mapping_debit.values())) & (df['amount']<0), 'category'] = df.loc[(df['Master Category'].isin(ft_to_orig_mapping_debit.values())) & (df['amount']<0), 'Master Category']
+
+        # if some category is coming which is not present in our category list then make it as transfer
+        df.loc[(~df['Master Category'].isin(ft_to_orig_mapping_credit.values())) & (~df['Master Category'].isna()) & (df['Master Category'].str.strip()!='') & (df['amount']>=0), 'category'] = "Transfer from " + df.loc[(~df['Master Category'].isin(ft_to_orig_mapping_credit.values())) & (~df['Master Category'].isna()) & (df['Master Category'].str.strip()!='') & (df['amount']>=0), 'merchant_name']
+        df.loc[(~df['Master Category'].isin(ft_to_orig_mapping_debit.values())) & (~df['Master Category'].isna()) & (df['Master Category'].str.strip()!='') & (df['amount']<0), 'category'] = "Transfer to " + df.loc[(~df['Master Category'].isin(ft_to_orig_mapping_debit.values())) & (~df['Master Category'].isna()) & (df['Master Category'].str.strip()!='') & (df['amount']<0), 'merchant_name']
+
+        df.loc[(df['entity_type']=='INDIVIDUAL')&(df['amount']>=0), 'category'] = "Transfer from " + df.loc[(df['entity_type']=='INDIVIDUAL')&(df['amount']>=0), 'merchant_name']
+        df.loc[(df['entity_type'] == 'INDIVIDUAL')&(df['amount']<0), 'category'] = "Transfer to " + df.loc[(df['entity_type'] == 'INDIVIDUAL')&(df['amount']<0), 'merchant_name']
+        df.loc[(df['entity_type'] == 'INDIVIDUAL'), 'sub_category'] = 'INDIVIDUAL'
+        df.loc[(df['entity_type'] == 'MERCHANT') & (df['sub_category'].isna()), 'sub_category'] = 'Others'
+
+        df = df[cols_to_take + ['merchant_name', 'sub_category', 'request_id', 'client_ref_num', 'result_code', 'http_response_code']]
+
+    except Exception as e:
+        print("Final Exception in function get_upi_details is: ", e)
+        # raise e
+        df['merchant_name'] = ''
+        df['sub_category'] = ''
+        df['request_id'] = ''
+        df['client_ref_num'] = ''
+        df['result_code'] = ''
+        df['http_response_code'] = ''
+
+    # handle null cases for null
+    if 'upi_id' in df.columns.tolist():
+        df['upi_id'].fillna("", inplace=True)
+
+    print("UPI details time taken: ", time.time() - t1)
+    return df
 
 
 
 
-# def get_upi_details(df, bank_data_id):
-#
-#     batch_size = 25
-#
-#     async def call_api(session, payload):
-#         client_id = '42165571'
-#         client_secret = 'lZ9MQS0HrbFdkmeYW4Fr5o79jTsaFVbK'
-#         url = 'https://svcstage.digitap.work/validation/bank/v1/upi-categorization'
-#
-#         # client_id = prod_config.upi_client_id
-#         # client_secret = prod_config.upi_client_secret
-#         # url = prod_config.upi_url
-#
-#         encoded_authorization = basicauth.encode(client_id, client_secret)
-#         headers = {
-#             "Authorization": encoded_authorization,
-#             "Content-Type": "application/json"
-#         }
-#
-#         async with session.post(url, headers=headers, data=payload) as response:
-#             return await response.text()
-#
-#     async def main():
-#         upi_response_lst = []
-#         async with aiohttp.ClientSession() as session:
-#             tasks = [call_api(session, payload) for payload in payloads]
-#             responses = await asyncio.gather(*tasks)
-#
-#             for i, response_text in enumerate(responses):
-#                 try:
-#                     # print(response_text)
-#                     response_dict = json.loads(response_text)
-#                     if response_dict['http_response_code'] == 200:
-#                         result_lst = response_dict['result']['vpa_details']
-#                         for dct in result_lst:
-#                             if dct["result_code"] == 101:
-#                                 upi_response_lst.append((dct['vpa'], dct['entity_type'],
-#                                                          dct['account_holder_name'], dct['merchant_category'],
-#                                                          response_dict['request_id'], response_dict['client_ref_num'],
-#                                                          dct['result_code'], response_dict['http_response_code']))
-#                             else:
-#                                 upi_response_lst.append((dct['vpa'], '', '', '',
-#                                                          response_dict['request_id'], response_dict['client_ref_num'],
-#                                                          dct['result_code'], response_dict['http_response_code']))
-#                     else:
-#                         raise Exception(str(response_dict['error']))
-#                 except Exception as e:
-#                     upi_response_lst.extend([(vpa, '', '', '', response_dict['request_id'], response_dict['client_ref_num'],
-#                                               '', response_dict['http_response_code'])
-#                                              for vpa in unique_vpa_list[i*batch_size : (i+1)*batch_size]])
-#                     print("Got error: ", e)
-#                     print(response_text)
-#                     print(unique_vpa_list[i*batch_size : (i+1)*batch_size], "\n\n")
-#
-#         return pd.DataFrame(upi_response_lst, columns=['upi_id', 'entity_type', 'merchant_name', 'MWT Cat Mapping',
-#                                                        'request_id', 'client_ref_num', 'result_code', 'http_response_code'])
-#
-#     t1 = time.time()
-#     try:
-#         df['upi_id'] = df['narration'].map(get_upi_id)
-#         unique_vpa_list = df['upi_id'].dropna().unique().tolist()
-#         print(f"Unique VPAs found {len(unique_vpa_list)}")
-#         payloads = []
-#         for i in range(0, len(unique_vpa_list), batch_size):
-#             payload = json.dumps({
-#                 "client_ref_num": bank_data_id + "_" + str(i),
-#                 "vpa": unique_vpa_list[i:i + batch_size],
-#                 "strategy":"2"   # 1->fetch from db,  2->using external api
-#             })
-#             payloads.append(payload)
-#
-#         loop = asyncio.get_event_loop()
-#         upi_response_lst = loop.run_until_complete(main())
-#
-#         upi_cat_mapping_df = pd.read_csv("./ft_utils/upi_categorisation_mapping.csv").drop(columns=['MCC']).drop_duplicates()
-#         response_df = pd.DataFrame(upi_response_lst, columns=['upi_id', 'entity_type', 'merchant_name', 'MWT Cat Mapping',
-#                                                               'request_id', 'client_ref_num', 'result_code', 'http_response_code'])
-#         response_df['MWT Cat Mapping_proc'] = response_df['MWT Cat Mapping'].str.lower().str.replace(' ', '')
-#         upi_cat_mapping_df['MWT Cat Mapping_proc'] = upi_cat_mapping_df['MWT Cat Mapping'].str.lower().str.replace(' ', '')
-#         response_df = pd.merge(response_df, upi_cat_mapping_df, on='MWT Cat Mapping_proc', how='left')
-#         # print(response_df.columns)
-#         cols_to_take = df.columns.tolist()
-#         df = pd.merge(df, response_df, on='upi_id', how='left')
-#         df.loc[(df['Master Category'].isin(ft_to_orig_mapping_credit.values())) & (df['amount']>=0), 'category'] = df.loc[(df['Master Category'].isin(ft_to_orig_mapping_credit.values())) & (df['amount']>=0), 'Master Category']
-#         df.loc[(df['Master Category'].isin(ft_to_orig_mapping_debit.values())) & (df['amount']<0), 'category'] = df.loc[(df['Master Category'].isin(ft_to_orig_mapping_debit.values())) & (df['amount']<0), 'Master Category']
-#
-#         # if some category is coming which is not present in our category list then make it as transfer
-#         df.loc[(~df['Master Category'].isin(ft_to_orig_mapping_credit.values())) & (~df['Master Category'].isna()) & (df['Master Category'].str.strip()!='') & (df['amount']>=0), 'category'] = "Transfer from " + df.loc[(~df['Master Category'].isin(ft_to_orig_mapping_credit.values())) & (~df['Master Category'].isna()) & (df['Master Category'].str.strip()!='') & (df['amount']>=0), 'merchant_name']
-#         df.loc[(~df['Master Category'].isin(ft_to_orig_mapping_debit.values())) & (~df['Master Category'].isna()) & (df['Master Category'].str.strip()!='') & (df['amount']<0), 'category'] = "Transfer to " + df.loc[(~df['Master Category'].isin(ft_to_orig_mapping_debit.values())) & (~df['Master Category'].isna()) & (df['Master Category'].str.strip()!='') & (df['amount']<0), 'merchant_name']
-#
-#         df.loc[(df['entity_type']=='INDIVIDUAL')&(df['amount']>=0), 'category'] = "Transfer from " + df.loc[(df['entity_type']=='INDIVIDUAL')&(df['amount']>=0), 'merchant_name']
-#         df.loc[(df['entity_type'] == 'INDIVIDUAL')&(df['amount']<0), 'category'] = "Transfer to " + df.loc[(df['entity_type'] == 'INDIVIDUAL')&(df['amount']<0), 'merchant_name']
-#         df.loc[(df['entity_type'] == 'INDIVIDUAL'), 'sub_category'] = 'INDIVIDUAL'
-#         df.loc[(df['entity_type'] == 'MERCHANT') & (df['sub_category'].isna()), 'sub_category'] = 'Others'
-#
-#         df = df[cols_to_take + ['merchant_name', 'sub_category', 'request_id', 'client_ref_num', 'result_code', 'http_response_code']]
-#
-#     except Exception as e:
-#         print("Final Exception in function get_upi_details is: ", e)
-#         # raise e
-#         df['merchant_name'] = ''
-#         df['sub_category'] = ''
-#         df['request_id'] = ''
-#         df['client_ref_num'] = ''
-#         df['result_code'] = ''
-#         df['http_response_code'] = ''
-#
-#     # handle null cases for null
-#     if 'upi_id' in df.columns.tolist():
-#         df['upi_id'].fillna("", inplace=True)
-#
-#     print("UPI details time taken: ", time.time() - t1)
-#     return df
+
+
+
+
+
+
+
 
 
