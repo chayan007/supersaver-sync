@@ -1,137 +1,67 @@
 [
-   {
-      "category":"Bills & Utilities",
-      "sum of amount":-3751.15,
-      "count":3
-   },
-   {
-      "category":"Bounced I\/W ECS",
-      "sum of amount":836457.0,
-      "count":8
-   },
-   {
-      "category":"Bounced I\/W ECS Charges",
-      "sum of amount":-1062.0,
-      "count":2
-   },
-   {
-      "category":"Bounced O\/W Cheque",
-      "sum of amount":-50000.0,
-      "count":1
-   },
-   {
-      "category":"Cash Deposit",
-      "sum of amount":715500.0,
-      "count":19
-   },
-   {
-      "category":"Cash Withdrawal",
-      "sum of amount":-182000.0,
-      "count":14
-   },
-   {
-      "category":"Charges",
-      "sum of amount":-177.0,
-      "count":1
-   },
-   {
-      "category":"CreditCard Payment",
-      "sum of amount":-931053.16,
-      "count":13
-   },
-   {
-      "category":"Electricity bill",
-      "sum of amount":-8340.0,
-      "count":2
-   },
-   {
-      "category":"Food",
-      "sum of amount":-1924.0,
-      "count":5
-   },
-   {
-      "category":"Gaming",
-      "sum of amount":-1245.0,
-      "count":5
-   },
-   {
-      "category":"Gas bill",
-      "sum of amount":-5780.0,
-      "count":3
-   },
-   {
-      "category":"Home Loan",
-      "sum of amount":-58989.0,
-      "count":7
-   },
-   {
-      "category":"Insurance",
-      "sum of amount":90972.0,
-      "count":9
-   },
-   {
-      "category":"Interest",
-      "sum of amount":487.0,
-      "count":2
-   },
-   {
-      "category":"Investment Expense",
-      "sum of amount":-35000.0,
-      "count":7
-   },
-   {
-      "category":"Loan & EMI Repayment",
-      "sum of amount":-375328.5,
-      "count":53
-   },
-   {
-      "category":"Loan Disbursed",
-      "sum of amount":295849.0,
-      "count":9
-   },
-   {
-      "category":"Reversal",
-      "sum of amount":2526.4,
-      "count":3
-   },
-   {
-      "category":"Salary",
-      "sum of amount":233800.0,
-      "count":7
-   },
-   {
-      "category":"Share Purchase",
-      "sum of amount":-923700.0,
-      "count":92
-   },
-   {
-      "category":"Share Sell",
-      "sum of amount":363215.9400000001,
-      "count":36
-   },
-   {
-      "category":"Shopping & Purchase",
-      "sum of amount":-127158.04,
-      "count":13
-   },
-   {
-      "category":"Tax",
-      "sum of amount":44810.0,
-      "count":1
-   },
-   {
-      "category":"Transfer in",
-      "sum of amount":805546.79,
-      "count":84
-   },
-   {
-      "category":"Transfer out",
-      "sum of amount":-625964.9399999999,
-      "count":142
-   },
-   {
-      "category":"Travel",
-      "sum of amount":-8357.08,
-      "count":12
-   }
+    {
+        "category": "Alcohol",
+        "sum of amount": -110.0,
+        "count": 1
+    },
+    {
+        "category": "Bills & Utilities",
+        "sum of amount": -669.0,
+        "count": 1
+    },
+    {
+        "category": "Cash Withdrawal",
+        "sum of amount": -182000.0,
+        "count": 14
+    },
+    {
+        "category": "Electricity bill",
+        "sum of amount": -8340.0,
+        "count": 2
+    },
+    {
+        "category": "Entertainment & Lifestyle",
+        "sum of amount": -85.0,
+        "count": 3
+    },
+    {
+        "category": "Food",
+        "sum of amount": -17486.0,
+        "count": 26
+    },
+    {
+        "category": "Gaming",
+        "sum of amount": -1245.0,
+        "count": 5
+    },
+    {
+        "category": "Gas bill",
+        "sum of amount": -5780.0,
+        "count": 3
+    },
+    {
+        "category": "Investment Expense",
+        "sum of amount": -35000.0,
+        "count": 7
+    },
+    {
+        "category": "Share Purchase",
+        "sum of amount": -923700.0,
+        "count": 92
+    },
+    {
+        "category": "Shopping & Purchase",
+        "sum of amount": -154398.21,
+        "count": 52
+    },
+    {
+        "category": "Transfer out",
+        "sum of amount": -582706.64,
+        "count": 74
+    },
+    {
+        "category": "Travel",
+        "sum of amount": -12182.88,
+        "count": 15
+    }
 ]
