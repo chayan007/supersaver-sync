@@ -162,3 +162,4 @@ cython_debug/
 
 ml/categorization_models/*
 
+ml/categorization_models.zip

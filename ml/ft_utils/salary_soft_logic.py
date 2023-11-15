@@ -3,11 +3,9 @@ import re
 from datetime import datetime
 from nltk.tokenize import RegexpTokenizer
 from fuzzywuzzy import fuzz
-# from ft_utils.preprocess import *
 import fasttext
 import logging
 from time import time
-# import psutil
 import warnings
 import pylcs
 from itertools import product
