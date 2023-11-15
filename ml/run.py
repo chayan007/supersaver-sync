@@ -44,19 +44,19 @@ def process_json_file(data):
                             if transaction.get('type') == "DEBIT":
                                 transaction_data.append({
                                     "Narration": transaction.get('narration', ''),
-                                    "transaction_amount": transaction.get('amount', ''),
+                                    "transaction_amount": -float(transaction.get('amount', '')),
                                     "transaction_type": transaction.get('type', ''),
                                     "transaction_timestamp": transaction.get('transactionTimestamp', ''),
-                                    "balance": -float(transaction.get('currentBalance', '')),
+                                    "balance": transaction.get('currentBalance', ''),
                                     "masked_acc": masked_acc
                                 })
                             elif transaction.get('type') == "CREDIT":
                                 transaction_data.append({
                                     "Narration": transaction.get('narration', ''),
-                                    "transaction_amount": transaction.get('amount', ''),
+                                    "transaction_amount": float(transaction.get('amount', '')),
                                     "transaction_type": transaction.get('type', ''),
                                     "transaction_timestamp": transaction.get('transactionTimestamp', ''),
-                                    "balance": float(transaction.get('currentBalance', '')),
+                                    "balance": transaction.get('currentBalance', ''),
                                     "masked_acc": masked_acc
                                 })
                     except Exception as e:
@@ -142,6 +142,13 @@ class Categorise:
         df_out['category'] = df_out[['narration', 'category']].apply(sender_info, axis=1)
         df_out['category'] = df_out[['narration', 'category']].apply(receiver_info, axis=1)
 
+        df_out['vendor'] = df_out[['narration', 'category']].apply(sender_info, axis=1)
+        df_out['vendor'] = df_out[['narration', 'category']].apply(receiver_info, axis=1)
+
+        mask = (df_out['vendor'].str.startswith("Transfer to") | df_out['vendor'].str.startswith("Transfer from"))
+        df_out.loc[~mask, 'vendor'] = ""
+        df_out['vendor'] = df_out['vendor'].str.replace("Transfer to ", "").str.replace("Transfer from ", "").str.strip()
+
         return df_out
 
     def __init__(self, data_type: str, apply_salary_logic: bool=False):
@@ -211,7 +218,7 @@ class Categorise:
             return df
 
         except Exception as e:
-            raise e
+            # raise e
             print(f"Exception in {self.data_type} is: {e}")
             return None
 
@@ -221,9 +228,10 @@ def bankCategorization(data, account_type='', sub_categorization=False, upi_id=F
 
     try:
         bankdata = process_json_file(data)
+
         print(bankdata.columns)
         input_cols = bankdata.columns.tolist()
-        output_cols = ['category', 'employer', 'sub_category']
+        output_cols = ['category', 'employer', 'vendor']
         print(bankdata.shape)
         bankdata['preproc_narration'] = bankdata['narration'].map(eval('clean_narration1'))
         bankdata['function'] = ''
@@ -248,8 +256,8 @@ def bankCategorization(data, account_type='', sub_categorization=False, upi_id=F
         categorise_credit = Categorise(data_type="Credit", apply_salary_logic=apply_salary_logic)
         categorise_debit = Categorise(data_type="Debit")
 
-        credit_df = bankdata[bankdata['amount'] >= 0]
-        debit_df = bankdata[bankdata['amount'] < 0]
+        credit_df = bankdata[bankdata['type']=='CREDIT']
+        debit_df = bankdata[bankdata['type']=='DEBIT']
 
         futures_to_call = []
         with concurrent.futures.ProcessPoolExecutor() as executor:
@@ -313,14 +321,29 @@ def bankCategorization(data, account_type='', sub_categorization=False, upi_id=F
         df_out = df_out.sort_values(by='seq_id')
         df_out.drop(columns=['seq_id'], inplace=True)
 
+        df_out['category1'] = df_out['category']
+        df_out.loc[df_out['category1'].str.startswith("Transfer from"), "category1"] = "Transfer in"
+        df_out.loc[df_out['category1'].str.startswith("Transfer to"), "category1"] = "Transfer out"
+        df_out.loc[df_out['category'].str.startswith("Transfer from"), "category"] = "Transfer in"
+        df_out.loc[df_out['category'].str.startswith("Transfer to"), "category"] = "Transfer out"
+        df_out['date'] = pd.to_datetime(df_out['date'])
+        df_out['vendor1'] = df_out['vendor']
+
+        df_out1 = df_out[['amount', 'date', 'category1', 'category']].groupby('category').agg({'amount': 'sum', 'category1': 'size', 'date': lambda x: list(x)}).reset_index()
+        df_out2 = df_out[['amount', 'date', 'vendor1', 'vendor']].groupby('vendor').agg({'amount': 'sum', 'vendor1': 'size', 'date': lambda x: list(x)}).reset_index()
+
+        df_out1 = df_out[['amount', 'date', 'category1', 'category']].groupby('category').agg({'amount': 'sum', 'category1': 'size'}).reset_index()
+        df_out2 = df_out[['amount', 'date', 'vendor1', 'vendor']].groupby('vendor').agg({'amount': 'sum', 'vendor1': 'size'}).reset_index()
+
     except Exception as e:
-        raise e
+        # raise e
         df_out = None
 
     df_out = df_out[input_cols + output_cols]
-    df_out.rename(columns={'cleaned_narration_ft': 'cleaned_narration_salary'}, inplace=True)
+    df_out1.rename(columns={'amount':'sum of amount', 'category1':'count', 'date':'date_lst'}, inplace=True)
+    df_out2.rename(columns={'amount': 'sum of amount', 'vendor1': 'count', 'date': 'date_lst'}, inplace=True)
     print(f"Total time for Version 3.0={time() - start_time}")
-    return df_out
+    return df_out, df_out1, df_out2
 
 
 
