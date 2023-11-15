@@ -221,6 +221,19 @@ def get_nach_date_report(report_json):
 
 
 
+with open("/home/ramnaryanpanda/Downloads/with_category_vars_data_dafaf20 (1).json") as file:
+    report_json = json.load(file)
+print(get_nach_date_report(report_json))
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -28,6 +28,55 @@ ft_to_orig_mapping.update(ft_to_orig_mapping_credit)
 ft_to_orig_mapping.update(ft_to_orig_mapping_debit)
 
 
+def process_json_file(data):
+    transaction_data = []
+
+    for key, value in data.items():
+        if isinstance(value, list):
+            for item in value:
+                masked_acc = value[0].get('masked_account')
+                if 'decrypted_data' in item:
+                    try:
+                        transactions = item['decrypted_data']['Account'].get('Transactions', {}).get('Transaction', [])
+                        transactions = [transactions] if isinstance(transactions, dict) else transactions
+
+                        for transaction in transactions:
+                            if transaction.get('type') == "DEBIT":
+                                transaction_data.append({
+                                    "Narration": transaction.get('narration', ''),
+                                    "transaction_amount": transaction.get('amount', ''),
+                                    "transaction_type": transaction.get('type', ''),
+                                    "transaction_timestamp": transaction.get('transactionTimestamp', ''),
+                                    "balance": -float(transaction.get('currentBalance', '')),
+                                    "masked_acc": masked_acc
+                                })
+                            elif transaction.get('type') == "CREDIT":
+                                transaction_data.append({
+                                    "Narration": transaction.get('narration', ''),
+                                    "transaction_amount": transaction.get('amount', ''),
+                                    "transaction_type": transaction.get('type', ''),
+                                    "transaction_timestamp": transaction.get('transactionTimestamp', ''),
+                                    "balance": float(transaction.get('currentBalance', '')),
+                                    "masked_acc": masked_acc
+                                })
+                    except Exception as e:
+                        # print("here I go on the road again", transaction)
+                        raise e
+
+
+    df = pd.DataFrame(transaction_data)
+    df.rename(columns={'Narration':'narration',
+                       'transaction_amount':'amount',
+                       'transaction_timestamp':'date',
+                       'transaction_type':'type'}, inplace=True)
+    # df['date'] = pd.to_datetime(df['date'])
+    # df['date'] = df['date'].dt.date
+    df['date'] = df['date'].astype('datetime64')
+    df['amount'] = df['amount'].astype('float64')
+
+    return df
+
+
 class Categorise:
 
     @staticmethod
@@ -167,12 +216,14 @@ class Categorise:
             return None
 
 
-def bankCategorization(bankdata, account_type='', sub_categorization=False, upi_id=False, upi_sub_category_data_df=None):
-    input_cols = bankdata.columns.tolist()
-    output_cols = ['category', 'employer', 'sub_category']
+def bankCategorization(data, account_type='', sub_categorization=False, upi_id=False, upi_sub_category_data_df=None):
     start_time = time()
 
     try:
+        bankdata = process_json_file(data)
+        print(bankdata.columns)
+        input_cols = bankdata.columns.tolist()
+        output_cols = ['category', 'employer', 'sub_category']
         print(bankdata.shape)
         bankdata['preproc_narration'] = bankdata['narration'].map(eval('clean_narration1'))
         bankdata['function'] = ''
