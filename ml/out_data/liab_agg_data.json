@@ -1,0 +1,87 @@
+[
+    {
+        "category": "Alcohol",
+        "sum of amount": -110.0,
+        "count": 1
+    },
+    {
+        "category": "Bills & Utilities",
+        "sum of amount": -669.0,
+        "count": 1
+    },
+    {
+        "category": "Cash Withdrawal",
+        "sum of amount": -182000.0,
+        "count": 14
+    },
+    {
+        "category": "CreditCard Payment",
+        "sum of amount": -928034.0,
+        "count": 12
+    },
+    {
+        "category": "Electricity bill",
+        "sum of amount": -8340.0,
+        "count": 2
+    },
+    {
+        "category": "Entertainment & Lifestyle",
+        "sum of amount": -85.0,
+        "count": 3
+    },
+    {
+        "category": "Food",
+        "sum of amount": -17486.0,
+        "count": 26
+    },
+    {
+        "category": "Gaming",
+        "sum of amount": -1245.0,
+        "count": 5
+    },
+    {
+        "category": "Gas bill",
+        "sum of amount": -5780.0,
+        "count": 3
+    },
+    {
+        "category": "Home Loan",
+        "sum of amount": -58989.0,
+        "count": 7
+    },
+    {
+        "category": "Insurance",
+        "sum of amount": -25447.0,
+        "count": 8
+    },
+    {
+        "category": "Investment Expense",
+        "sum of amount": -35000.0,
+        "count": 7
+    },
+    {
+        "category": "Loan & EMI Repayment",
+        "sum of amount": -377865.14,
+        "count": 57
+    },
+    {
+        "category": "Share Purchase",
+        "sum of amount": -923700.0,
+        "count": 92
+    },
+    {
+        "category": "Shopping & Purchase",
+        "sum of amount": -154398.21,
+        "count": 52
+    },
+    {
+        "category": "Transfer out",
+        "sum of amount": -582706.64,
+        "count": 74
+    },
+    {
+        "category": "Travel",
+        "sum of amount": -12182.88,
+        "count": 15
+    }
+]

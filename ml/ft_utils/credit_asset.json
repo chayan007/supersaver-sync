@@ -1,0 +1,20 @@
+{
+"Salary": "Asset",
+"Cash Deposit": "Asset",
+"Loan Disbursed": "Asset",
+"Investment Income": "Asset",
+"Insurance": "Asset",
+"Rewards & Allowances": "Asset",
+"Tax": "Asset",
+"Interest": "Asset",
+"Reversal": "Asset",
+"Transfer in": "Asset",
+"Bounced I/W Cheque": "Negative event",
+"Bounced I/W ECS": "Negative event",
+"Crypto Transaction": "Asset",
+"Fixed Deposit": "Asset",
+"Share Sell": "Asset",
+"MF Redemption": "Asset",
+"Small Savings": "Asset",
+"Dividend": "Asset"
+}
