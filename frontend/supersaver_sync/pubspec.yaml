@@ -14,6 +14,17 @@ dependencies:
   flutter_localizations:
     sdk: flutter
   intl: ^0.18.0
+  coupon_uikit: ^0.2.0
+  dropdown_textfield:
+  stylish_bottom_bar:
+  fl_chart:
+  cached_network_image:
+  dio: ^4.0.0
+  json_annotation:
+  json_serializable:
+  http:
+  blur:
+  awesome_card:
 
 dev_dependencies:
   bloc_test: ^9.1.4
@@ -21,7 +32,11 @@ dev_dependencies:
     sdk: flutter
   mocktail: ^1.0.0
   very_good_analysis: ^5.1.0
+  build_runner:
 
 flutter:
   uses-material-design: true
   generate: true
+
+  assets:
+    - assets/image/
