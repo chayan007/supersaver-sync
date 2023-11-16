@@ -35,7 +35,7 @@ class _CouponListPageState extends State<CouponListPage> {
     },
     1: {
       "title": "Coupons Waiting For You",
-      "api_url": Endpoints.baseUrl + Endpoints.coupons,
+      "api_url": Endpoints.baseUrl + Endpoints.alternateCoupons,
       "image_url": "https://img.icons8.com/ios/50/budget.png"
     },
     2: {

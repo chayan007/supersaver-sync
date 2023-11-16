@@ -102,9 +102,11 @@ class _RegisterPageState extends State<RegisterPage> {
                     }
                   },
                   dropDownList: const [
-                    DropDownValueModel(name: '1', value: "1"),
-                    DropDownValueModel(name: '2', value: "2"),
-                    DropDownValueModel(name: '3', value: "3"),
+                    DropDownValueModel(value: '1', name: "1 months"),
+                    DropDownValueModel(value: '2', name: "3 months"),
+                    DropDownValueModel(value: '3', name: "6 months"),
+                    DropDownValueModel(value: '3', name: "9 months"),
+                    DropDownValueModel(value: '3', name: "12 months"),
                   ],
                   listTextStyle: const TextStyle(color: Color(0xAA004165)),
                   dropDownItemCount: 3,
