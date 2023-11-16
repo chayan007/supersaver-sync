@@ -4,18 +4,28 @@ import 'package:stylish_bottom_bar/stylish_bottom_bar.dart';
 import 'package:supersaver_sync/screens/account_page.dart';
 import 'package:supersaver_sync/screens/category_page.dart';
 import 'package:supersaver_sync/screens/coupon_list.dart';
+import 'package:supersaver_sync/screens/history_page.dart';
 
 class HomePageMain extends StatefulWidget {
-  const HomePageMain({super.key});
+  const HomePageMain({super.key, required this.defaultPage});
+  final int defaultPage;
 
   @override
   State<HomePageMain> createState() => _HomePageMainState();
 }
 
 class _HomePageMainState extends State<HomePageMain> {
-  PageController controller = PageController();
+  late PageController controller;
   int selected = 0;
   var heart = false;
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    controller = PageController(initialPage: widget.defaultPage);
+    selected = widget.defaultPage;
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -54,7 +64,7 @@ class _HomePageMainState extends State<HomePageMain> {
                 controller: controller,
                 children: [
                   CouponListPage(),
-                  Center(child: Text('Star')),
+                  HistoryPage(),
                   CategoryPage(),
                   AccountsPage()
                 ],
@@ -80,12 +90,12 @@ class _HomePageMainState extends State<HomePageMain> {
             badgeColor: Colors.purple,
           ),
           BottomBarItem(
-            icon: const Icon(Icons.search_outlined),
-            selectedIcon: const Icon(Icons.search),
+            icon: const Icon(Icons.history_outlined),
+            selectedIcon: const Icon(Icons.history_rounded),
             selectedColor: Colors.teal,
             unSelectedColor: Colors.grey,
             // backgroundColor: Colors.orange,
-            title: const Text('Search'),
+            title: const Text('History'),
           ),
           BottomBarItem(
               icon: const Icon(

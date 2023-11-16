@@ -39,10 +39,10 @@ class _CategoryPageState extends State<CategoryPage> {
       "image_url": "https://img.icons8.com/officel/80/piping.png"
     },
     2: {
-      "title": "Expenditure Graph",
-      "subtitle": "Expenditure  Categories",
-      "api_url": Endpoints.baseUrl + Endpoints.dashoardLiabilities,
-      "image_url": "https://img.icons8.com/officel/80/piping.png"
+      "title": "EMI Graph",
+      "subtitle": "EMI  Categories",
+      "api_url": Endpoints.baseUrl + Endpoints.dashboardEMI,
+      "image_url": "https://img.icons8.com/parakeet/48/buy-now-pay-later.png"
     }
   };
 
@@ -83,11 +83,10 @@ class _CategoryPageState extends State<CategoryPage> {
       child: InkWell(
         onTap: () {
           _responseData = [];
-          _fetchData();
-
           setState(() {
             selected = value;
           });
+          _fetchData();
         },
         child: Container(
           padding: EdgeInsets.symmetric(horizontal: 10),

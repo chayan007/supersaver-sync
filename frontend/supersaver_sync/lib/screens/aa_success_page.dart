@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:supersaver_sync/screens/homepage.dart';
 import 'package:supersaver_sync/screens/main_home.dart';
 
 class AASuccessPage extends StatefulWidget {
@@ -72,16 +73,21 @@ class _AASuccessPageState extends State<AASuccessPage> {
                   Navigator.of(context).pop();
                   Navigator.of(context).pop();
                   Navigator.of(context).pop();
+                  Navigator.of(context).pop();
+                  Navigator.of(context).pop();
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => HomePageMain()),
+                    MaterialPageRoute(
+                        builder: (context) => HomePageMain(
+                              defaultPage: 3,
+                            )),
                   );
                 },
                 child: Row(
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     Text(
-                      'Continue',
+                      'View Fetched Data',
                       style: TextStyle(
                           color: Colors.white,
                           fontSize: 25,

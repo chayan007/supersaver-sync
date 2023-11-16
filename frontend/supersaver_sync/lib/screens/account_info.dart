@@ -5,6 +5,7 @@ import 'package:http/http.dart' as http;
 import 'package:supersaver_sync/config/endpoints.dart';
 import 'package:supersaver_sync/models/linked_banks.dart';
 import 'package:supersaver_sync/screens/register_page.dart';
+import 'package:supersaver_sync/screens/view_transaction.dart';
 import 'package:supersaver_sync/services/dio_service.dart';
 
 class AccountInfo extends StatefulWidget {
@@ -178,7 +179,13 @@ class _AccountInfoState extends State<AccountInfo> {
               ),
               Center(
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => ViewTransaction()),
+                    );
+                  },
                   child: Row(
                     mainAxisSize: MainAxisSize.min,
                     children: [

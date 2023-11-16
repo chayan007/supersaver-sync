@@ -1,6 +1,7 @@
 import 'package:dropdown_textfield/dropdown_textfield.dart';
 import 'package:flutter/material.dart';
 import 'package:supersaver_sync/screens/aa_success_page.dart';
+import 'package:supersaver_sync/screens/anumati_login.dart';
 import 'package:supersaver_sync/screens/main_home.dart';
 
 class RegisterPage extends StatefulWidget {
@@ -122,8 +123,12 @@ class _RegisterPageState extends State<RegisterPage> {
                     // Add your logic for "Yes" here
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => AASuccessPage()),
+                      MaterialPageRoute(builder: (context) => AnumatiLogin()),
                     );
+                    // Navigator.push(
+                    //   context,
+                    //   MaterialPageRoute(builder: (context) => AASuccessPage()),
+                    // );
                   },
                   child: Text(
                     'YES',
