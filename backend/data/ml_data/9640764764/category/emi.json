@@ -1,0 +1,22 @@
+[
+    {
+        "category": "CreditCard Payment",
+        "sum of amount": -928034.0,
+        "count": 12
+    },
+    {
+        "category": "Auto Loan",
+        "sum of amount": -58989.0,
+        "count": 7
+    },
+    {
+        "category": "Insurance",
+        "sum of amount": -25447.0,
+        "count": 8
+    },
+    {
+        "category": "Home Loan",
+        "sum of amount": -377865.14,
+        "count": 57
+    }
+]

@@ -6,27 +6,15 @@ from starlette import status
 from dependencies.constants import SuperSaverSyncConstants
 from dependencies.logger import logger
 
-profile_router = APIRouter()
+dashboard_router = APIRouter()
 
 
-@profile_router.get("/linked-banks")
-def get_linked_banks(mobile: str):
+@dashboard_router.get("/assets")
+def get_assets(mobile: str):
     try:
-        aa_file = open(f"data/aa_data/{mobile}.json", mode='rb')
-        aa_report = json.load(aa_file)
-
-        bank_identifiers = aa_report.keys()
-        linked_banks = []
-
-        for bank_identifier in bank_identifiers:
-            linked_banks.append({
-                "bank_name": SuperSaverSyncConstants.BANK_IDENTIFIER_MAPPING[bank_identifier][0],
-                "bank_account": aa_report[bank_identifier][0].get('masked_account'),
-                "bank_identifier": bank_identifier,
-                "bank_logo": SuperSaverSyncConstants.BANK_IDENTIFIER_MAPPING[bank_identifier][1]
-            })
-
-        return linked_banks
+        coupon_file = open(f"data/ml_data/{mobile}/category/assets.json", mode='rb')
+        coupon_list = json.load(coupon_file)
+        return coupon_list
 
     except Exception:
         logger.exception("Find traceback below")
@@ -36,18 +24,12 @@ def get_linked_banks(mobile: str):
         )
 
 
-@profile_router.get("/transactions")
-def get_transactions(mobile: str, bank_identifier: str, page: int):
+@dashboard_router.get("/liabilities")
+def get_liabilities(mobile: str):
     try:
-        aa_file = open(f"data/aa_data/{mobile}.json", mode='rb')
-        aa_report = json.load(aa_file)
-
-        bank_data = aa_report[bank_identifier][0]
-        transaction_list = bank_data['decrypted_data']['Account']['Transactions']['Transaction']
-
-        offset = (page - 1) * SuperSaverSyncConstants.DEFAULT_PAGE_SIZE
-        limit = offset + SuperSaverSyncConstants.DEFAULT_PAGE_SIZE
-        return transaction_list[offset:limit]
+        cc_file = open(f"data/ml_data/{mobile}/category/liabilities.json", mode='rb')
+        cc_list = json.load(cc_file)
+        return cc_list
 
     except Exception:
         logger.exception("Find traceback below")
@@ -57,18 +39,27 @@ def get_transactions(mobile: str, bank_identifier: str, page: int):
         )
 
 
-@profile_router.get("/history")
-def get_transactions(mobile: str, bank_identifier: str, page: int):
+@dashboard_router.get("/emi")
+def get_liabilities(mobile: str):
     try:
-        aa_file = open(f"data/aa_data/{mobile}.json", mode='rb')
-        aa_report = json.load(aa_file)
+        cc_file = open(f"data/ml_data/{mobile}/category/emi.json", mode='rb')
+        cc_list = json.load(cc_file)
+        return cc_list
 
-        bank_data = aa_report[bank_identifier][0]
-        transaction_list = bank_data['decrypted_data']['Account']['Transactions']['Transaction']
+    except Exception:
+        logger.exception("Find traceback below")
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=SuperSaverSyncConstants.INTERNAL_ERROR_JSON,
+        )
 
-        offset = (page - 1) * SuperSaverSyncConstants.DEFAULT_PAGE_SIZE
-        limit = offset + SuperSaverSyncConstants.DEFAULT_PAGE_SIZE
-        return transaction_list[offset:limit]
+
+@dashboard_router.get("/vendors")
+def get_vendors(mobile: str):
+    try:
+        vendor_file = open(f"data/ml_data/{mobile}/vendor.json", mode='rb')
+        vendor_list = json.load(vendor_file)
+        return vendor_list
 
     except Exception:
         logger.exception("Find traceback below")
