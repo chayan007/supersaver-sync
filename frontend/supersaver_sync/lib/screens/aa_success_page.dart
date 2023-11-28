@@ -18,29 +18,29 @@ class _AASuccessPageState extends State<AASuccessPage> {
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 20),
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                CircleAvatar(
-                  radius: 25.0, // Adjust the radius as needed
-                  backgroundColor: Color(0xAA004165), // Set background color
-                  child: Icon(
-                    size: 50,
-                    Icons.account_circle,
-                    color: Colors.white, // Set icon color
-                  ),
-                ),
-                IconButton(
-                    onPressed: () {},
-                    icon: Icon(
-                      Icons.menu,
-                      size: 60,
-                      color: Color(0xAA004165),
-                    ))
-              ],
-            ),
+            // Row(
+            //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            //   children: [
+            //     CircleAvatar(
+            //       radius: 25.0, // Adjust the radius as needed
+            //       backgroundColor: Color(0xAA004165), // Set background color
+            //       child: Icon(
+            //         size: 50,
+            //         Icons.account_circle,
+            //         color: Colors.white, // Set icon color
+            //       ),
+            //     ),
+            //     IconButton(
+            //         onPressed: () {},
+            //         icon: Icon(
+            //           Icons.menu,
+            //           size: 60,
+            //           color: Color(0xAA004165),
+            //         ))
+            //   ],
+            // ),
             Column(
               children: [
                 Text(
@@ -65,6 +65,9 @@ class _AASuccessPageState extends State<AASuccessPage> {
                   ),
                 )
               ],
+            ),
+            SizedBox(
+              height: 40,
             ),
             Center(
               child: ElevatedButton(

@@ -8,6 +8,7 @@ import 'package:flutter/material.dart';
 import 'package:supersaver_sync/config/endpoints.dart';
 import 'package:supersaver_sync/models/card_line.dart';
 import 'package:supersaver_sync/models/coupon.dart';
+import 'package:supersaver_sync/widgets/vertical_coupon.dart';
 
 class CouponListPage extends StatefulWidget {
   const CouponListPage({super.key});
@@ -35,7 +36,7 @@ class _CouponListPageState extends State<CouponListPage> {
     },
     1: {
       "title": "Coupons Waiting For You",
-      "api_url": Endpoints.baseUrl + Endpoints.coupons,
+      "api_url": Endpoints.baseUrl + Endpoints.alternateCoupons,
       "image_url": "https://img.icons8.com/ios/50/budget.png"
     },
     2: {
@@ -120,98 +121,107 @@ class _CouponListPageState extends State<CouponListPage> {
     // const Color secondaryColor = Color(0xff368f8b);
     Color primaryColor = stringToColor(item.couponHexCode, type: 'primary');
     Color secondaryColor = stringToColor(item.couponHexCode);
-    return CouponCard(
-      height: 150,
-      backgroundColor: primaryColor,
-      curveAxis: Axis.vertical,
-      firstChild: Container(
-        decoration: BoxDecoration(
-          color: secondaryColor,
-        ),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Expanded(
-              child: Center(
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    Text(
-                      (item.discountAmount == 0)
-                          ? item.discountRate!.toString() + "%"
-                          : item.discountAmount!.toString() + "₹",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 24,
-                        fontWeight: FontWeight.bold,
+    return InkWell(
+      onTap: () {
+        Navigator.of(context).push(MaterialPageRoute(
+            builder: (context) => VerticalCoupon(
+                  couponItem: item,
+                  primaryColor: primaryColor,
+                )));
+      },
+      child: CouponCard(
+        height: 150,
+        backgroundColor: primaryColor,
+        curveAxis: Axis.vertical,
+        firstChild: Container(
+          decoration: BoxDecoration(
+            color: secondaryColor,
+          ),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Expanded(
+                child: Center(
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Text(
+                        (item.discountAmount == 0)
+                            ? item.discountRate!.toString() + "%"
+                            : item.discountAmount!.toString() + "₹",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 24,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
-                    ),
-                    Text(
-                      'OFF',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 16,
-                        fontWeight: FontWeight.bold,
+                      Text(
+                        'OFF',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-            const Divider(color: Colors.white54, height: 0),
-            Expanded(
-              child: Center(
-                child: Text(
-                  item.couponName!,
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 12,
-                    fontWeight: FontWeight.bold,
+                    ],
                   ),
                 ),
               ),
-            ),
-          ],
+              const Divider(color: Colors.white54, height: 0),
+              Expanded(
+                child: Center(
+                  child: Text(
+                    item.couponName!,
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 12,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
         ),
-      ),
-      secondChild: Container(
-        width: double.maxFinite,
-        padding: const EdgeInsets.all(18),
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              'Coupon Code',
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                fontSize: 13,
-                fontWeight: FontWeight.bold,
-                color: Colors.black54,
+        secondChild: Container(
+          width: double.maxFinite,
+          padding: const EdgeInsets.all(18),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                'Coupon Code',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 13,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black54,
+                ),
               ),
-            ),
-            SizedBox(height: 4),
-            Text(
-              item.couponCode!,
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                fontSize: 24,
-                color: secondaryColor,
-                fontWeight: FontWeight.bold,
+              SizedBox(height: 4),
+              Text(
+                "Tap to Reveal",
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 24,
+                  color: secondaryColor,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
-            ),
-            Spacer(),
-            Text(
-              (item.discountLimit != 0)
-                  ? "Upto: " + item.discountLimit!.toString() + " ₹"
-                  : "",
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                color: Colors.black45,
+              Spacer(),
+              Text(
+                (item.discountLimit != 0)
+                    ? "Upto: " + item.discountLimit!.toString() + " ₹"
+                    : "",
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  color: Colors.black45,
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );

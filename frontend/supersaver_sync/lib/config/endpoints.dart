@@ -12,7 +12,9 @@ class Endpoints {
   // connectTimeout
   static const Duration connectionTimeout = Duration(seconds: 4);
 
-  static const String coupons = '/offerings/coupons?mobile=1';
+  static const String coupons = '/offerings/actual-coupons?mobile=1';
+  static const String alternateCoupons =
+      '/offerings/alternate-coupons?mobile=1';
   static const String creditCards = '/offerings/credit_cards?mobile=1';
 
   static const String linkedBanks = '/profile/linked-banks?mobile=9640764764';

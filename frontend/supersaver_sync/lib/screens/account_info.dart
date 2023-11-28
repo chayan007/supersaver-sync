@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+import 'package:supersaver_sync/app/app.dart';
 import 'package:supersaver_sync/config/endpoints.dart';
 import 'package:supersaver_sync/models/linked_banks.dart';
 import 'package:supersaver_sync/screens/register_page.dart';
@@ -33,32 +34,48 @@ class _AccountInfoState extends State<AccountInfo> {
     return SafeArea(
       child: Scaffold(
         backgroundColor: Colors.white,
+        appBar: AppBar(
+            leading: IconButton(
+          onPressed: () {
+            Navigator.of(context).pop();
+          },
+          icon: Icon(Icons.arrow_back_ios),
+          color: Colors.grey,
+        )),
         body: Container(
           child: Padding(
             padding: EdgeInsets.symmetric(horizontal: 20),
             child:
                 Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  CircleAvatar(
-                    radius: 25.0, // Adjust the radius as needed
-                    backgroundColor: Color(0xAA004165), // Set background color
-                    child: Icon(
-                      size: 50,
-                      Icons.account_circle,
-                      color: Colors.white, // Set icon color
-                    ),
-                  ),
-                  IconButton(
-                      onPressed: () {},
-                      icon: Icon(
-                        Icons.menu,
-                        size: 60,
-                        color: Color(0xAA004165),
-                      ))
-                ],
-              ),
+              // Row(
+              //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              //   children: [
+              //     CircleAvatar(
+              //       radius: 25.0, // Adjust the radius as needed
+              //       backgroundColor: Color(0xAA004165), // Set background color
+              //       child: Icon(
+              //         size: 50,
+              //         Icons.account_circle,
+              //         color: Colors.white, // Set icon color
+              //       ),
+              //     ),
+              //     IconButton(
+              //         onPressed: () {},
+              //         icon: Icon(
+              //           Icons.menu,
+              //           size: 60,
+              //           color: Color(0xAA004165),
+              //         ))
+              //   ],
+              // ),
+              // IconButton(
+              //     onPressed: () {
+              //       Navigator.of(context).pop();
+              //     },
+              //     icon: Icon(
+              //       Icons.arrow_back_ios_new,
+              //       size: 25,
+              //     )),
               Text(
                 "Accounts Details",
                 style: TextStyle(

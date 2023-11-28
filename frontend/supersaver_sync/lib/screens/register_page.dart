@@ -18,6 +18,13 @@ class _RegisterPageState extends State<RegisterPage> {
     return SafeArea(
       child: Scaffold(
         backgroundColor: Colors.white,
+        bottomNavigationBar: Padding(
+          padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+          child: Text(
+            'Disclaimer: AA records will be pulled daily for better recommendations',
+            style: TextStyle(color: Colors.grey, fontWeight: FontWeight.w600),
+          ),
+        ),
         body: Padding(
           padding: EdgeInsets.symmetric(horizontal: 20),
           child: Column(
@@ -74,9 +81,9 @@ class _RegisterPageState extends State<RegisterPage> {
                     }
                   },
                   dropDownList: const [
-                    DropDownValueModel(name: 'Finvu', value: "value1"),
-                    DropDownValueModel(name: 'oneMoney', value: "value2"),
-                    DropDownValueModel(name: 'Sahamati', value: "value3"),
+                    DropDownValueModel(name: 'Sahamati', value: "value1"),
+                    DropDownValueModel(name: 'Finvu', value: "value2"),
+                    DropDownValueModel(name: 'oneMoney', value: "value3"),
                   ],
                   listTextStyle: const TextStyle(color: Color(0xAA004165)),
                   dropDownItemCount: 3,
@@ -102,9 +109,11 @@ class _RegisterPageState extends State<RegisterPage> {
                     }
                   },
                   dropDownList: const [
-                    DropDownValueModel(name: '1', value: "1"),
-                    DropDownValueModel(name: '2', value: "2"),
-                    DropDownValueModel(name: '3', value: "3"),
+                    DropDownValueModel(value: '1', name: "1 months"),
+                    DropDownValueModel(value: '2', name: "3 months"),
+                    DropDownValueModel(value: '3', name: "6 months"),
+                    DropDownValueModel(value: '3', name: "9 months"),
+                    DropDownValueModel(value: '3', name: "12 months"),
                   ],
                   listTextStyle: const TextStyle(color: Color(0xAA004165)),
                   dropDownItemCount: 3,
