@@ -1,622 +1,296 @@
 [
    {
-      "vendor":"",
-      "sum of amount":43345.56,
-      "count":341
+      "vendor":"ANGEL LTD NSE",
+      "sub_category":"Share Purchase",
+      "sum of amount":-887500.0,
+      "count":89
    },
    {
-      "vendor":"1000220413000026.9823037189@IDBI",
-      "sum of amount":-3400.0,
-      "count":1
-   },
-   {
-      "vendor":"11165746056@OKBIZAXIS",
-      "sum of amount":-130.0,
-      "count":1
-   },
-   {
-      "vendor":"11193578809@OKBIZAXIS",
-      "sum of amount":-120.0,
-      "count":3
-   },
-   {
-      "vendor":"11197216612@OKBIZAXIS",
-      "sum of amount":-55.0,
-      "count":1
-   },
-   {
-      "vendor":"11199836926@OKBIZAXIS",
-      "sum of amount":-20.0,
-      "count":1
-   },
-   {
-      "vendor":"11202525179@OKBIZAXIS",
-      "sum of amount":-250.0,
-      "count":1
-   },
-   {
-      "vendor":"11204550944@OKBIZAXIS",
-      "sum of amount":-270.0,
-      "count":1
-   },
-   {
-      "vendor":"11204613853@OKBIZAXIS",
-      "sum of amount":-80.0,
+      "vendor":"Angel One Limited",
+      "sub_category":"Share Purchase",
+      "sum of amount":-30400.0,
       "count":2
    },
    {
-      "vendor":"11208455766@OKBIZAXIS",
-      "sum of amount":-400.0,
-      "count":1
-   },
-   {
-      "vendor":"11208756384@OKBIZAXIS",
-      "sum of amount":-1000.0,
-      "count":1
-   },
-   {
-      "vendor":"11220979150@OK",
-      "sum of amount":-10.0,
-      "count":1
-   },
-   {
-      "vendor":"11222909492@OKBIZAXIS",
-      "sum of amount":-60.0,
-      "count":1
-   },
-   {
-      "vendor":"1975SREENIVAS@OKHDFCBANK",
-      "sum of amount":350.0,
-      "count":2
-   },
-   {
-      "vendor":"59414869@PAYTM",
-      "sum of amount":-399.02,
-      "count":1
-   },
-   {
-      "vendor":"6355080256@IBL",
-      "sum of amount":-40.0,
-      "count":1
-   },
-   {
-      "vendor":"7285054652@PAYTM",
-      "sum of amount":-100.0,
-      "count":1
-   },
-   {
-      "vendor":"7777998805@PAYTM",
-      "sum of amount":2000.0,
-      "count":1
-   },
-   {
-      "vendor":"8460007469@PAYTM",
-      "sum of amount":1000.0,
-      "count":1
-   },
-   {
-      "vendor":"8511286387@PAYTM",
-      "sum of amount":-3500.0,
-      "count":1
-   },
-   {
-      "vendor":"8897185490@YBL",
-      "sum of amount":50.0,
-      "count":1
-   },
-   {
-      "vendor":"9016548873@YBL",
-      "sum of amount":-100.0,
-      "count":1
-   },
-   {
-      "vendor":"9033360393@OKBIZAXIS",
-      "sum of amount":-1160.0,
-      "count":1
-   },
-   {
-      "vendor":"9537195521@OKBIZAXIS",
-      "sum of amount":-300.0,
-      "count":1
-   },
-   {
-      "vendor":"9601376603@IBL",
-      "sum of amount":-5000.0,
-      "count":1
-   },
-   {
-      "vendor":"9624432777@OKBIZAXIS",
-      "sum of amount":-40.0,
-      "count":1
-   },
-   {
-      "vendor":"9662038175@YBL",
-      "sum of amount":430.0,
-      "count":1
-   },
-   {
-      "vendor":"9726971436@YBL",
-      "sum of amount":-2000.0,
-      "count":1
-   },
-   {
-      "vendor":"9979967711@AXL",
-      "sum of amount":-7001.0,
-      "count":2
-   },
-   {
-      "vendor":"9998170554@YBL",
-      "sum of amount":-5000.0,
-      "count":3
-   },
-   {
-      "vendor":"A\/c",
-      "sum of amount":-3492.0,
-      "count":1
-   },
-   {
-      "vendor":"ANJANAPATEL95585@OKSBI",
-      "sum of amount":-935.0,
-      "count":1
-   },
-   {
-      "vendor":"AVANISHJAYANI@YBL",
-      "sum of amount":148410.0,
-      "count":30
-   },
-   {
-      "vendor":"BHARATPE.90063856096@FBPE",
-      "sum of amount":-110.0,
-      "count":1
-   },
-   {
-      "vendor":"BHARATPE.9053041852@FBPE",
-      "sum of amount":-95.0,
-      "count":1
-   },
-   {
-      "vendor":"BHUPENDRAJAGA22@OKHDFCBANK",
-      "sum of amount":50.0,
-      "count":1
-   },
-   {
-      "vendor":"BHUPENDRAJAGA@YBL",
-      "sum of amount":4200.0,
-      "count":2
-   },
-   {
-      "vendor":"CHAUDHARIPURVI7@OKHDFCBANK",
-      "sum of amount":50.0,
-      "count":1
-   },
-   {
-      "vendor":"CHUADHARIKRISHNA@OKSBI",
-      "sum of amount":50.0,
-      "count":1
-   },
-   {
-      "vendor":"DIPENSHIROYAAXIS@YBL",
-      "sum of amount":-50000.0,
-      "count":1
-   },
-   {
-      "vendor":"DR.HIMANIGARASIA@OKICICI",
-      "sum of amount":650.0,
-      "count":2
-   },
-   {
-      "vendor":"DRAMKOTHIYA@OKSBI",
-      "sum of amount":-5000.0,
-      "count":1
-   },
-   {
-      "vendor":"DRDARSHANAPRAJAPATI@OKHDFCBANK",
-      "sum of amount":-430.0,
-      "count":1
-   },
-   {
-      "vendor":"EAZYPAY.580507272@ICICI",
-      "sum of amount":-85.0,
-      "count":3
-   },
-   {
-      "vendor":"EURONET@YBL",
-      "sum of amount":-669.0,
-      "count":1
-   },
-   {
-      "vendor":"EURONETGPAY.PAY@ICICI",
-      "sum of amount":-1417.0,
-      "count":3
-   },
-   {
-      "vendor":"GONDALIYADHAVAL45@OKICICI",
-      "sum of amount":6600.0,
-      "count":2
-   },
-   {
-      "vendor":"HARDIKPLIMBANI@OKHDFCBANK",
-      "sum of amount":-1150.0,
-      "count":1
-   },
-   {
-      "vendor":"HIRALPS025@OKHDFCBANK",
-      "sum of amount":800.0,
-      "count":1
-   },
-   {
-      "vendor":"HIRENNAIKAWALA410-1@OKSBI",
-      "sum of amount":-430.0,
-      "count":1
-   },
-   {
-      "vendor":"JADU1413@OKHDFCBANK",
-      "sum of amount":20000.0,
-      "count":1
-   },
-   {
-      "vendor":"JENISHBODAR1-1@OKHDFCBANK",
-      "sum of amount":-11500.0,
-      "count":2
-   },
-   {
-      "vendor":"JENISHBODAR1@OKICICI",
-      "sum of amount":8000.0,
-      "count":1
-   },
-   {
-      "vendor":"JENISHJBODAR007@YBL",
-      "sum of amount":-1035.0,
-      "count":1
-   },
-   {
-      "vendor":"JSPANSURIYA-2@OKICICI",
-      "sum of amount":2000.0,
-      "count":1
-   },
-   {
-      "vendor":"KAUSHIKGUJJAR94227@OKAXIS",
-      "sum of amount":600.0,
-      "count":1
-   },
-   {
-      "vendor":"KRISHNAENT003-3@OKICICI",
-      "sum of amount":10000.0,
-      "count":1
-   },
-   {
-      "vendor":"MADANPARIHAR9358302704@IBL",
-      "sum of amount":-40.0,
-      "count":1
-   },
-   {
-      "vendor":"MANOJHAL143@YBL",
-      "sum of amount":0.0,
-      "count":4
-   },
-   {
-      "vendor":"MARVEL8306050000@OKHDFCBANK",
-      "sum of amount":-380.0,
-      "count":1
-   },
-   {
-      "vendor":"MERCHANT1156145.AUGP@AUBANK",
-      "sum of amount":-500.0,
-      "count":1
-   },
-   {
-      "vendor":"MIRACLEJOSEPH353@OKHDFCBANK",
-      "sum of amount":50.0,
-      "count":1
-   },
-   {
-      "vendor":"MODIKALPESH88@OKHDFCBANK",
-      "sum of amount":2150.0,
-      "count":2
-   },
-   {
-      "vendor":"MUSTAFA.HS.1994@OKHDFCBANK",
-      "sum of amount":4050.0,
-      "count":2
-   },
-   {
-      "vendor":"NAYANSONY44@OKHDFCBANK",
-      "sum of amount":-48190.0,
-      "count":5
-   },
-   {
-      "vendor":"NAYNESHBHOJANI3390@OKHDFCBANK",
-      "sum of amount":-4400.0,
-      "count":1
-   },
-   {
-      "vendor":"PATELTANVIKA6698@OKHDFCBANK",
-      "sum of amount":1200.0,
-      "count":3
-   },
-   {
-      "vendor":"PATELTANVIKA6698@OKSBI",
-      "sum of amount":300.0,
-      "count":1
-   },
-   {
-      "vendor":"PAYTMQR1DLOCYIKWN@PAYTM",
-      "sum of amount":-13.0,
-      "count":1
-   },
-   {
-      "vendor":"PAYTMQR1FVIG9ZO6I@PAYTM",
-      "sum of amount":-510.0,
-      "count":4
-   },
-   {
-      "vendor":"PAYTMQR1OCKR9IW5O@PAYTM",
-      "sum of amount":-60.0,
-      "count":1
-   },
-   {
-      "vendor":"PAYTMQR28100505010111LDH01140FG@PAYTM",
-      "sum of amount":-1027.0,
-      "count":17
-   },
-   {
-      "vendor":"PAYTMQR28100505010111S45H6DGNCQ@PAYTM",
-      "sum of amount":-77.0,
-      "count":1
-   },
-   {
-      "vendor":"PAYTMQR28100505010114L6VUYB76KT@PAYTM",
-      "sum of amount":-13.0,
-      "count":1
-   },
-   {
-      "vendor":"PAYTMQR28100505010118N5HPGJPH2W@PAYTM",
-      "sum of amount":-25.0,
-      "count":2
-   },
-   {
-      "vendor":"PAYTMQR2810050501011D3C3EZXNSCQ@PAYTM",
-      "sum of amount":-55.0,
-      "count":1
-   },
-   {
-      "vendor":"PAYTMQR2810050501011MPP0BQCNYZW@PAYTM",
-      "sum of amount":-20.0,
-      "count":1
-   },
-   {
-      "vendor":"PAYTMQR2810050501011QOT7O0ORARK@PAYTM",
-      "sum of amount":-360.0,
-      "count":1
-   },
-   {
-      "vendor":"PAYTMQR2810050501011S64D9FJ72TK@PAYTM",
-      "sum of amount":-100.0,
-      "count":1
-   },
-   {
-      "vendor":"PAYTMQR2810050501011WB6YRTY7JXQ@PAYTM",
-      "sum of amount":-10.0,
-      "count":1
-   },
-   {
-      "vendor":"PAYTMQR28100505010139VXXN3WH23F@PAYTM",
-      "sum of amount":-45.0,
-      "count":1
-   },
-   {
-      "vendor":"PAYTMQR2810050501017KNHSW38ITHT@PAYTM",
-      "sum of amount":-150.0,
-      "count":1
-   },
-   {
-      "vendor":"PAYTMQR2810050501017M41JYG0DFYY@PAYTM",
-      "sum of amount":-170.0,
-      "count":1
-   },
-   {
-      "vendor":"PAYTMQR281005050101FCZ8MS095EPL@PAYTM",
-      "sum of amount":-100.0,
-      "count":2
-   },
-   {
-      "vendor":"PAYTMQR281005050101T6WWB31GQINC@PAYTM",
-      "sum of amount":-4150.0,
-      "count":1
-   },
-   {
-      "vendor":"PAYTMQR54FEO6N1Q0@PAYTM",
-      "sum of amount":-350.0,
-      "count":1
-   },
-   {
-      "vendor":"PAYTMQRA9CP2LAHHD@PAYTM",
-      "sum of amount":-320.0,
-      "count":1
-   },
-   {
-      "vendor":"PAYTMQRFXZNT7OFDB@PAYTM",
-      "sum of amount":-140.0,
-      "count":1
-   },
-   {
-      "vendor":"PINKALKUMARGAMIT26@OKAXIS",
-      "sum of amount":500.0,
-      "count":1
-   },
-   {
-      "vendor":"Q024071379@YBL",
-      "sum of amount":-240.0,
-      "count":1
-   },
-   {
-      "vendor":"Q077775165@YBL",
-      "sum of amount":-150.0,
-      "count":1
-   },
-   {
-      "vendor":"Q085480978@YBL",
-      "sum of amount":-1000.0,
-      "count":1
-   },
-   {
-      "vendor":"Q143748255@YBL",
-      "sum of amount":-600.0,
-      "count":1
-   },
-   {
-      "vendor":"Q406364171@YBL",
-      "sum of amount":-1599.0,
-      "count":1
-   },
-   {
-      "vendor":"Q55504431@YBL",
-      "sum of amount":-3150.0,
-      "count":1
-   },
-   {
-      "vendor":"Q62556582@YBL",
-      "sum of amount":-430.0,
-      "count":1
-   },
-   {
-      "vendor":"Q772026883@YBL",
-      "sum of amount":-90.0,
-      "count":1
-   },
-   {
-      "vendor":"Q878549585@YBL",
-      "sum of amount":-2450.0,
-      "count":1
-   },
-   {
-      "vendor":"Q950164444@YBL",
-      "sum of amount":-729.0,
-      "count":1
-   },
-   {
-      "vendor":"Q962692577@YBL",
+      "vendor":"M S GUJJUS",
+      "sub_category":"Hotels & Restaurants",
       "sum of amount":-12278.0,
       "count":4
    },
    {
-      "vendor":"QUADRILLION.SLICE@YESPAY",
+      "vendor":"Social Worth Technologies Private Limited",
+      "sub_category":"Super Market",
+      "sum of amount":-9541.0,
+      "count":1
+   },
+   {
+      "vendor":"Quadrillion Finance Private Limited",
+      "sub_category":"Payments",
       "sum of amount":-9057.48,
       "count":3
    },
    {
-      "vendor":"RAJESHRADADIA40@OKSBI",
-      "sum of amount":-1000.0,
-      "count":1
+      "vendor":"billdesktez",
+      "sub_category":"Electricity bill",
+      "sum of amount":-8340.0,
+      "count":2
    },
    {
-      "vendor":"RAMANIR267-1@OKSBI",
-      "sum of amount":600.0,
-      "count":1
-   },
-   {
-      "vendor":"RAVI4AMIPARA@OKICICI",
-      "sum of amount":11000.0,
+      "vendor":"Red rails",
+      "sub_category":"Public Transportation",
+      "sum of amount":-6051.2,
       "count":4
    },
    {
-      "vendor":"REDRAILSONLINE@YBL",
-      "sum of amount":-3825.8,
+      "vendor":"Ghelani Hemal Maheshbhai",
+      "sub_category":"Books & Stationery",
+      "sum of amount":-4150.0,
+      "count":1
+   },
+   {
+      "vendor":"PHONEPE",
+      "sub_category":"Others",
+      "sum of amount":-3550.15,
+      "count":2
+   },
+   {
+      "vendor":"KALURAM VENARAM GHANCHI",
+      "sub_category":"Super Market",
+      "sum of amount":-3150.0,
+      "count":1
+   },
+   {
+      "vendor":"Navi Finserv Ltd",
+      "sub_category":"Others",
+      "sum of amount":-3090.0,
+      "count":1
+   },
+   {
+      "vendor":"slice",
+      "sub_category":"Others",
+      "sum of amount":-3019.16,
+      "count":1
+   },
+   {
+      "vendor":"AMBIKA WATCH AND GIFT",
+      "sub_category":"Clothing & Fashion",
+      "sum of amount":-1599.0,
+      "count":1
+   },
+   {
+      "vendor":"Uber",
+      "sub_category":"Public Transportation",
+      "sum of amount":-1511.26,
+      "count":1
+   },
+   {
+      "vendor":"EURONETGPAY",
+      "sub_category":"Movies",
+      "sum of amount":-1417.0,
       "count":3
    },
    {
-      "vendor":"RZPBQVGOKULDHAMMAHATIRTH@YESBANK",
+      "vendor":"SWIGGY",
+      "sub_category":"Hotels & Restaurants",
+      "sum of amount":-1175.0,
+      "count":2
+   },
+   {
+      "vendor":"KEWAL TRADING CO",
+      "sub_category":"Super Market",
+      "sum of amount":-1160.0,
+      "count":1
+   },
+   {
+      "vendor":"Chetan Lakhmanbhai Pansuriya",
+      "sub_category":"Super Market",
+      "sum of amount":-1027.0,
+      "count":17
+   },
+   {
+      "vendor":"PhonePe",
+      "sub_category":"Telecom Services",
+      "sum of amount":-870.0,
+      "count":2
+   },
+   {
+      "vendor":"Babaji Dhonduram Renashe",
+      "sub_category":"Hotels & Restaurants",
+      "sum of amount":-855.0,
+      "count":7
+   },
+   {
+      "vendor":"LEMON RESTAURANT BAN",
+      "sub_category":"Hotels & Restaurants",
+      "sum of amount":-749.0,
+      "count":1
+   },
+   {
+      "vendor":"FOOD FIEST",
+      "sub_category":"Hotels & Restaurants",
+      "sum of amount":-729.0,
+      "count":1
+   },
+   {
+      "vendor":"GOKUL DHAM GAU SEWA MAHATIRTH",
+      "sub_category":"Donation",
       "sum of amount":-620.0,
       "count":1
    },
    {
-      "vendor":"SALMANPATEL635474@OKICICI",
-      "sum of amount":-4000.0,
+      "vendor":"AKSHAY PRAVINBHAI JA",
+      "sub_category":"Hotels & Restaurants",
+      "sum of amount":-600.0,
       "count":1
    },
    {
-      "vendor":"SALVIYOGESH1990@OKAXIS",
-      "sum of amount":-104800.0,
+      "vendor":"SHREE SATADHAR TRADING CO",
+      "sub_category":"Super Market",
+      "sum of amount":-500.0,
+      "count":1
+   },
+   {
+      "vendor":"Rapido",
+      "sub_category":"Public Transportation",
+      "sum of amount":-399.02,
+      "count":1
+   },
+   {
+      "vendor":"Bheru Lal Prajapat",
+      "sub_category":"Hotels & Restaurants",
+      "sum of amount":-360.0,
+      "count":1
+   },
+   {
+      "vendor":"Shailesh Bharatbhai Patel",
+      "sub_category":"Hotels & Restaurants",
+      "sum of amount":-350.0,
+      "count":1
+   },
+   {
+      "vendor":"Anthem Petroleum",
+      "sub_category":"Fuel",
+      "sum of amount":-320.0,
+      "count":1
+   },
+   {
+      "vendor":"Gopal Lal Mali",
+      "sub_category":"Vehicle Maintainance",
+      "sum of amount":-320.0,
+      "count":1
+   },
+   {
+      "vendor":"Shree Swami Chashma Ghar",
+      "sub_category":"Super Market",
+      "sum of amount":-300.0,
+      "count":1
+   },
+   {
+      "vendor":"Kishor Maganbhai Bedse",
+      "sub_category":"Hotels & Restaurants",
+      "sum of amount":-170.0,
+      "count":1
+   },
+   {
+      "vendor":"SHREE GIRIRAJ KATHIAWADI HOTEL",
+      "sub_category":"Bars",
+      "sum of amount":-110.0,
+      "count":1
+   },
+   {
+      "vendor":"Khushal Pravinbhai Kothiya",
+      "sub_category":"Super Market",
+      "sum of amount":-100.0,
+      "count":1
+   },
+   {
+      "vendor":"Rasraj Katchi Dabeli",
+      "sub_category":"Super Market",
+      "sum of amount":-100.0,
       "count":2
    },
    {
-      "vendor":"SANYALB76@OKICICI",
-      "sum of amount":500.0,
-      "count":1
-   },
-   {
-      "vendor":"SEJUVALVI@OKAXIS",
-      "sum of amount":3500.0,
-      "count":1
-   },
-   {
-      "vendor":"SETUBROKENTUSK@KAYPAY",
-      "sum of amount":-1.0,
-      "count":1
-   },
-   {
-      "vendor":"SHAILESHYADAV3375-2@OKSBI",
-      "sum of amount":-414.0,
-      "count":1
-   },
-   {
-      "vendor":"SHRIKANTAMIPARA6@PAYTM",
-      "sum of amount":7000.0,
-      "count":1
-   },
-   {
-      "vendor":"STELLASHAREDSPACESPRIVATELIMITED.RZP@ICICI",
+      "vendor":"STELLA SHARED SPACES PRIVATE LIMITED",
+      "sub_category":"Movies",
       "sum of amount":-99.0,
       "count":1
    },
    {
-      "vendor":"SUMITMAYANI007@OKHDFCBANK",
-      "sum of amount":1000.0,
+      "vendor":"AJIT LALDHARI YADAV",
+      "sub_category":"Hotels & Restaurants",
+      "sum of amount":-90.0,
       "count":1
    },
    {
-      "vendor":"THANGHAT74@OKICICI",
-      "sum of amount":4000.0,
+      "vendor":"SHILPA HOSPITALITY SERVICES",
+      "sub_category":"Camping & Recreation",
+      "sum of amount":-85.0,
+      "count":3
+   },
+   {
+      "vendor":"Pankajkumar Gunvantrai Bhagwagar",
+      "sub_category":"Others",
+      "sum of amount":-77.0,
       "count":1
    },
    {
-      "vendor":"YOGESHUKANI200@YBL",
-      "sum of amount":5000.0,
+      "vendor":"Renuka Ramesh Benal",
+      "sub_category":"Hotels & Restaurants",
+      "sum of amount":-60.0,
       "count":1
    },
    {
-      "vendor":"cashfree",
-      "sum of amount":1.0,
+      "vendor":"Patel Maheshbhai Vashrambhai",
+      "sub_category":"Books & Stationery",
+      "sum of amount":-45.0,
       "count":1
    },
    {
-      "vendor":"jayani avanishkumar",
-      "sum of amount":20000.0,
+      "vendor":"JAY JALARAM KHAMAN HOUSE",
+      "sub_category":"Hotels & Restaurants",
+      "sum of amount":-40.0,
+      "count":1
+   },
+   {
+      "vendor":"Dubey Sumit Ashok",
+      "sub_category":"Super Market",
+      "sum of amount":-25.0,
       "count":2
    },
    {
-      "vendor":"khodiyar trading",
-      "sum of amount":2400.0,
+      "vendor":"Radhika Medical",
+      "sub_category":"Drugs & Pharmacies",
+      "sum of amount":-25.0,
       "count":1
    },
    {
-      "vendor":"lovepreet traders",
-      "sum of amount":-4000.0,
+      "vendor":"Shree Giriraj Kathiyawadi Hotel",
+      "sub_category":"Hotels & Restaurants",
+      "sum of amount":-20.0,
       "count":1
    },
    {
-      "vendor":"quadrillion finance",
-      "sum of amount":1.0,
+      "vendor":"Himta Ram",
+      "sub_category":"Super Market",
+      "sum of amount":-13.0,
       "count":1
    },
    {
-      "vendor":"rina avanishbhai jay",
-      "sum of amount":56017.0,
-      "count":2
+      "vendor":"Vasava Jayantibhai Sonjibhai",
+      "sub_category":"Super Market",
+      "sum of amount":-13.0,
+      "count":1
    },
    {
-      "vendor":"rzpx pvt ltd",
-      "sum of amount":1.0,
+      "vendor":"Rukmani Prajapati D O Shivnath Prajapati",
+      "sub_category":"Hotels & Restaurants",
+      "sum of amount":-10.0,
+      "count":1
+   },
+   {
+      "vendor":"Setu BrokenTusk Technologies",
+      "sub_category":"Payments",
+      "sum of amount":-1.0,
       "count":1
    }
 ]
