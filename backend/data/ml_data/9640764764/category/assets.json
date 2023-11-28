@@ -1,47 +1,47 @@
 [
-    {
-        "category": "Cash Deposit",
-        "sum of amount": 715500.0,
-        "count": 19
-    },
-    {
-        "category": "Insurance",
-        "sum of amount": 116419.0,
-        "count": 1
-    },
-    {
-        "category": "Interest",
-        "sum of amount": 487.0,
-        "count": 2
-    },
-    {
-        "category": "Loan Disbursed",
-        "sum of amount": 295849.0,
-        "count": 9
-    },
-    {
-        "category": "Reversal",
-        "sum of amount": 2526.4,
-        "count": 3
-    },
-    {
-        "category": "Salary",
-        "sum of amount": 233800.0,
-        "count": 7
-    },
-    {
-        "category": "Share Sell",
-        "sum of amount": 363215.9400000001,
-        "count": 36
-    },
-    {
-        "category": "Tax",
-        "sum of amount": 44810.0,
-        "count": 1
-    },
-    {
-        "category": "Transfer in",
-        "sum of amount": 805546.79,
-        "count": 84
-    }
+   {
+      "category":"Transfer in",
+      "sum of amount":805546.79,
+      "count":84
+   },
+   {
+      "category":"Cash Deposit",
+      "sum of amount":715500.0,
+      "count":19
+   },
+   {
+      "category":"Share Sell",
+      "sum of amount":363215.9400000001,
+      "count":36
+   },
+   {
+      "category":"Loan Disbursed",
+      "sum of amount":295849.0,
+      "count":9
+   },
+   {
+      "category":"Salary",
+      "sum of amount":233800.0,
+      "count":7
+   },
+   {
+      "category":"Insurance",
+      "sum of amount":116419.0,
+      "count":1
+   },
+   {
+      "category":"Tax",
+      "sum of amount":44810.0,
+      "count":1
+   },
+   {
+      "category":"Reversal",
+      "sum of amount":2526.4,
+      "count":3
+   },
+   {
+      "category":"Interest",
+      "sum of amount":487.0,
+      "count":2
+   }
 ]
