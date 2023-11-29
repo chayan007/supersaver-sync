@@ -1,302 +1,74 @@
 [
     {
-        "vendor": "AJIT LALDHARI YADAV",
-        "sub_category": "Hotels & Restaurants",
-        "sum of amount": -90.0,
-        "count": 1
-    },
-    {
-        "vendor": "AKSHAY PRAVINBHAI JA",
-        "sub_category": "Hotels & Restaurants",
-        "sum of amount": -600.0,
-        "count": 1
-    },
-    {
-        "vendor": "AMBIKA WATCH AND GIFT",
-        "sub_category": "Clothing & Fashion",
-        "sum of amount": -1599.0,
-        "count": 1
-    },
-    {
-        "vendor": "ANGEL LTD NSE",
-        "sub_category": "Share Purchase",
-        "sum of amount": -887500.0,
-        "count": 89
-    },
-    {
-        "vendor": "Angel One Limited",
-        "sub_category": "Share Purchase",
-        "sum of amount": -30400.0,
-        "count": 2
-    },
-    {
-        "vendor": "Anthem Petroleum",
-        "sub_category": "Fuel",
-        "sum of amount": -320.0,
-        "count": 1
-    },
-    {
-        "vendor": "Babaji Dhonduram Renashe",
-        "sub_category": "Hotels & Restaurants",
-        "sum of amount": -855.0,
-        "count": 7
-    },
-    {
-        "vendor": "Bheru Lal Prajapat",
-        "sub_category": "Hotels & Restaurants",
-        "sum of amount": -360.0,
-        "count": 1
-    },
-    {
-        "vendor": "Chetan Lakhmanbhai Pansuriya",
-        "sub_category": "Super Market",
-        "sum of amount": -1027.0,
-        "count": 17
-    },
-    {
-        "vendor": "Dubey Sumit Ashok",
-        "sub_category": "Super Market",
+        "vendor": "CAFE CASTLE",
+        "sub_category": "Food Suppliers",
         "sum of amount": -25.0,
+        "count": 1
+    },
+    {
+        "vendor": "Cred",
+        "sub_category": "",
+        "sum of amount": -25189.73,
         "count": 2
     },
     {
-        "vendor": "EURONETGPAY",
-        "sub_category": "Movies",
-        "sum of amount": -1417.0,
-        "count": 3
-    },
-    {
-        "vendor": "FOOD FIEST",
-        "sub_category": "Hotels & Restaurants",
-        "sum of amount": -729.0,
-        "count": 1
-    },
-    {
-        "vendor": "GOKUL DHAM GAU SEWA MAHATIRTH",
-        "sub_category": "Donation",
-        "sum of amount": -620.0,
-        "count": 1
-    },
-    {
-        "vendor": "Ghelani Hemal Maheshbhai",
-        "sub_category": "Books & Stationery",
-        "sum of amount": -4150.0,
-        "count": 1
-    },
-    {
-        "vendor": "Gopal Lal Mali",
-        "sub_category": "Vehicle Maintainance",
-        "sum of amount": -320.0,
-        "count": 1
-    },
-    {
-        "vendor": "Himta Ram",
-        "sub_category": "Super Market",
-        "sum of amount": -13.0,
-        "count": 1
-    },
-    {
-        "vendor": "JAY JALARAM KHAMAN HOUSE",
-        "sub_category": "Hotels & Restaurants",
-        "sum of amount": -40.0,
-        "count": 1
-    },
-    {
-        "vendor": "KALURAM VENARAM GHANCHI",
-        "sub_category": "Super Market",
-        "sum of amount": -3150.0,
-        "count": 1
-    },
-    {
-        "vendor": "KEWAL TRADING CO",
-        "sub_category": "Super Market",
-        "sum of amount": -1160.0,
-        "count": 1
-    },
-    {
-        "vendor": "Khushal Pravinbhai Kothiya",
-        "sub_category": "Super Market",
-        "sum of amount": -100.0,
-        "count": 1
-    },
-    {
-        "vendor": "Kishor Maganbhai Bedse",
-        "sub_category": "Hotels & Restaurants",
-        "sum of amount": -170.0,
-        "count": 1
-    },
-    {
-        "vendor": "LEMON RESTAURANT BAN",
-        "sub_category": "Hotels & Restaurants",
-        "sum of amount": -749.0,
-        "count": 1
-    },
-    {
-        "vendor": "M S GUJJUS",
-        "sub_category": "Hotels & Restaurants",
-        "sum of amount": -12278.0,
+        "vendor": "CredClub",
+        "sub_category": "Others",
+        "sum of amount": -77129.67,
         "count": 4
     },
     {
-        "vendor": "Navi Finserv Ltd",
-        "sub_category": "Others",
-        "sum of amount": -3090.0,
-        "count": 1
-    },
-    {
-        "vendor": "PHONEPE",
-        "sub_category": "Others",
-        "sum of amount": -3550.15,
-        "count": 2
-    },
-    {
-        "vendor": "Pankajkumar Gunvantrai Bhagwagar",
-        "sub_category": "Others",
-        "sum of amount": -77.0,
-        "count": 1
-    },
-    {
-        "vendor": "Patel Maheshbhai Vashrambhai",
-        "sub_category": "Books & Stationery",
-        "sum of amount": -45.0,
-        "count": 1
-    },
-    {
-        "vendor": "PhonePe",
+        "vendor": "ECHOBOOOM MANAGEMENT and ENTEREPRENEURIAL",
         "sub_category": "Telecom Services",
-        "sum of amount": -870.0,
-        "count": 2
-    },
-    {
-        "vendor": "Quadrillion Finance Private Limited",
-        "sub_category": "Payments",
-        "sum of amount": -9057.48,
-        "count": 3
-    },
-    {
-        "vendor": "Radhika Medical",
-        "sub_category": "Drugs & Pharmacies",
-        "sum of amount": -25.0,
+        "sum of amount": -3050.0,
         "count": 1
     },
     {
-        "vendor": "Rasraj Katchi Dabeli",
-        "sub_category": "Super Market",
-        "sum of amount": -100.0,
-        "count": 2
+        "vendor": "IBL",
+        "sub_category": "Others",
+        "sum of amount": -20000.0,
+        "count": 1
     },
     {
-        "vendor": "Red rails",
-        "sub_category": "Public Transportation",
-        "sum of amount": -6051.2,
-        "count": 4
+        "vendor": "Krazybee",
+        "sub_category": "Others",
+        "sum of amount": -13635.0,
+        "count": 1
     },
     {
-        "vendor": "Renuka Ramesh Benal",
+        "vendor": "LAZYPAY PRIVATE",
+        "sub_category": "Others",
+        "sum of amount": -1410.12,
+        "count": 1
+    },
+    {
+        "vendor": "M RAHUL KRISHNA REDD",
         "sub_category": "Hotels & Restaurants",
-        "sum of amount": -60.0,
+        "sum of amount": -15.0,
         "count": 1
     },
     {
-        "vendor": "Rukmani Prajapati D O Shivnath Prajapati",
+        "vendor": "NASIM AKHTAR",
         "sub_category": "Hotels & Restaurants",
         "sum of amount": -10.0,
         "count": 1
     },
     {
-        "vendor": "SHILPA HOSPITALITY SERVICES",
-        "sub_category": "Camping & Recreation",
-        "sum of amount": -85.0,
-        "count": 3
-    },
-    {
-        "vendor": "SHREE GIRIRAJ KATHIAWADI HOTEL",
-        "sub_category": "Bars",
-        "sum of amount": -110.0,
-        "count": 1
-    },
-    {
-        "vendor": "SHREE SATADHAR TRADING CO",
+        "vendor": "SHAIK SAMAD",
         "sub_category": "Super Market",
-        "sum of amount": -500.0,
+        "sum of amount": -590.0,
         "count": 1
     },
     {
-        "vendor": "STELLA SHARED SPACES PRIVATE LIMITED",
-        "sub_category": "Movies",
-        "sum of amount": -99.0,
-        "count": 1
-    },
-    {
-        "vendor": "SWIGGY",
+        "vendor": "The Fishermans Wharf Hyderabad",
         "sub_category": "Hotels & Restaurants",
-        "sum of amount": -693.0,
-        "count": 2
-    },
-    {
-        "vendor": "Setu BrokenTusk Technologies",
-        "sub_category": "Payments",
-        "sum of amount": -1.0,
+        "sum of amount": -5102.0,
         "count": 1
     },
     {
-        "vendor": "Shailesh Bharatbhai Patel",
-        "sub_category": "Hotels & Restaurants",
-        "sum of amount": -350.0,
-        "count": 1
-    },
-    {
-        "vendor": "Shree Giriraj Kathiyawadi Hotel",
-        "sub_category": "Hotels & Restaurants",
-        "sum of amount": -20.0,
-        "count": 1
-    },
-    {
-        "vendor": "Shree Swami Chashma Ghar",
-        "sub_category": "Super Market",
-        "sum of amount": -300.0,
-        "count": 1
-    },
-    {
-        "vendor": "Social Worth Technologies Private Limited",
-        "sub_category": "Super Market",
-        "sum of amount": -9541.0,
-        "count": 1
-    },
-    {
-        "vendor": "Swiggy",
-        "sub_category": "Hotels & Restaurants",
-        "sum of amount": -482.0,
-        "count": 2
-    },
-    {
-        "vendor": "Vasava Jayantibhai Sonjibhai",
-        "sub_category": "Super Market",
-        "sum of amount": -13.0,
-        "count": 1
-    },
-    {
-        "vendor": "Vero Moda",
-        "sub_category": "Clothing & Fashion",
-        "sum of amount": -399.02,
-        "count": 1
-    },
-    {
-        "vendor": "billdesktez",
-        "sub_category": "Electricity bill",
-        "sum of amount": -8340.0,
-        "count": 2
-    },
-    {
-        "vendor": "ixigo",
-        "sub_category": "Public Transportation",
-        "sum of amount": -1511.26,
-        "count": 1
-    },
-    {
-        "vendor": "slice",
-        "sub_category": "Others",
-        "sum of amount": -3019.16,
+        "vendor": "Tonique",
+        "sub_category": "Doctors & Consultation",
+        "sum of amount": -12820.0,
         "count": 1
     }
 ]

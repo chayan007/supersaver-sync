@@ -5,7 +5,7 @@ import pandas as pd
 
 class MerchantNameMapper:
     def __init__(self):
-        self.merchant_df = pd.read_csv('/home/dinesh/Documents/sept_13th/super_saver_sync/supersaver-sync/ml/new_merchant_mappings.csv')
+        self.merchant_df = pd.read_csv('./ft_utils/new_merchant_mappings.csv')
         self.clean_name_lst = self.merchant_df['Report_Store_Name'].str.lower().unique().tolist()
         self.boundary_vars_pattern = re.compile(r'itc|uber|dell|nike|wow|lakme|puma|acer|biba|anish|1mg|for|simpl|cred', re.IGNORECASE)
         self.keyword_pattern = re.compile(
@@ -57,5 +57,5 @@ class MerchantNameMapper:
         return best_match
 
     def get_merchant_name(self, df):
-        df['merch_name_fuzzy'] = df['receiver_name'].str.lower().map(self._partial_fuzz_match, na_action='ignore')
+        df['merchant_name_fuzzy'] = df['receiver_name'].str.lower().map(self._partial_fuzz_match, na_action='ignore')
         return df
