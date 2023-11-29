@@ -13,10 +13,14 @@ import concurrent.futures
 from ft_utils.other_utils import get_upi_details, get_upi_id
 from ft_utils.soft_logic import *
 from ft_utils.salary_soft_logic import salary_with_out_keyword, loan_salary_with_out_keyword, find_employer
+from ft_utils.merchant_name_mapper import MerchantNameMapper
 import warnings
+
 warnings.filterwarnings('ignore')
+
 logger = logging.getLogger('bank_recat_logger')
 var_type = 'BANK_RECAT'
+
 
 with open('./ft_utils/category_mapping_credit.json', 'r') as fp:
     ft_to_orig_mapping_credit = json.load(fp)
@@ -25,7 +29,6 @@ with open('./ft_utils/category_mapping_debit.json', 'r') as fp:
 ft_to_orig_mapping = {}
 ft_to_orig_mapping.update(ft_to_orig_mapping_credit)
 ft_to_orig_mapping.update(ft_to_orig_mapping_debit)
-
 
 with open('./ft_utils/credit_asset.json', 'r') as fp:
     asset_json = json.load(fp)
@@ -68,17 +71,16 @@ def process_json_file(data):
                         # print("here I go on the road again", transaction)
                         raise e
 
-
     df = pd.DataFrame(transaction_data)
-    df.rename(columns={'Narration':'narration',
-                       'transaction_amount':'amount',
-                       'transaction_timestamp':'date',
-                       'transaction_type':'type'}, inplace=True)
+    df.rename(columns={'Narration': 'narration',
+                       'transaction_amount': 'amount',
+                       'transaction_timestamp': 'date',
+                       'transaction_type': 'type'}, inplace=True)
     # df['date'] = pd.to_datetime(df['date'])
     # df['date'] = df['date'].dt.date
     df['date'] = df['date'].astype('datetime64')
     df['amount'] = df['amount'].astype('float64')
-
+    df['seq'] = df.index
     return df
 
 
@@ -109,7 +111,7 @@ class Categorise:
 
             # make salaries as rewards if salary amount is less than 0.4*max of salary of that particular month
             df['month'] = df['date'].dt.month
-            max_salary_by_month = df[df['category']=='salary'].groupby('month')['amount'].max()
+            max_salary_by_month = df[df['category'] == 'salary'].groupby('month')['amount'].max()
             # print(max_salary_by_month)
             for month, max_salary_amount in max_salary_by_month.iteritems():
                 mask = (df['category'] == 'salary') & (df['month'] == month) & (df['amount'] < 0.4 * max_salary_amount)
@@ -144,8 +146,11 @@ class Categorise:
         df_out['model_pred_category'] = df_out['model_pred_category'].replace(ft_to_orig_mapping)
         df_out['category'] = df_out['category'].replace(ft_to_orig_mapping)
 
-        df_out['category'] = df_out[['narration', 'category']].apply(sender_info, axis=1)
-        df_out['category'] = df_out[['narration', 'category']].apply(receiver_info, axis=1)
+        df_out['category22'] = ''
+        df_out.loc[df_out['amount']<0, 'category22'] = 'Transfer out'
+        df_out.loc[df_out['amount']>=0, 'category22'] = 'Transfer in'
+        df_out['category22'] = df_out[['narration', 'category22']].apply(sender_info, axis=1)
+        df_out['category22'] = df_out[['narration', 'category22']].apply(receiver_info, axis=1)
 
         # df_out['vendor'] = df_out[['narration', 'category']].apply(sender_info, axis=1)
         # df_out['vendor'] = df_out[['narration', 'category']].apply(receiver_info, axis=1)
@@ -156,7 +161,7 @@ class Categorise:
 
         return df_out
 
-    def __init__(self, data_type: str, apply_salary_logic: bool=False):
+    def __init__(self, data_type: str, apply_salary_logic: bool = False):
 
         self.data_type = data_type
         self.apply_salary_logic = apply_salary_logic
@@ -230,7 +235,7 @@ class Categorise:
 
 def bankCategorization(data, account_type='', sub_categorization=False, upi_sub_category_data_df=None):
     start_time = time()
-    cols_to_return = ['narration', 'type', 'date', 'amount', 'category', 'balance', 'masked_acc', 'upi_id', 'sub_category', 'vendor', 'liab_or_asset']
+    cols_to_return = ['narration', 'type', 'date', 'amount', 'category', 'balance', 'masked_acc', 'upi_id', 'sub_category', 'vendor', 'liab_or_asset', 'receiver_name', 'seq']
 
     try:
         bankdata = process_json_file(data)
@@ -256,14 +261,14 @@ def bankCategorization(data, account_type='', sub_categorization=False, upi_sub_
         apply_salary_logic = True
         number_of_days_data = (bankdata['date'].astype('datetime64').max() - bankdata['date'].astype('datetime64').min()).days
         current_account_match = re.search(r"\bsme\b|small\W*enter|^ca\b|^cur\b|(c)?urrent|^cc\b", account_type.lower())
-        if number_of_days_data<=32 or current_account_match:
+        if number_of_days_data <= 32 or current_account_match:
             apply_salary_logic = False
 
         categorise_credit = Categorise(data_type="Credit", apply_salary_logic=apply_salary_logic)
         categorise_debit = Categorise(data_type="Debit")
 
-        credit_df = bankdata[bankdata['type']=='CREDIT']
-        debit_df = bankdata[bankdata['type']=='DEBIT']
+        credit_df = bankdata[bankdata['type'] == 'CREDIT']
+        debit_df = bankdata[bankdata['type'] == 'DEBIT']
 
         futures_to_call = []
         with concurrent.futures.ProcessPoolExecutor() as executor:
@@ -289,9 +294,9 @@ def bankCategorization(data, account_type='', sub_categorization=False, upi_sub_
 
         df_out = pd.concat((credit_df, debit_df), axis=0).sort_index()
 
-        if number_of_days_data>32 and pd.to_datetime(df_out[(df_out['category'] == 'loandisbursed') & (df_out['amount'] >= 8000)]['date']).dt.to_period('M').shape[0] > 2 or \
-           pd.to_datetime(df_out[(df_out['category'] == 'insurance') & (df_out['amount'] >= 8000)]['date']).dt.to_period('M').shape[0] > 2 or \
-           pd.to_datetime(df_out[(df_out['category'] == 'investmentincome') & (df_out['amount'] >= 8000)]['date']).dt.to_period('M').shape[0] > 2:
+        if number_of_days_data > 32 and pd.to_datetime(df_out[(df_out['category'] == 'loandisbursed') & (df_out['amount'] >= 8000)]['date']).dt.to_period('M').shape[0] > 2 or \
+                pd.to_datetime(df_out[(df_out['category'] == 'insurance') & (df_out['amount'] >= 8000)]['date']).dt.to_period('M').shape[0] > 2 or \
+                pd.to_datetime(df_out[(df_out['category'] == 'investmentincome') & (df_out['amount'] >= 8000)]['date']).dt.to_period('M').shape[0] > 2:
             df_out = Categorise.apply_salary_logic(df_out, is_loan_salary_check=True)
 
         df_out = Categorise.data_cleanup(df_out)
@@ -302,12 +307,12 @@ def bankCategorization(data, account_type='', sub_categorization=False, upi_sub_
         # get sub category
         sub_category_obj = SubCategory()
         df_out = sub_category_obj.get_sub_category(df_out)
-        df_out.rename(columns={'sub_category':'sub_category_soft'}, inplace=True)
+        df_out.rename(columns={'sub_category': 'sub_category_soft'}, inplace=True)
 
         # upi sub categorisation
         if sub_categorization:
-            df_out_debit = get_upi_details(df_out[df_out['type']=='DEBIT'], upi_sub_category_data_df)
-            df_out_credit = df_out[df_out['type']=='CREDIT']
+            df_out_debit = get_upi_details(df_out[df_out['type'] == 'DEBIT'], upi_sub_category_data_df)
+            df_out_credit = df_out[df_out['type'] == 'CREDIT']
             df_out_credit['merchant_name'] = ""
             df_out_credit['sub_category'] = ""
             df_out_credit['upi_id'] = ""
@@ -320,14 +325,26 @@ def bankCategorization(data, account_type='', sub_categorization=False, upi_sub_
         mask = ~(df_out['sub_category_soft'].isin(['', 'Others']))
         df_out.loc[mask, 'category'] = df_out.loc[mask, 'sub_category_soft']
 
-        mask = ((df_out['sub_category_soft']=='') | (df_out['sub_category_soft'].isna()) | (df_out['sub_category_soft']=='Others'))
+        mask = ((df_out['sub_category_soft'] == '') | (df_out['sub_category_soft'].isna()) | (df_out['sub_category_soft'] == 'Others'))
         df_out.loc[mask, "sub_category_soft"] = df_out.loc[mask, "sub_category"]
         df_out.drop(columns=['sub_category'], inplace=True)
-        df_out.rename(columns={'sub_category_soft': 'sub_category', 'merchant_name':'vendor'}, inplace=True)
+
+        df_out['receiver_name'] = ''
+        mask = (df_out['category22'].str.startswith("Transfer to")) | (df_out['category22'].str.startswith("Transfer from"))
+        df_out.loc[mask, 'receiver_name'] = df_out.loc[mask, 'category22'].str.replace("Transfer to", "").str.replace("Transfer from", "").str.strip()
+
+        merch_mapper = MerchantNameMapper()
+        df_out = merch_mapper.get_merchant_name(df_out)
+        mask = ((df_out['merchant_name'].isna()) | (df_out['merchant_name'].str.strip()=='')) & \
+               ((df_out['merchant_name_fuzzy'].notna()) & (df_out['merchant_name_fuzzy'].str.strip()!=''))
+        df_out.loc[mask, 'merchant_name'] = df_out.loc[mask, 'merchant_name_fuzzy']
+        df_out.rename(columns={'sub_category_soft': 'sub_category', 'merchant_name': 'vendor'}, inplace=True)
 
         assert df_out.shape[0] == bankdata.shape[0]
         df_out = df_out.sort_values(by='seq_id')
         df_out.drop(columns=['seq_id'], inplace=True)
+
+        df_out.loc[df_out['vendor']=='NA', 'vendor'] = ""
 
         df_out['category1'] = df_out['category']
         df_out.loc[df_out['category1'].str.startswith("Transfer from"), "category1"] = "Transfer in"
@@ -339,13 +356,15 @@ def bankCategorization(data, account_type='', sub_categorization=False, upi_sub_
         df_out['liab_or_asset'] = ""
         df_out.loc[df_out['type'] == 'CREDIT', 'liab_or_asset'] = df_out.loc[df_out['type'] == 'CREDIT', 'category'].map(asset_json).fillna("")
         df_out.loc[df_out['type'] == 'DEBIT', 'liab_or_asset'] = df_out.loc[df_out['type'] == 'DEBIT', 'category'].map(liab_json).fillna("")
+        df_out.loc[df_out['category'].str.lower().str.contains('bounce'), 'liab_or_asset'] = 'Negative event'
+
         df_asset = df_out.loc[df_out['liab_or_asset'] == 'Asset']
         df_liab = df_out.loc[df_out['liab_or_asset'] == 'Liability']
         df_neg_event = df_out.loc[df_out['liab_or_asset'] == 'Negative event']
 
         # categ_agg_df = df_out[['amount', 'date', 'category1', 'category']].groupby('category').agg({'amount': 'sum', 'category1': 'size'}).reset_index()
         # categ_agg_df.rename(columns={'amount': 'sum of amount', 'category1': 'count', 'date': 'date_lst'}, inplace=True)
-        vendor_mask = ((df_out['vendor'].notna()) & (df_out['vendor']!='') & (df_out['sub_category']!='INDIVIDUAL'))
+        vendor_mask = ((df_out['vendor'].notna()) & (df_out['vendor'] != '') & (df_out['sub_category'] != 'INDIVIDUAL'))
         vendor_agg_df = df_out[vendor_mask][['amount', 'date', 'vendor1', 'vendor', 'sub_category']].groupby('vendor').agg({'sub_category': lambda x: x.iloc[0], 'amount': 'sum', 'vendor1': 'size'}).reset_index()
         vendor_agg_df.rename(columns={'amount': 'sum of amount', 'vendor1': 'count', 'date': 'date_lst'}, inplace=True)
 
@@ -359,13 +378,8 @@ def bankCategorization(data, account_type='', sub_categorization=False, upi_sub_
         neg_event_agg_df.rename(columns={'amount': 'sum of amount', 'category1': 'count'}, inplace=True)
 
     except Exception as e:
-        raise e
+        # raise e
         df_out, categ_agg_df, vendor_agg_df, df_asset, df_liab, df_neg_event = None, None, None, None, None, None
 
     print(f"Total time for Version 3.0={time() - start_time}")
     return df_out[cols_to_return], vendor_agg_df, asset_agg_df, liab_agg_df, neg_event_agg_df
-
-
-
-
-

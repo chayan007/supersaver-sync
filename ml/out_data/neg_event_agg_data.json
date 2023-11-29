@@ -1,12 +1,22 @@
 [
     {
-        "category": "Bounced I/W ECS",
-        "sum of amount": 836457.0,
-        "count": 8
+        "category": "Below Min Balance",
+        "sum of amount": -676.39,
+        "count": 7
+    },
+    {
+        "category": "Bounced I/W Cheque",
+        "sum of amount": 10043.0,
+        "count": 1
+    },
+    {
+        "category": "Bounced I/W ECS Charges",
+        "sum of amount": -1469.7,
+        "count": 9
     },
     {
         "category": "Charges",
-        "sum of amount": -177.0,
-        "count": 1
+        "sum of amount": -2858.71,
+        "count": 13
     }
 ]
