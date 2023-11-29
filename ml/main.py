@@ -9,6 +9,7 @@ def make_user_json(df, data):
     category_lst = df['category'].tolist()
     vendor_lst = df['vendor'].tolist()
     sub_category_lst = df['sub_category'].tolist()
+    receiver_name_lst = df['receiver_name'].tolist()
     cnt = 0
 
     for key, value in data.items():
@@ -25,6 +26,7 @@ def make_user_json(df, data):
                             transaction['asset_or_liab'] = asset_or_liab[cnt]
                             transaction['vendor'] = vendor_lst[cnt]
                             transaction['sub_category'] = sub_category_lst[cnt]
+                            transaction['receiver_name'] = receiver_name_lst[cnt]
                             cnt+=1
                     except Exception as e:
                         # print("here I go on the road again", transaction)
@@ -46,7 +48,7 @@ if __name__=='__main__':
     user_df.to_csv("./out_data/user_data.csv", index=False)
 
     data = make_user_json(user_df, data)
-    with open('./out_data/user_data1.json', 'w') as fp:
+    with open('./out_data/user_data.json', 'w') as fp:
         json.dump(data, fp, indent=4)
 
     def save_df_to_json_format(file_path, df):
