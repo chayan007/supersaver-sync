@@ -58,12 +58,7 @@
                                 "transactionTimestamp": "2023-05-03T14:27:18+05:30",
                                 "txnId": "MIR2412300307484",
                                 "type": "DEBIT",
-                                "valueDate": "2023-05-03",
-                                "category": "Bounced I/W ECS Charges",
-                                "asset_or_liab": "Negative event",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "454139678-emi rtn charges-january 210223-mir2412300307484"
+                                "valueDate": "2023-05-03"
                             },
                             {
                                 "amount": "55.37",
@@ -74,12 +69,7 @@
                                 "transactionTimestamp": "2023-05-03T14:27:18+05:30",
                                 "txnId": "MIR2412299756655",
                                 "type": "DEBIT",
-                                "valueDate": "2023-05-03",
-                                "category": "Bounced I/W ECS Charges",
-                                "asset_or_liab": "Negative event",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "454139678-emi rtn charges-novembe 270123-mir2412299756655"
+                                "valueDate": "2023-05-03"
                             },
                             {
                                 "amount": "99.62",
@@ -90,12 +80,7 @@
                                 "transactionTimestamp": "2023-05-03T14:27:18+05:30",
                                 "txnId": "MIR2412299524147",
                                 "type": "DEBIT",
-                                "valueDate": "2023-05-03",
-                                "category": "Bounced I/W ECS Charges",
-                                "asset_or_liab": "Negative event",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "7403358-emi rtn charges-december- 080223-mir2412299524147"
+                                "valueDate": "2023-05-03"
                             },
                             {
                                 "amount": "10043.0",
@@ -106,12 +91,7 @@
                                 "transactionTimestamp": "2023-05-05T12:29:59+05:30",
                                 "txnId": "0000000454139678",
                                 "type": "DEBIT",
-                                "valueDate": "2023-05-05",
-                                "category": "Loan & EMI Repayment",
-                                "asset_or_liab": "Liability",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "emi 454139678 chq s4541396780091"
+                                "valueDate": "2023-05-05"
                             },
                             {
                                 "amount": "10043.0",
@@ -122,12 +102,7 @@
                                 "transactionTimestamp": "2023-05-05T12:29:59+05:30",
                                 "txnId": "0000000454139678",
                                 "type": "CREDIT",
-                                "valueDate": "2023-05-05",
-                                "category": "Bounced I/W Cheque",
-                                "asset_or_liab": "Negative event",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": ""
+                                "valueDate": "2023-05-05"
                             },
                             {
                                 "amount": "24863.0",
@@ -138,12 +113,7 @@
                                 "transactionTimestamp": "2023-05-05T17:38:49+05:30",
                                 "txnId": "0000000000318869",
                                 "type": "CREDIT",
-                                "valueDate": "2023-05-05",
-                                "category": "Rewards & Allowances",
-                                "asset_or_liab": "Asset",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": ""
+                                "valueDate": "2023-05-05"
                             },
                             {
                                 "amount": "10043.0",
@@ -154,12 +124,7 @@
                                 "transactionTimestamp": "2023-05-06T07:09:11+05:30",
                                 "txnId": "000000000000000 ",
                                 "type": "DEBIT",
-                                "valueDate": "2023-05-06",
-                                "category": "Loan & EMI Repayment",
-                                "asset_or_liab": "Liability",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "emi 454139678 chq s4541396780091 0523454139678-454139678"
+                                "valueDate": "2023-05-06"
                             },
                             {
                                 "amount": "6000.0",
@@ -170,12 +135,7 @@
                                 "transactionTimestamp": "2023-05-08T18:03:25+05:30",
                                 "txnId": "N128232450570462",
                                 "type": "DEBIT",
-                                "valueDate": "2023-05-08",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "bhanu prakash"
+                                "valueDate": "2023-05-08"
                             },
                             {
                                 "amount": "8800.0",
@@ -186,12 +146,7 @@
                                 "transactionTimestamp": "2023-05-09T11:46:02+05:30",
                                 "txnId": "0000349548547407",
                                 "type": "DEBIT",
-                                "valueDate": "2023-05-09",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "PAVANKUMAR K",
-                                "sub_category": "INDIVIDUAL",
-                                "receiver_name": "9985048711@YBL"
+                                "valueDate": "2023-05-09"
                             },
                             {
                                 "amount": "20.01",
@@ -202,12 +157,7 @@
                                 "transactionTimestamp": "2023-05-12T10:31:40+05:30",
                                 "txnId": "MIR2413012028985",
                                 "type": "DEBIT",
-                                "valueDate": "2023-05-12",
-                                "category": "Bounced I/W ECS Charges",
-                                "asset_or_liab": "Negative event",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "7403358-emi rtn charges-december- 080223-mir2413012028985"
+                                "valueDate": "2023-05-12"
                             },
                             {
                                 "amount": "100005.0",
@@ -218,12 +168,7 @@
                                 "transactionTimestamp": "2023-05-23T16:24:30+05:30",
                                 "txnId": "0000314316705102",
                                 "type": "CREDIT",
-                                "valueDate": "2023-05-23",
-                                "category": "Transfer in",
-                                "asset_or_liab": "Asset",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "edugene technologies"
+                                "valueDate": "2023-05-23"
                             },
                             {
                                 "amount": "116.38",
@@ -234,12 +179,7 @@
                                 "transactionTimestamp": "2023-05-26T11:41:49+05:30",
                                 "txnId": "MIR2414557395239",
                                 "type": "DEBIT",
-                                "valueDate": "2023-05-26",
-                                "category": "Bounced I/W ECS Charges",
-                                "asset_or_liab": "Negative event",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "7403358-emi rtn charges-december- 080223-mir2414557395239"
+                                "valueDate": "2023-05-26"
                             },
                             {
                                 "amount": "1.42",
@@ -250,12 +190,7 @@
                                 "transactionTimestamp": "2023-05-26T11:41:57+05:30",
                                 "txnId": "MIR2414658471603",
                                 "type": "DEBIT",
-                                "valueDate": "2023-05-26",
-                                "category": "Charges",
-                                "asset_or_liab": "Negative event",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "janmar23 instaalertchg 6 sms 220323-mir2414658471603"
+                                "valueDate": "2023-05-26"
                             },
                             {
                                 "amount": "4.48",
@@ -266,12 +201,7 @@
                                 "transactionTimestamp": "2023-05-26T11:41:58+05:30",
                                 "txnId": "MIR2414557663583",
                                 "type": "DEBIT",
-                                "valueDate": "2023-05-26",
-                                "category": "Charges",
-                                "asset_or_liab": "Negative event",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "octdec22 instaalertchg 19 sms 040123-mir2414557663583"
+                                "valueDate": "2023-05-26"
                             },
                             {
                                 "amount": "49843.0",
@@ -282,12 +212,7 @@
                                 "transactionTimestamp": "2023-06-05T19:02:04+05:30",
                                 "txnId": "0000000000432964",
                                 "type": "CREDIT",
-                                "valueDate": "2023-06-05",
-                                "category": "Salary",
-                                "asset_or_liab": "Asset",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": ""
+                                "valueDate": "2023-06-05"
                             },
                             {
                                 "amount": "5000.0",
@@ -298,12 +223,7 @@
                                 "transactionTimestamp": "2023-06-17T20:21:08+05:30",
                                 "txnId": "0000316817071475",
                                 "type": "DEBIT",
-                                "valueDate": "2023-06-17",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "PILLAMETI BHUPAIAH",
-                                "sub_category": "INDIVIDUAL",
-                                "receiver_name": "GREATCODERTECHNOLOGIESS@OKSBI"
+                                "valueDate": "2023-06-17"
                             },
                             {
                                 "amount": "30000.0",
@@ -314,12 +234,7 @@
                                 "transactionTimestamp": "2023-06-19T16:02:18+05:30",
                                 "txnId": "0000317066062533",
                                 "type": "CREDIT",
-                                "valueDate": "2023-06-19",
-                                "category": "Transfer in",
-                                "asset_or_liab": "Asset",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "EGT.BHANUPRAKASH@OKAXIS"
+                                "valueDate": "2023-06-19"
                             },
                             {
                                 "amount": "23000.0",
@@ -330,12 +245,7 @@
                                 "transactionTimestamp": "2023-06-22T10:35:27+05:30",
                                 "txnId": "0000317325803429",
                                 "type": "DEBIT",
-                                "valueDate": "2023-06-22",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "EDUGENE TECHNOLOGIES PRIVATE LIMITED",
-                                "sub_category": "INDIVIDUAL",
-                                "receiver_name": "PRAKASHBANDI.DATA-1@OKAXIS"
+                                "valueDate": "2023-06-22"
                             },
                             {
                                 "amount": "1593.0",
@@ -346,12 +256,7 @@
                                 "transactionTimestamp": "2023-06-26T13:30:41+05:30",
                                 "txnId": "000000000000000 ",
                                 "type": "DEBIT",
-                                "valueDate": "2023-06-26",
-                                "category": "Loan & EMI Repayment",
-                                "asset_or_liab": "Liability",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "2606 overdue loan -454139678 recovered"
+                                "valueDate": "2023-06-26"
                             },
                             {
                                 "amount": "8000.0",
@@ -362,12 +267,7 @@
                                 "transactionTimestamp": "2023-06-27T11:08:01+05:30",
                                 "txnId": "0000317848206668",
                                 "type": "DEBIT",
-                                "valueDate": "2023-06-27",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "JAYAPRAKASH R",
-                                "sub_category": "INDIVIDUAL",
-                                "receiver_name": "JP16586@OKHDFCBANK"
+                                "valueDate": "2023-06-27"
                             },
                             {
                                 "amount": "20000.0",
@@ -378,12 +278,7 @@
                                 "transactionTimestamp": "2023-06-28T13:41:07+05:30",
                                 "txnId": "0000317954829582",
                                 "type": "DEBIT",
-                                "valueDate": "2023-06-28",
-                                "category": "Loan & EMI Repayment",
-                                "asset_or_liab": "Liability",
-                                "vendor": "IBL",
-                                "sub_category": "Others",
-                                "receiver_name": "DIGIAO@INDUS"
+                                "valueDate": "2023-06-28"
                             },
                             {
                                 "amount": "432.0",
@@ -394,12 +289,7 @@
                                 "transactionTimestamp": "2023-07-01T01:11:24+05:30",
                                 "txnId": "000000000000000 ",
                                 "type": "CREDIT",
-                                "valueDate": "2023-06-30",
-                                "category": "Interest",
-                                "asset_or_liab": "Asset",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": ""
+                                "valueDate": "2023-06-30"
                             },
                             {
                                 "amount": "10000.0",
@@ -410,12 +300,7 @@
                                 "transactionTimestamp": "2023-07-01T10:31:32+05:30",
                                 "txnId": "0000318246196947",
                                 "type": "DEBIT",
-                                "valueDate": "2023-07-01",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "POTHIREDDY BALA KRISHNA REDDY",
-                                "sub_category": "INDIVIDUAL",
-                                "receiver_name": "9110748478@YBL"
+                                "valueDate": "2023-07-01"
                             },
                             {
                                 "amount": "24784.0",
@@ -426,12 +311,7 @@
                                 "transactionTimestamp": "2023-07-01T20:56:27+05:30",
                                 "txnId": "0000318267273746",
                                 "type": "DEBIT",
-                                "valueDate": "2023-07-01",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "BANDI BHANU PRAKASH",
-                                "sub_category": "INDIVIDUAL",
-                                "receiver_name": "EGT.BHANUPRAKASH@OKICICI"
+                                "valueDate": "2023-07-01"
                             },
                             {
                                 "amount": "6242.0",
@@ -442,12 +322,7 @@
                                 "transactionTimestamp": "2023-07-01T20:57:05+05:30",
                                 "txnId": "0000318267282283",
                                 "type": "DEBIT",
-                                "valueDate": "2023-07-01",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "KAPPALA PAVAN KUMAR",
-                                "sub_category": "INDIVIDUAL",
-                                "receiver_name": "PAVAN8282@OKICICI"
+                                "valueDate": "2023-07-01"
                             },
                             {
                                 "amount": "11500.0",
@@ -458,12 +333,7 @@
                                 "transactionTimestamp": "2023-07-02T23:43:49+05:30",
                                 "txnId": "0000318398414238",
                                 "type": "DEBIT",
-                                "valueDate": "2023-07-03",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "Bandi Bhanu Prakash",
-                                "sub_category": "INDIVIDUAL",
-                                "receiver_name": "PRAKASHBANDI.DATA-2@OKAXIS"
+                                "valueDate": "2023-07-03"
                             },
                             {
                                 "amount": "14970.0",
@@ -474,12 +344,7 @@
                                 "transactionTimestamp": "2023-07-03T10:24:02+05:30",
                                 "txnId": "0000318402984032",
                                 "type": "DEBIT",
-                                "valueDate": "2023-07-03",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "BANDI BHANU PRAKASH",
-                                "sub_category": "INDIVIDUAL",
-                                "receiver_name": "EGT.BHANUPRAKASH@OKICICI"
+                                "valueDate": "2023-07-03"
                             },
                             {
                                 "amount": "17336.0",
@@ -490,12 +355,7 @@
                                 "transactionTimestamp": "2023-07-03T20:44:32+05:30",
                                 "txnId": "0000318421680189",
                                 "type": "DEBIT",
-                                "valueDate": "2023-07-03",
-                                "category": "CreditCard Payment",
-                                "asset_or_liab": "Liability",
-                                "vendor": "CredClub",
-                                "sub_category": "Others",
-                                "receiver_name": "CREDCLUB@ICICI"
+                                "valueDate": "2023-07-03"
                             },
                             {
                                 "amount": "36357.0",
@@ -506,12 +366,7 @@
                                 "transactionTimestamp": "2023-07-03T20:45:14+05:30",
                                 "txnId": "0000318421683622",
                                 "type": "DEBIT",
-                                "valueDate": "2023-07-03",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "BANDI BHANU PRAKASH",
-                                "sub_category": "INDIVIDUAL",
-                                "receiver_name": "EGT.BHANUPRAKASH@OKAXIS"
+                                "valueDate": "2023-07-03"
                             },
                             {
                                 "amount": "36357.0",
@@ -522,12 +377,7 @@
                                 "transactionTimestamp": "2023-07-03T20:45:15+05:30",
                                 "txnId": "0000318421683622",
                                 "type": "CREDIT",
-                                "valueDate": "2023-07-03",
-                                "category": "Reversal",
-                                "asset_or_liab": "Asset",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "PRAKASHBANDI.DATA@OKHDFCBANK"
+                                "valueDate": "2023-07-03"
                             },
                             {
                                 "amount": "36357.0",
@@ -538,12 +388,7 @@
                                 "transactionTimestamp": "2023-07-03T20:45:52+05:30",
                                 "txnId": "0000318421701418",
                                 "type": "DEBIT",
-                                "valueDate": "2023-07-03",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "BANDI BHANU PRAKASH",
-                                "sub_category": "INDIVIDUAL",
-                                "receiver_name": "EGT.BHANUPRAKASH@OKAXIS"
+                                "valueDate": "2023-07-03"
                             },
                             {
                                 "amount": "36357.0",
@@ -554,12 +399,7 @@
                                 "transactionTimestamp": "2023-07-03T20:45:53+05:30",
                                 "txnId": "0000318421701418",
                                 "type": "CREDIT",
-                                "valueDate": "2023-07-03",
-                                "category": "Reversal",
-                                "asset_or_liab": "Asset",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "PRAKASHBANDI.DATA@OKHDFCBANK"
+                                "valueDate": "2023-07-03"
                             },
                             {
                                 "amount": "36357.0",
@@ -570,12 +410,7 @@
                                 "transactionTimestamp": "2023-07-03T20:46:50+05:30",
                                 "txnId": "0000318421736532",
                                 "type": "DEBIT",
-                                "valueDate": "2023-07-03",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "BANDI BHANU PRAKASH",
-                                "sub_category": "INDIVIDUAL",
-                                "receiver_name": "EGT.BHANUPRAKASH@OKAXIS"
+                                "valueDate": "2023-07-03"
                             },
                             {
                                 "amount": "36357.0",
@@ -586,12 +421,7 @@
                                 "transactionTimestamp": "2023-07-03T20:46:51+05:30",
                                 "txnId": "0000318421736532",
                                 "type": "CREDIT",
-                                "valueDate": "2023-07-03",
-                                "category": "Reversal",
-                                "asset_or_liab": "Asset",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "PRAKASHBANDI.DATA@OKHDFCBANK"
+                                "valueDate": "2023-07-03"
                             },
                             {
                                 "amount": "35000.0",
@@ -602,12 +432,7 @@
                                 "transactionTimestamp": "2023-07-03T20:49:13+05:30",
                                 "txnId": "0000318421830270",
                                 "type": "DEBIT",
-                                "valueDate": "2023-07-03",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "BANDI BHANU PRAKASH",
-                                "sub_category": "INDIVIDUAL",
-                                "receiver_name": "EGT.BHANUPRAKASH@OKAXIS"
+                                "valueDate": "2023-07-03"
                             },
                             {
                                 "amount": "35000.0",
@@ -618,12 +443,7 @@
                                 "transactionTimestamp": "2023-07-03T20:49:13+05:30",
                                 "txnId": "0000318421830270",
                                 "type": "CREDIT",
-                                "valueDate": "2023-07-03",
-                                "category": "Reversal",
-                                "asset_or_liab": "Asset",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "PRAKASHBANDI.DATA@OKHDFCBANK"
+                                "valueDate": "2023-07-03"
                             },
                             {
                                 "amount": "16500.0",
@@ -634,12 +454,7 @@
                                 "transactionTimestamp": "2023-07-03T21:57:35+05:30",
                                 "txnId": "0000318424007397",
                                 "type": "DEBIT",
-                                "valueDate": "2023-07-03",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "BANDI BHANU PRAKASH",
-                                "sub_category": "INDIVIDUAL",
-                                "receiver_name": "EGT.BHANUPRAKASH@OKICICI"
+                                "valueDate": "2023-07-03"
                             },
                             {
                                 "amount": "16177.67",
@@ -650,12 +465,7 @@
                                 "transactionTimestamp": "2023-07-04T14:37:02+05:30",
                                 "txnId": "0000318536482767",
                                 "type": "DEBIT",
-                                "valueDate": "2023-07-04",
-                                "category": "CreditCard Payment",
-                                "asset_or_liab": "Liability",
-                                "vendor": "CredClub",
-                                "sub_category": "Others",
-                                "receiver_name": "CREDCLUB@ICICI"
+                                "valueDate": "2023-07-04"
                             },
                             {
                                 "amount": "5055.0",
@@ -666,12 +476,7 @@
                                 "transactionTimestamp": "2023-07-05T12:19:56+05:30",
                                 "txnId": "0000318660372906",
                                 "type": "DEBIT",
-                                "valueDate": "2023-07-05",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "BANDI BHANU PRAKASH",
-                                "sub_category": "INDIVIDUAL",
-                                "receiver_name": "EGT.BHANUPRAKASH@OKICICI"
+                                "valueDate": "2023-07-05"
                             },
                             {
                                 "amount": "49843.0",
@@ -682,12 +487,7 @@
                                 "transactionTimestamp": "2023-07-05T17:10:10+05:30",
                                 "txnId": "0000000000432964",
                                 "type": "CREDIT",
-                                "valueDate": "2023-07-05",
-                                "category": "Salary",
-                                "asset_or_liab": "Asset",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": ""
+                                "valueDate": "2023-07-05"
                             },
                             {
                                 "amount": "50000.0",
@@ -698,12 +498,7 @@
                                 "transactionTimestamp": "2023-07-08T17:30:58+05:30",
                                 "txnId": "0000355582556995",
                                 "type": "CREDIT",
-                                "valueDate": "2023-07-08",
-                                "category": "Transfer in",
-                                "asset_or_liab": "Asset",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "EGT.BHANUPRAKASH@OKICICI"
+                                "valueDate": "2023-07-08"
                             },
                             {
                                 "amount": "236.0",
@@ -714,12 +509,7 @@
                                 "transactionTimestamp": "2023-07-11T15:00:05+05:30",
                                 "txnId": "MIR2418836719580",
                                 "type": "DEBIT",
-                                "valueDate": "2023-07-11",
-                                "category": "Bounced I/W ECS Charges",
-                                "asset_or_liab": "Negative event",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "454139678-emi rtn charges-march-2 180523-mir2418836719580"
+                                "valueDate": "2023-07-11"
                             },
                             {
                                 "amount": "7500.0",
@@ -730,12 +520,7 @@
                                 "transactionTimestamp": "2023-07-12T14:08:14+05:30",
                                 "txnId": "0000319352698307",
                                 "type": "DEBIT",
-                                "valueDate": "2023-07-12",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "KAPPALA PAVAN KUMAR",
-                                "sub_category": "INDIVIDUAL",
-                                "receiver_name": "PAVAN8282@OKICICI"
+                                "valueDate": "2023-07-12"
                             },
                             {
                                 "amount": "12820.0",
@@ -746,12 +531,7 @@
                                 "transactionTimestamp": "2023-07-16T20:57:22+05:30",
                                 "txnId": "0000319775891134",
                                 "type": "DEBIT",
-                                "valueDate": "2023-07-16",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "Tonique",
-                                "sub_category": "Doctors & Consultation",
-                                "receiver_name": "52822111@PAYTM"
+                                "valueDate": "2023-07-16"
                             },
                             {
                                 "amount": "20000.0",
@@ -762,12 +542,7 @@
                                 "transactionTimestamp": "2023-07-17T18:59:33+05:30",
                                 "txnId": "0000319897747091",
                                 "type": "DEBIT",
-                                "valueDate": "2023-07-17",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "EDUGENE TECHNOLOGIES PRIVATE LIMITED",
-                                "sub_category": "INDIVIDUAL",
-                                "receiver_name": "PRAKASHBANDI.DATA-1@OKAXIS"
+                                "valueDate": "2023-07-17"
                             },
                             {
                                 "amount": "59000.0",
@@ -778,12 +553,7 @@
                                 "transactionTimestamp": "2023-07-20T12:31:13+05:30",
                                 "txnId": "0000320164326768",
                                 "type": "DEBIT",
-                                "valueDate": "2023-07-20",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "EDUGENE TECHNOLOGIES PRIVATE LIMITED",
-                                "sub_category": "INDIVIDUAL",
-                                "receiver_name": "PRAKASHBANDI.DATA-1@OKAXIS"
+                                "valueDate": "2023-07-20"
                             },
                             {
                                 "amount": "2.6",
@@ -794,12 +564,7 @@
                                 "transactionTimestamp": "2023-07-20T16:44:27+05:30",
                                 "txnId": "MIR2419954849294",
                                 "type": "DEBIT",
-                                "valueDate": "2023-07-20",
-                                "category": "Charges",
-                                "asset_or_liab": "Negative event",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "aprjun23 instaalertchg 11 sms 220523-mir2419954849294"
+                                "valueDate": "2023-07-20"
                             },
                             {
                                 "amount": "284.45",
@@ -810,12 +575,7 @@
                                 "transactionTimestamp": "2023-07-28T11:58:39+05:30",
                                 "txnId": "MIR2420882926996",
                                 "type": "DEBIT",
-                                "valueDate": "2023-07-28",
-                                "category": "Charges",
-                                "asset_or_liab": "Negative event",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "ambcharge for apr23 310523-mir2420882926996"
+                                "valueDate": "2023-07-28"
                             },
                             {
                                 "amount": "15943.0",
@@ -826,12 +586,7 @@
                                 "transactionTimestamp": "2023-08-05T12:57:38+05:30",
                                 "txnId": "0000000000390898",
                                 "type": "CREDIT",
-                                "valueDate": "2023-08-05",
-                                "category": "Salary",
-                                "asset_or_liab": "Asset",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": ""
+                                "valueDate": "2023-08-05"
                             },
                             {
                                 "amount": "10000.0",
@@ -842,12 +597,7 @@
                                 "transactionTimestamp": "2023-08-09T20:38:27+05:30",
                                 "txnId": "0000322133212379",
                                 "type": "DEBIT",
-                                "valueDate": "2023-08-09",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "Gowni Vaishnav",
-                                "sub_category": "INDIVIDUAL",
-                                "receiver_name": "GOWNIVAISHNAV2003@OKHDFCBANK"
+                                "valueDate": "2023-08-09"
                             },
                             {
                                 "amount": "560.0",
@@ -858,12 +608,7 @@
                                 "transactionTimestamp": "2023-08-09T21:25:08+05:30",
                                 "txnId": "0000000000006538",
                                 "type": "DEBIT",
-                                "valueDate": "2023-08-09",
-                                "category": "Food",
-                                "asset_or_liab": "Liability",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "madhu restaurant"
+                                "valueDate": "2023-08-09"
                             },
                             {
                                 "amount": "590.0",
@@ -874,12 +619,7 @@
                                 "transactionTimestamp": "2023-08-10T13:22:17+05:30",
                                 "txnId": "0000322247187830",
                                 "type": "DEBIT",
-                                "valueDate": "2023-08-10",
-                                "category": "Shopping & Purchase",
-                                "asset_or_liab": "Liability",
-                                "vendor": "SHAIK SAMAD",
-                                "sub_category": "Super Market",
-                                "receiver_name": "BHARATPE.90065900558@FBPE"
+                                "valueDate": "2023-08-10"
                             },
                             {
                                 "amount": "236.0",
@@ -890,12 +630,7 @@
                                 "transactionTimestamp": "2023-08-10T13:26:19+05:30",
                                 "txnId": "MIR2422111823244",
                                 "type": "DEBIT",
-                                "valueDate": "2023-08-10",
-                                "category": "Bounced I/W ECS Charges",
-                                "asset_or_liab": "Negative event",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "454139678-emi rtn charges-april-2 230523-mir2422111823244"
+                                "valueDate": "2023-08-10"
                             },
                             {
                                 "amount": "236.0",
@@ -906,12 +641,7 @@
                                 "transactionTimestamp": "2023-08-10T13:26:19+05:30",
                                 "txnId": "MIR2422111856036",
                                 "type": "DEBIT",
-                                "valueDate": "2023-08-10",
-                                "category": "Bounced I/W ECS Charges",
-                                "asset_or_liab": "Negative event",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "A/c"
+                                "valueDate": "2023-08-10"
                             },
                             {
                                 "amount": "2000.0",
@@ -922,12 +652,7 @@
                                 "transactionTimestamp": "2023-08-10T17:59:01+05:30",
                                 "txnId": "0000322255086126",
                                 "type": "DEBIT",
-                                "valueDate": "2023-08-10",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "ADMALA SAMYUKTHA",
-                                "sub_category": "INDIVIDUAL",
-                                "receiver_name": "SAMYUKTHA35ADMALA@OKHDFCBANK"
+                                "valueDate": "2023-08-10"
                             },
                             {
                                 "amount": "25.0",
@@ -938,12 +663,7 @@
                                 "transactionTimestamp": "2023-08-10T19:45:03+05:30",
                                 "txnId": "0000322259683874",
                                 "type": "DEBIT",
-                                "valueDate": "2023-08-10",
-                                "category": "Food",
-                                "asset_or_liab": "Liability",
-                                "vendor": "CAFE CASTLE",
-                                "sub_category": "Food Suppliers",
-                                "receiver_name": "MAB0451256A0124917@YESBANK"
+                                "valueDate": "2023-08-10"
                             },
                             {
                                 "amount": "600.0",
@@ -954,12 +674,7 @@
                                 "transactionTimestamp": "2023-08-10T20:04:52+05:30",
                                 "txnId": "0000322260229562",
                                 "type": "DEBIT",
-                                "valueDate": "2023-08-10",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "CHENNABOINA SAI PAVAN",
-                                "sub_category": "INDIVIDUAL",
-                                "receiver_name": "SAIPAVANYADAV62-3@OKHDFCBANK"
+                                "valueDate": "2023-08-10"
                             },
                             {
                                 "amount": "600.0",
@@ -970,12 +685,7 @@
                                 "transactionTimestamp": "2023-08-11T23:24:34+05:30",
                                 "txnId": "0000000000003795",
                                 "type": "DEBIT",
-                                "valueDate": "2023-08-11",
-                                "category": "Shopping & Purchase",
-                                "asset_or_liab": "Liability",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "noodle king"
+                                "valueDate": "2023-08-11"
                             },
                             {
                                 "amount": "290.0",
@@ -986,12 +696,7 @@
                                 "transactionTimestamp": "2023-08-15T20:42:53+05:30",
                                 "txnId": "0000322710572635",
                                 "type": "DEBIT",
-                                "valueDate": "2023-08-15",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "PRAKASHBANDI.DATA-2@OKHDFCBANK"
+                                "valueDate": "2023-08-15"
                             },
                             {
                                 "amount": "310.0",
@@ -1002,12 +707,7 @@
                                 "transactionTimestamp": "2023-08-17T00:49:23+05:30",
                                 "txnId": "0000000000006097",
                                 "type": "DEBIT",
-                                "valueDate": "2023-08-17",
-                                "category": "Entertainment & Lifestyle",
-                                "asset_or_liab": "Liability",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "spi cinemas pvt"
+                                "valueDate": "2023-08-17"
                             },
                             {
                                 "amount": "423.54",
@@ -1018,12 +718,7 @@
                                 "transactionTimestamp": "2023-08-19T18:15:17+05:30",
                                 "txnId": "MIR2423143054071",
                                 "type": "DEBIT",
-                                "valueDate": "2023-08-19",
-                                "category": "Charges",
-                                "asset_or_liab": "Negative event",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "ambcharge for apr23 310523-mir2423143054071"
+                                "valueDate": "2023-08-19"
                             },
                             {
                                 "amount": "72.46",
@@ -1034,12 +729,7 @@
                                 "transactionTimestamp": "2023-08-19T18:15:17+05:30",
                                 "txnId": "MIR2423143431532",
                                 "type": "DEBIT",
-                                "valueDate": "2023-08-19",
-                                "category": "Charges",
-                                "asset_or_liab": "Negative event",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "ambcharge for feb23 310523-mir2423143431532"
+                                "valueDate": "2023-08-19"
                             },
                             {
                                 "amount": "1.0",
@@ -1050,12 +740,7 @@
                                 "transactionTimestamp": "2023-08-30T17:04:11+05:30",
                                 "txnId": "0000324217347931",
                                 "type": "CREDIT",
-                                "valueDate": "2023-08-30",
-                                "category": "Transfer in",
-                                "asset_or_liab": "Asset",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "phonepeprivatelimi"
+                                "valueDate": "2023-08-30"
                             },
                             {
                                 "amount": "18000.0",
@@ -1066,12 +751,7 @@
                                 "transactionTimestamp": "2023-09-01T20:07:03+05:30",
                                 "txnId": "0000324441947005",
                                 "type": "CREDIT",
-                                "valueDate": "2023-09-01",
-                                "category": "Transfer in",
-                                "asset_or_liab": "Asset",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "PAYOUTS@YESBANK"
+                                "valueDate": "2023-09-01"
                             },
                             {
                                 "amount": "14960.0",
@@ -1082,12 +762,7 @@
                                 "transactionTimestamp": "2023-09-01T20:09:03+05:30",
                                 "txnId": "0000324403646677",
                                 "type": "DEBIT",
-                                "valueDate": "2023-09-01",
-                                "category": "CreditCard Payment",
-                                "asset_or_liab": "Liability",
-                                "vendor": "CredClub",
-                                "sub_category": "Others",
-                                "receiver_name": "CREDCLUB@ICICI"
+                                "valueDate": "2023-09-01"
                             },
                             {
                                 "amount": "3000.0",
@@ -1098,12 +773,7 @@
                                 "transactionTimestamp": "2023-09-01T20:16:19+05:30",
                                 "txnId": "0000324403925182",
                                 "type": "DEBIT",
-                                "valueDate": "2023-09-01",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "KAPPALA PAVAN KUMAR",
-                                "sub_category": "INDIVIDUAL",
-                                "receiver_name": "PAVAN8282@OKICICI"
+                                "valueDate": "2023-09-01"
                             },
                             {
                                 "amount": "41.0",
@@ -1114,12 +784,7 @@
                                 "transactionTimestamp": "2023-09-11T13:27:14+05:30",
                                 "txnId": "MIR2425188484833",
                                 "type": "DEBIT",
-                                "valueDate": "2023-09-11",
-                                "category": "Charges",
-                                "asset_or_liab": "Negative event",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "ambcharge for jan23 310523-mir2425188484833"
+                                "valueDate": "2023-09-11"
                             },
                             {
                                 "amount": "409000.0",
@@ -1130,12 +795,7 @@
                                 "transactionTimestamp": "2023-09-25T21:35:35+05:30",
                                 "txnId": "0000326821054504",
                                 "type": "CREDIT",
-                                "valueDate": "2023-09-25",
-                                "category": "Transfer in",
-                                "asset_or_liab": "Asset",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "MONEY TRANSFER"
+                                "valueDate": "2023-09-25"
                             },
                             {
                                 "amount": "3000.0",
@@ -1146,12 +806,7 @@
                                 "transactionTimestamp": "2023-09-26T19:37:41+05:30",
                                 "txnId": "0000326912865472",
                                 "type": "CREDIT",
-                                "valueDate": "2023-09-26",
-                                "category": "Transfer in",
-                                "asset_or_liab": "Asset",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "PRAKASHBANDI.DATA-1@OKAXIS"
+                                "valueDate": "2023-09-26"
                             },
                             {
                                 "amount": "2135.0",
@@ -1162,12 +817,7 @@
                                 "transactionTimestamp": "2023-09-30T11:30:42+05:30",
                                 "txnId": "0000327377127229",
                                 "type": "DEBIT",
-                                "valueDate": "2023-09-30",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "PIRATLA VENKATA SATYA SAI SAKETH",
-                                "sub_category": "INDIVIDUAL",
-                                "receiver_name": "SAKETHPIRATLA207@OKSBI"
+                                "valueDate": "2023-09-30"
                             },
                             {
                                 "amount": "321.0",
@@ -1178,12 +828,7 @@
                                 "transactionTimestamp": "2023-10-01T04:51:31+05:30",
                                 "txnId": "000000000000000 ",
                                 "type": "CREDIT",
-                                "valueDate": "2023-09-30",
-                                "category": "Interest",
-                                "asset_or_liab": "Asset",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": ""
+                                "valueDate": "2023-09-30"
                             },
                             {
                                 "amount": "3495.01",
@@ -1194,12 +839,7 @@
                                 "transactionTimestamp": "2023-10-01T16:59:18+05:30",
                                 "txnId": "0000000000001608",
                                 "type": "DEBIT",
-                                "valueDate": "2023-10-01",
-                                "category": "Shopping & Purchase",
-                                "asset_or_liab": "Liability",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "yousta"
+                                "valueDate": "2023-10-01"
                             },
                             {
                                 "amount": "4689.0",
@@ -1210,12 +850,7 @@
                                 "transactionTimestamp": "2023-10-01T23:35:37+05:30",
                                 "txnId": "0000000000547606",
                                 "type": "DEBIT",
-                                "valueDate": "2023-10-02",
-                                "category": "Shopping & Purchase",
-                                "asset_or_liab": "Liability",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "fire fly"
+                                "valueDate": "2023-10-02"
                             },
                             {
                                 "amount": "500.0",
@@ -1226,12 +861,7 @@
                                 "transactionTimestamp": "2023-10-01T23:36:31+05:30",
                                 "txnId": "0000327437119076",
                                 "type": "DEBIT",
-                                "valueDate": "2023-10-02",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "ASWINI HIMIRIKA",
-                                "sub_category": "INDIVIDUAL",
-                                "receiver_name": "ASWINIHIMIRIKA2015@OKICICI"
+                                "valueDate": "2023-10-02"
                             },
                             {
                                 "amount": "1000.0",
@@ -1242,12 +872,7 @@
                                 "transactionTimestamp": "2023-10-03T01:53:03+05:30",
                                 "txnId": "0000327671702126",
                                 "type": "DEBIT",
-                                "valueDate": "2023-10-03",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "Bandi Bhanu Prakash",
-                                "sub_category": "INDIVIDUAL",
-                                "receiver_name": "BBANDI2@YBL"
+                                "valueDate": "2023-10-03"
                             },
                             {
                                 "amount": "635.53",
@@ -1258,12 +883,7 @@
                                 "transactionTimestamp": "2023-10-03T13:23:42+05:30",
                                 "txnId": "MIR2427548862040",
                                 "type": "DEBIT",
-                                "valueDate": "2023-10-03",
-                                "category": "Charges",
-                                "asset_or_liab": "Negative event",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "ambcharge for feb23 310523-mir2427548862040"
+                                "valueDate": "2023-10-03"
                             },
                             {
                                 "amount": "666.99",
@@ -1274,12 +894,7 @@
                                 "transactionTimestamp": "2023-10-03T13:23:42+05:30",
                                 "txnId": "MIR2427549236118",
                                 "type": "DEBIT",
-                                "valueDate": "2023-10-03",
-                                "category": "Charges",
-                                "asset_or_liab": "Negative event",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "ambcharge for jan23 310523-mir2427549236118"
+                                "valueDate": "2023-10-03"
                             },
                             {
                                 "amount": "708.0",
@@ -1290,12 +905,7 @@
                                 "transactionTimestamp": "2023-10-03T13:23:43+05:30",
                                 "txnId": "MIR2427549637149",
                                 "type": "DEBIT",
-                                "valueDate": "2023-10-03",
-                                "category": "Charges",
-                                "asset_or_liab": "Negative event",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "ambcharge for mar23 310523-mir2427549637149"
+                                "valueDate": "2023-10-03"
                             },
                             {
                                 "amount": "234.32",
@@ -1306,12 +916,7 @@
                                 "transactionTimestamp": "2023-10-04T13:08:29+05:30",
                                 "txnId": "MIR2427542607654",
                                 "type": "DEBIT",
-                                "valueDate": "2023-10-04",
-                                "category": "Bounced I/W ECS Charges",
-                                "asset_or_liab": "Negative event",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "454139678-emi rtn charges-septemb 151222-mir2427542607654"
+                                "valueDate": "2023-10-04"
                             },
                             {
                                 "amount": "3050.0",
@@ -1322,12 +927,7 @@
                                 "transactionTimestamp": "2023-10-07T16:33:16+05:30",
                                 "txnId": "0000328027864807",
                                 "type": "DEBIT",
-                                "valueDate": "2023-10-07",
-                                "category": "Bills & Utilities",
-                                "asset_or_liab": "Liability",
-                                "vendor": "ECHOBOOOM MANAGEMENT and ENTEREPRENEURIAL",
-                                "sub_category": "Telecom Services",
-                                "receiver_name": "0791351A0113039.BQR@KOTAK"
+                                "valueDate": "2023-10-07"
                             },
                             {
                                 "amount": "88000.0",
@@ -1338,12 +938,7 @@
                                 "transactionTimestamp": "2023-10-11T10:30:04+05:30",
                                 "txnId": "0000328486940458",
                                 "type": "DEBIT",
-                                "valueDate": "2023-10-11",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "Bandi Bhanu Prakash",
-                                "sub_category": "INDIVIDUAL",
-                                "receiver_name": "BBANDI2@AXL"
+                                "valueDate": "2023-10-11"
                             },
                             {
                                 "amount": "7000.0",
@@ -1354,12 +949,7 @@
                                 "transactionTimestamp": "2023-10-13T19:46:54+05:30",
                                 "txnId": "0000328647590274",
                                 "type": "DEBIT",
-                                "valueDate": "2023-10-13",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "Bandi Bhanu Prakash",
-                                "sub_category": "INDIVIDUAL",
-                                "receiver_name": "PRAKASHBANDI25065@AXL"
+                                "valueDate": "2023-10-13"
                             },
                             {
                                 "amount": "24000.0",
@@ -1370,12 +960,7 @@
                                 "transactionTimestamp": "2023-10-15T11:13:17+05:30",
                                 "txnId": "0000328802854772",
                                 "type": "DEBIT",
-                                "valueDate": "2023-10-15",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "PADALA KIRAN REDDY",
-                                "sub_category": "INDIVIDUAL",
-                                "receiver_name": "KIRAN26524@OKHDFCBANK"
+                                "valueDate": "2023-10-15"
                             },
                             {
                                 "amount": "11200.0",
@@ -1386,12 +971,7 @@
                                 "transactionTimestamp": "2023-10-17T18:03:45+05:30",
                                 "txnId": "0000329088773665",
                                 "type": "DEBIT",
-                                "valueDate": "2023-10-17",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "PAVANKUMAR K",
-                                "sub_category": "INDIVIDUAL",
-                                "receiver_name": "PAVAN8282-1@OKICICI"
+                                "valueDate": "2023-10-17"
                             },
                             {
                                 "amount": "5000.0",
@@ -1402,12 +982,7 @@
                                 "transactionTimestamp": "2023-10-17T19:49:28+05:30",
                                 "txnId": "0000329094130219",
                                 "type": "DEBIT",
-                                "valueDate": "2023-10-17",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "PAVANKUMAR K",
-                                "sub_category": "INDIVIDUAL",
-                                "receiver_name": "PAVAN8282-1@OKICICI"
+                                "valueDate": "2023-10-17"
                             },
                             {
                                 "amount": "5102.0",
@@ -1418,12 +993,7 @@
                                 "transactionTimestamp": "2023-10-21T14:38:27+05:30",
                                 "txnId": "0000329418228424",
                                 "type": "DEBIT",
-                                "valueDate": "2023-10-21",
-                                "category": "Food",
-                                "asset_or_liab": "Liability",
-                                "vendor": "The Fishermans Wharf Hyderabad",
-                                "sub_category": "Hotels & Restaurants",
-                                "receiver_name": "Q256899234@YBL"
+                                "valueDate": "2023-10-21"
                             },
                             {
                                 "amount": "100000.0",
@@ -1434,12 +1004,7 @@
                                 "transactionTimestamp": "2023-10-21T18:09:10+05:30",
                                 "txnId": "0000329418378650",
                                 "type": "DEBIT",
-                                "valueDate": "2023-10-21",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "bhanu prakash"
+                                "valueDate": "2023-10-21"
                             },
                             {
                                 "amount": "6710.0",
@@ -1450,12 +1015,7 @@
                                 "transactionTimestamp": "2023-10-21T19:17:05+05:30",
                                 "txnId": "0000000000545317",
                                 "type": "DEBIT",
-                                "valueDate": "2023-10-21",
-                                "category": "Shopping & Purchase",
-                                "asset_or_liab": "Liability",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "tonique"
+                                "valueDate": "2023-10-21"
                             },
                             {
                                 "amount": "48195.0",
@@ -1466,12 +1026,7 @@
                                 "transactionTimestamp": "2023-10-22T11:35:24+05:30",
                                 "txnId": "0000329546076370",
                                 "type": "DEBIT",
-                                "valueDate": "2023-10-22",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "BANDI BHANU PRAKASH",
-                                "sub_category": "INDIVIDUAL",
-                                "receiver_name": "PRAKASHBANDI2506-5@OKAXIS"
+                                "valueDate": "2023-10-22"
                             },
                             {
                                 "amount": "25000.0",
@@ -1482,12 +1037,7 @@
                                 "transactionTimestamp": "2023-11-02T00:57:49+05:30",
                                 "txnId": "0000330600102139",
                                 "type": "DEBIT",
-                                "valueDate": "2023-11-02",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "BANDI BHANU PRAKASH",
-                                "sub_category": "INDIVIDUAL",
-                                "receiver_name": "EGT.BHANUPRAKASH@OKICICI"
+                                "valueDate": "2023-11-02"
                             },
                             {
                                 "amount": "20000.0",
@@ -1498,12 +1048,7 @@
                                 "transactionTimestamp": "2023-11-02T08:00:03+05:30",
                                 "txnId": "0000330601927150",
                                 "type": "DEBIT",
-                                "valueDate": "2023-11-02",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "BANDI BHANU PRAKASH",
-                                "sub_category": "INDIVIDUAL",
-                                "receiver_name": "EGT.BHANUPRAKASH@OKICICI"
+                                "valueDate": "2023-11-02"
                             },
                             {
                                 "amount": "1000.0",
@@ -1514,12 +1059,7 @@
                                 "transactionTimestamp": "2023-11-02T09:01:16+05:30",
                                 "txnId": "0000330603412838",
                                 "type": "DEBIT",
-                                "valueDate": "2023-11-02",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "BANDI BHANU PRAKASH",
-                                "sub_category": "INDIVIDUAL",
-                                "receiver_name": "EGT.BHANUPRAKASH@OKICICI"
+                                "valueDate": "2023-11-02"
                             },
                             {
                                 "amount": "11210.0",
@@ -1530,12 +1070,7 @@
                                 "transactionTimestamp": "2023-11-03T09:36:04+05:30",
                                 "txnId": "0000330787037732",
                                 "type": "DEBIT",
-                                "valueDate": "2023-11-03",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "Bandi Bhanu Prakash",
-                                "sub_category": "INDIVIDUAL",
-                                "receiver_name": "BBANDI2@AXL"
+                                "valueDate": "2023-11-03"
                             },
                             {
                                 "amount": "1.66",
@@ -1546,12 +1081,7 @@
                                 "transactionTimestamp": "2023-11-04T13:31:50+05:30",
                                 "txnId": "MIR2430534982289",
                                 "type": "DEBIT",
-                                "valueDate": "2023-11-04",
-                                "category": "Charges",
-                                "asset_or_liab": "Negative event",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "julsep23 instaalertchg 7 sms 031023-mir2430534982289"
+                                "valueDate": "2023-11-04"
                             },
                             {
                                 "amount": "1410.12",
@@ -1562,12 +1092,7 @@
                                 "transactionTimestamp": "2023-11-06T14:50:27+05:30",
                                 "txnId": "0000331058965408",
                                 "type": "DEBIT",
-                                "valueDate": "2023-11-06",
-                                "category": "Loan & EMI Repayment",
-                                "asset_or_liab": "Liability",
-                                "vendor": "LAZYPAY PRIVATE",
-                                "sub_category": "Others",
-                                "receiver_name": "LAZYPAYPRIVATE901.RZP@ICICI"
+                                "valueDate": "2023-11-06"
                             },
                             {
                                 "amount": "5.9",
@@ -1578,12 +1103,7 @@
                                 "transactionTimestamp": "2023-11-07T13:43:26+05:30",
                                 "txnId": "MIR2431143112794",
                                 "type": "DEBIT",
-                                "valueDate": "2023-11-07",
-                                "category": "Charges",
-                                "asset_or_liab": "Negative event",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": ".imps p2p 329418378650# 211023-mir2431143112794"
+                                "valueDate": "2023-11-07"
                             },
                             {
                                 "amount": "3395.0",
@@ -1594,12 +1114,7 @@
                                 "transactionTimestamp": "2023-11-07T17:05:20+05:30",
                                 "txnId": "0000331198859289",
                                 "type": "DEBIT",
-                                "valueDate": "2023-11-07",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "MOHAMMED GHOUSE UDDIN",
-                                "sub_category": "INDIVIDUAL",
-                                "receiver_name": "SHAIKFAIIZANYAHOO@OKSBI"
+                                "valueDate": "2023-11-07"
                             },
                             {
                                 "amount": "13635.0",
@@ -1610,12 +1125,7 @@
                                 "transactionTimestamp": "2023-11-08T13:23:32+05:30",
                                 "txnId": "0000331226955503",
                                 "type": "DEBIT",
-                                "valueDate": "2023-11-08",
-                                "category": "Loan & EMI Repayment",
-                                "asset_or_liab": "Liability",
-                                "vendor": "Krazybee",
-                                "sub_category": "Others",
-                                "receiver_name": "CF.KRAZYBEE@KOTAK"
+                                "valueDate": "2023-11-08"
                             },
                             {
                                 "amount": "5000.0",
@@ -1626,12 +1136,7 @@
                                 "transactionTimestamp": "2023-11-10T10:53:57+05:30",
                                 "txnId": "0000331495371281",
                                 "type": "DEBIT",
-                                "valueDate": "2023-11-10",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "BANDI BHANU PRAKASH",
-                                "sub_category": "INDIVIDUAL",
-                                "receiver_name": "EGT.BHANUPRAKASH-2@OKICICI"
+                                "valueDate": "2023-11-10"
                             },
                             {
                                 "amount": "10000.0",
@@ -1642,12 +1147,7 @@
                                 "transactionTimestamp": "2023-11-11T10:01:28+05:30",
                                 "txnId": "0000331532324089",
                                 "type": "DEBIT",
-                                "valueDate": "2023-11-11",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "BANDI BHANU PRAKASH",
-                                "sub_category": "INDIVIDUAL",
-                                "receiver_name": "PRAKASHBANDI2506-2@OKSBI"
+                                "valueDate": "2023-11-11"
                             },
                             {
                                 "amount": "387.0",
@@ -1658,12 +1158,7 @@
                                 "transactionTimestamp": "2023-11-11T10:01:49+05:30",
                                 "txnId": "0000331532342883",
                                 "type": "DEBIT",
-                                "valueDate": "2023-11-11",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "BANDI BHANU PRAKASH",
-                                "sub_category": "INDIVIDUAL",
-                                "receiver_name": "PRAKASHBANDI2506-2@OKSBI"
+                                "valueDate": "2023-11-11"
                             },
                             {
                                 "amount": "2390.0",
@@ -1674,12 +1169,7 @@
                                 "transactionTimestamp": "2023-11-11T10:10:40+05:30",
                                 "txnId": "0000331532680521",
                                 "type": "DEBIT",
-                                "valueDate": "2023-11-11",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "BANDI BHANU PRAKASH",
-                                "sub_category": "INDIVIDUAL",
-                                "receiver_name": "PRAKASHBANDI2506-2@OKSBI"
+                                "valueDate": "2023-11-11"
                             },
                             {
                                 "amount": "6500.0",
@@ -1690,12 +1180,7 @@
                                 "transactionTimestamp": "2023-11-12T19:22:51+05:30",
                                 "txnId": "0000331693313747",
                                 "type": "DEBIT",
-                                "valueDate": "2023-11-12",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "BANDI BHANU PRAKASH",
-                                "sub_category": "INDIVIDUAL",
-                                "receiver_name": "PRAKASHBANDI2506-2@OKSBI"
+                                "valueDate": "2023-11-12"
                             },
                             {
                                 "amount": "15.0",
@@ -1706,12 +1191,7 @@
                                 "transactionTimestamp": "2023-11-12T19:23:35+05:30",
                                 "txnId": "0000368234735202",
                                 "type": "DEBIT",
-                                "valueDate": "2023-11-12",
-                                "category": "Food",
-                                "asset_or_liab": "Liability",
-                                "vendor": "M RAHUL KRISHNA REDD",
-                                "sub_category": "Hotels & Restaurants",
-                                "receiver_name": "Q817613863@YBL"
+                                "valueDate": "2023-11-12"
                             }
                         ]
                     }
@@ -1775,12 +1255,7 @@
                                 "transactionTimestamp": "2023-05-03T00:00:00+05:30",
                                 "txnId": "",
                                 "type": "DEBIT",
-                                "valueDate": "2023-05-03",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "BANDI BHA"
+                                "valueDate": "2023-05-03"
                             },
                             {
                                 "amount": "315.0",
@@ -1791,12 +1266,7 @@
                                 "transactionTimestamp": "2023-05-05T00:00:00+05:30",
                                 "txnId": "",
                                 "type": "DEBIT",
-                                "valueDate": "2023-05-05",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "EDUGENE T"
+                                "valueDate": "2023-05-05"
                             },
                             {
                                 "amount": "25704.0",
@@ -1807,12 +1277,7 @@
                                 "transactionTimestamp": "2023-05-10T00:00:00+05:30",
                                 "txnId": "",
                                 "type": "CREDIT",
-                                "valueDate": "2023-05-10",
-                                "category": "Loan Disbursed",
-                                "asset_or_liab": "Asset",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "poonawal"
+                                "valueDate": "2023-05-10"
                             },
                             {
                                 "amount": "5005.9",
@@ -1823,12 +1288,7 @@
                                 "transactionTimestamp": "2023-05-10T00:00:00+05:30",
                                 "txnId": "",
                                 "type": "DEBIT",
-                                "valueDate": "2023-05-10",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": ""
+                                "valueDate": "2023-05-10"
                             },
                             {
                                 "amount": "20000.0",
@@ -1839,12 +1299,7 @@
                                 "transactionTimestamp": "2023-05-10T00:00:00+05:30",
                                 "txnId": "",
                                 "type": "DEBIT",
-                                "valueDate": "2023-05-10",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "EDUGENE T"
+                                "valueDate": "2023-05-10"
                             },
                             {
                                 "amount": "507.0",
@@ -1855,12 +1310,7 @@
                                 "transactionTimestamp": "2023-05-20T00:00:00+05:30",
                                 "txnId": "",
                                 "type": "DEBIT",
-                                "valueDate": "2023-05-20",
-                                "category": "Electricity bill",
-                                "asset_or_liab": "Liability",
-                                "vendor": "",
-                                "sub_category": "Electricity bill",
-                                "receiver_name": "TSSPDCL E"
+                                "valueDate": "2023-05-20"
                             },
                             {
                                 "amount": "80.0",
@@ -1871,12 +1321,7 @@
                                 "transactionTimestamp": "2023-05-20T00:00:00+05:30",
                                 "txnId": "",
                                 "type": "DEBIT",
-                                "valueDate": "2023-05-20",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "BHARATPE"
+                                "valueDate": "2023-05-20"
                             },
                             {
                                 "amount": "192130.0",
@@ -1887,12 +1332,7 @@
                                 "transactionTimestamp": "2023-05-22T00:00:00+05:30",
                                 "txnId": "",
                                 "type": "CREDIT",
-                                "valueDate": "2023-05-22",
-                                "category": "Loan Disbursed",
-                                "asset_or_liab": "Asset",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "krazybee"
+                                "valueDate": "2023-05-22"
                             },
                             {
                                 "amount": "108.0",
@@ -1903,12 +1343,7 @@
                                 "transactionTimestamp": "2023-05-22T00:00:00+05:30",
                                 "txnId": "",
                                 "type": "DEBIT",
-                                "valueDate": "2023-05-22",
-                                "category": "Tax",
-                                "asset_or_liab": "Liability",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "gst @18% on mab charge"
+                                "valueDate": "2023-05-22"
                             },
                             {
                                 "amount": "600.0",
@@ -1919,12 +1354,7 @@
                                 "transactionTimestamp": "2023-05-22T00:00:00+05:30",
                                 "txnId": "",
                                 "type": "DEBIT",
-                                "valueDate": "2023-05-22",
-                                "category": "Below Min Balance",
-                                "asset_or_liab": "Negative event",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "non-maint avg bal chgs mar2023"
+                                "valueDate": "2023-05-22"
                             },
                             {
                                 "amount": "21502.04",
@@ -1935,12 +1365,7 @@
                                 "transactionTimestamp": "2023-05-24T00:00:00+05:30",
                                 "txnId": "",
                                 "type": "DEBIT",
-                                "valueDate": "2023-05-24",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "SIMPL"
+                                "valueDate": "2023-05-24"
                             },
                             {
                                 "amount": "4100.0",
@@ -1951,12 +1376,7 @@
                                 "transactionTimestamp": "2023-05-28T00:00:00+05:30",
                                 "txnId": "",
                                 "type": "DEBIT",
-                                "valueDate": "2023-05-28",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "S SUBHA L"
+                                "valueDate": "2023-05-28"
                             },
                             {
                                 "amount": "30000.0",
@@ -1967,12 +1387,7 @@
                                 "transactionTimestamp": "2023-06-02T00:00:00+05:30",
                                 "txnId": "",
                                 "type": "CREDIT",
-                                "valueDate": "2023-06-02",
-                                "category": "Transfer in",
-                                "asset_or_liab": "Asset",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "bandi bha"
+                                "valueDate": "2023-06-02"
                             },
                             {
                                 "amount": "20000.0",
@@ -1983,12 +1398,7 @@
                                 "transactionTimestamp": "2023-06-02T00:00:00+05:30",
                                 "txnId": "",
                                 "type": "DEBIT",
-                                "valueDate": "2023-06-02",
-                                "category": "CreditCard Payment",
-                                "asset_or_liab": "Liability",
-                                "vendor": "Cred",
-                                "sub_category": "",
-                                "receiver_name": "CREDCLUB"
+                                "valueDate": "2023-06-02"
                             },
                             {
                                 "amount": "5189.73",
@@ -1999,12 +1409,7 @@
                                 "transactionTimestamp": "2023-06-02T00:00:00+05:30",
                                 "txnId": "",
                                 "type": "DEBIT",
-                                "valueDate": "2023-06-02",
-                                "category": "CreditCard Payment",
-                                "asset_or_liab": "Liability",
-                                "vendor": "Cred",
-                                "sub_category": "",
-                                "receiver_name": "CREDCLUB"
+                                "valueDate": "2023-06-02"
                             },
                             {
                                 "amount": "4000.0",
@@ -2015,12 +1420,7 @@
                                 "transactionTimestamp": "2023-06-02T00:00:00+05:30",
                                 "txnId": "",
                                 "type": "DEBIT",
-                                "valueDate": "2023-06-02",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "JAYAPRAKA"
+                                "valueDate": "2023-06-02"
                             },
                             {
                                 "amount": "2500.0",
@@ -2031,12 +1431,7 @@
                                 "transactionTimestamp": "2023-06-02T00:00:00+05:30",
                                 "txnId": "",
                                 "type": "DEBIT",
-                                "valueDate": "2023-06-02",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": ""
+                                "valueDate": "2023-06-02"
                             },
                             {
                                 "amount": "60000.0",
@@ -2047,12 +1442,7 @@
                                 "transactionTimestamp": "2023-06-02T00:00:00+05:30",
                                 "txnId": "",
                                 "type": "DEBIT",
-                                "valueDate": "2023-06-02",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "bandi bh"
+                                "valueDate": "2023-06-02"
                             },
                             {
                                 "amount": "2926.26",
@@ -2063,12 +1453,7 @@
                                 "transactionTimestamp": "2023-06-04T00:00:00+05:30",
                                 "txnId": "",
                                 "type": "DEBIT",
-                                "valueDate": "2023-06-04",
-                                "category": "Loan & EMI Repayment",
-                                "asset_or_liab": "Liability",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "LAZYPAY P"
+                                "valueDate": "2023-06-04"
                             },
                             {
                                 "amount": "100000.0",
@@ -2079,12 +1464,7 @@
                                 "transactionTimestamp": "2023-06-05T00:00:00+05:30",
                                 "txnId": "",
                                 "type": "DEBIT",
-                                "valueDate": "2023-06-05",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "greatcod"
+                                "valueDate": "2023-06-05"
                             },
                             {
                                 "amount": "300.0",
@@ -2095,12 +1475,7 @@
                                 "transactionTimestamp": "2023-06-06T00:00:00+05:30",
                                 "txnId": "",
                                 "type": "DEBIT",
-                                "valueDate": "2023-06-06",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "KAPPALA P"
+                                "valueDate": "2023-06-06"
                             },
                             {
                                 "amount": "800.0",
@@ -2111,12 +1486,7 @@
                                 "transactionTimestamp": "2023-06-16T00:00:00+05:30",
                                 "txnId": "",
                                 "type": "DEBIT",
-                                "valueDate": "2023-06-16",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "CHENNABOI"
+                                "valueDate": "2023-06-16"
                             },
                             {
                                 "amount": "209.0",
@@ -2127,12 +1497,7 @@
                                 "transactionTimestamp": "2023-07-01T00:00:00+05:30",
                                 "txnId": "",
                                 "type": "CREDIT",
-                                "valueDate": "2023-07-01",
-                                "category": "Interest",
-                                "asset_or_liab": "Asset",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": ""
+                                "valueDate": "2023-07-01"
                             },
                             {
                                 "amount": "424.0",
@@ -2143,12 +1508,7 @@
                                 "transactionTimestamp": "2023-07-05T00:00:00+05:30",
                                 "txnId": "",
                                 "type": "DEBIT",
-                                "valueDate": "2023-07-05",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "BANDI BHA"
+                                "valueDate": "2023-07-05"
                             },
                             {
                                 "amount": "186000.0",
@@ -2159,12 +1519,7 @@
                                 "transactionTimestamp": "2023-10-04T00:00:00+05:30",
                                 "txnId": "",
                                 "type": "CREDIT",
-                                "valueDate": "2023-10-04",
-                                "category": "Transfer in",
-                                "asset_or_liab": "Asset",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "edugenet"
+                                "valueDate": "2023-10-04"
                             },
                             {
                                 "amount": "77479.0",
@@ -2175,12 +1530,7 @@
                                 "transactionTimestamp": "2023-10-04T00:00:00+05:30",
                                 "txnId": "",
                                 "type": "CREDIT",
-                                "valueDate": "2023-10-04",
-                                "category": "Transfer in",
-                                "asset_or_liab": "Asset",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "bandi bha"
+                                "valueDate": "2023-10-04"
                             },
                             {
                                 "amount": "1.0",
@@ -2191,12 +1541,7 @@
                                 "transactionTimestamp": "2023-10-04T00:00:00+05:30",
                                 "txnId": "",
                                 "type": "CREDIT",
-                                "valueDate": "2023-10-04",
-                                "category": "Transfer in",
-                                "asset_or_liab": "Asset",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "bandi bha"
+                                "valueDate": "2023-10-04"
                             },
                             {
                                 "amount": "263469.87",
@@ -2207,12 +1552,7 @@
                                 "transactionTimestamp": "2023-10-04T00:00:00+05:30",
                                 "txnId": "",
                                 "type": "DEBIT",
-                                "valueDate": "2023-10-04",
-                                "category": "CreditCard Payment",
-                                "asset_or_liab": "Liability",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "creditcard payment xxxx 4912 ref#0k64m0f49fcq2i"
+                                "valueDate": "2023-10-04"
                             },
                             {
                                 "amount": "10.68",
@@ -2223,12 +1563,7 @@
                                 "transactionTimestamp": "2023-10-22T00:00:00+05:30",
                                 "txnId": "",
                                 "type": "DEBIT",
-                                "valueDate": "2023-10-22",
-                                "category": "Charges",
-                                "asset_or_liab": "Negative event",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "sms alerts chrgs incl gst"
+                                "valueDate": "2023-10-22"
                             }
                         ]
                     }
@@ -2296,12 +1631,7 @@
                                 "transactionTimestamp": "2023-05-22T11:22:15+05:30",
                                 "txnId": "20231428281966",
                                 "type": "CREDIT",
-                                "valueDate": "2023-05-22",
-                                "category": "Salary",
-                                "asset_or_liab": "Asset",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": ""
+                                "valueDate": "2023-05-22"
                             },
                             {
                                 "amount": "1.0",
@@ -2312,12 +1642,7 @@
                                 "transactionTimestamp": "2023-05-26T17:25:50+05:30",
                                 "txnId": "314617803008",
                                 "type": "CREDIT",
-                                "valueDate": "2023-05-26",
-                                "category": "Transfer in",
-                                "asset_or_liab": "Asset",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": ""
+                                "valueDate": "2023-05-26"
                             },
                             {
                                 "amount": "50000.0",
@@ -2328,12 +1653,7 @@
                                 "transactionTimestamp": "2023-05-26T17:34:31+05:30",
                                 "txnId": "AP23052617494418",
                                 "type": "CREDIT",
-                                "valueDate": "2023-05-26",
-                                "category": "Loan Disbursed",
-                                "asset_or_liab": "Asset",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": ""
+                                "valueDate": "2023-05-26"
                             },
                             {
                                 "amount": "5000.0",
@@ -2344,12 +1664,7 @@
                                 "transactionTimestamp": "2023-05-26T18:24:48+05:30",
                                 "txnId": "314618466692",
                                 "type": "DEBIT",
-                                "valueDate": "2023-05-26",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "BANDI BHANU PRAKASH"
+                                "valueDate": "2023-05-26"
                             },
                             {
                                 "amount": "20000.0",
@@ -2360,12 +1675,7 @@
                                 "transactionTimestamp": "2023-05-26T18:26:14+05:30",
                                 "txnId": "314618539145",
                                 "type": "DEBIT",
-                                "valueDate": "2023-05-26",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": ""
+                                "valueDate": "2023-05-26"
                             },
                             {
                                 "amount": "25000.0",
@@ -2376,12 +1686,7 @@
                                 "transactionTimestamp": "2023-05-26T18:57:46+05:30",
                                 "txnId": "314618482352",
                                 "type": "DEBIT",
-                                "valueDate": "2023-05-26",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "BANDI BHANU PRAKASH"
+                                "valueDate": "2023-05-26"
                             },
                             {
                                 "amount": "164.0",
@@ -2392,12 +1697,7 @@
                                 "transactionTimestamp": "2023-05-31T02:06:37+05:30",
                                 "txnId": "0",
                                 "type": "CREDIT",
-                                "valueDate": "2023-05-31",
-                                "category": "Interest",
-                                "asset_or_liab": "Asset",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": ""
+                                "valueDate": "2023-05-31"
                             },
                             {
                                 "amount": "80.0",
@@ -2408,12 +1708,7 @@
                                 "transactionTimestamp": "2023-06-01T15:20:19+05:30",
                                 "txnId": "315215376247",
                                 "type": "DEBIT",
-                                "valueDate": "2023-06-01",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "pay to bharatpe merchant"
+                                "valueDate": "2023-06-01"
                             },
                             {
                                 "amount": "20000.0",
@@ -2424,12 +1719,7 @@
                                 "transactionTimestamp": "2023-06-02T20:05:38+05:30",
                                 "txnId": "315320623798",
                                 "type": "DEBIT",
-                                "valueDate": "2023-06-02",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "MS K  SRAVANI"
+                                "valueDate": "2023-06-02"
                             },
                             {
                                 "amount": "20000.0",
@@ -2440,12 +1730,7 @@
                                 "transactionTimestamp": "2023-06-05T10:23:17+05:30",
                                 "txnId": "315610686696",
                                 "type": "DEBIT",
-                                "valueDate": "2023-06-05",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "MS K  SRAVANI"
+                                "valueDate": "2023-06-05"
                             },
                             {
                                 "amount": "4700.0",
@@ -2456,12 +1741,7 @@
                                 "transactionTimestamp": "2023-06-15T15:46:30+05:30",
                                 "txnId": "316615824656",
                                 "type": "DEBIT",
-                                "valueDate": "2023-06-15",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": ""
+                                "valueDate": "2023-06-15"
                             },
                             {
                                 "amount": "9590.0",
@@ -2472,12 +1752,7 @@
                                 "transactionTimestamp": "2023-06-16T10:16:04+05:30",
                                 "txnId": "0",
                                 "type": "DEBIT",
-                                "valueDate": "2023-06-16",
-                                "category": "Loan & EMI Repayment",
-                                "asset_or_liab": "Liability",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": ""
+                                "valueDate": "2023-06-16"
                             },
                             {
                                 "amount": "5000.0",
@@ -2488,12 +1763,7 @@
                                 "transactionTimestamp": "2023-06-17T20:20:51+05:30",
                                 "txnId": "316820170425",
                                 "type": "DEBIT",
-                                "valueDate": "2023-06-17",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": ""
+                                "valueDate": "2023-06-17"
                             },
                             {
                                 "amount": "3000.0",
@@ -2504,12 +1774,7 @@
                                 "transactionTimestamp": "2023-06-18T08:52:05+05:30",
                                 "txnId": "316908907318",
                                 "type": "DEBIT",
-                                "valueDate": "2023-06-18",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "BANDI BHANU PRAKASH"
+                                "valueDate": "2023-06-18"
                             },
                             {
                                 "amount": "16000.0",
@@ -2520,12 +1785,7 @@
                                 "transactionTimestamp": "2023-06-18T17:48:55+05:30",
                                 "txnId": "316917251071",
                                 "type": "DEBIT",
-                                "valueDate": "2023-06-18",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": ""
+                                "valueDate": "2023-06-18"
                             },
                             {
                                 "amount": "20000.0",
@@ -2536,12 +1796,7 @@
                                 "transactionTimestamp": "2023-06-20T12:08:59+05:30",
                                 "txnId": "317112896468",
                                 "type": "DEBIT",
-                                "valueDate": "2023-06-20",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": ""
+                                "valueDate": "2023-06-20"
                             },
                             {
                                 "amount": "20000.0",
@@ -2552,12 +1807,7 @@
                                 "transactionTimestamp": "2023-06-20T12:09:18+05:30",
                                 "txnId": "317112897971",
                                 "type": "DEBIT",
-                                "valueDate": "2023-06-20",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": ""
+                                "valueDate": "2023-06-20"
                             },
                             {
                                 "amount": "7200.0",
@@ -2568,12 +1818,7 @@
                                 "transactionTimestamp": "2023-06-22T00:45:10+05:30",
                                 "txnId": "317300674642",
                                 "type": "DEBIT",
-                                "valueDate": "2023-06-22",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": ""
+                                "valueDate": "2023-06-22"
                             },
                             {
                                 "amount": "8800.0",
@@ -2584,12 +1829,7 @@
                                 "transactionTimestamp": "2023-06-22T00:48:31+05:30",
                                 "txnId": "317300678045",
                                 "type": "DEBIT",
-                                "valueDate": "2023-06-22",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": ""
+                                "valueDate": "2023-06-22"
                             },
                             {
                                 "amount": "2000.0",
@@ -2600,12 +1840,7 @@
                                 "transactionTimestamp": "2023-06-22T10:43:00+05:30",
                                 "txnId": "317310702043",
                                 "type": "DEBIT",
-                                "valueDate": "2023-06-22",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": ""
+                                "valueDate": "2023-06-22"
                             },
                             {
                                 "amount": "8000.0",
@@ -2616,12 +1851,7 @@
                                 "transactionTimestamp": "2023-06-26T13:20:36+05:30",
                                 "txnId": "317713960645",
                                 "type": "DEBIT",
-                                "valueDate": "2023-06-26",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": ""
+                                "valueDate": "2023-06-26"
                             },
                             {
                                 "amount": "4200.0",
@@ -2632,12 +1862,7 @@
                                 "transactionTimestamp": "2023-06-26T13:27:25+05:30",
                                 "txnId": "317713990799",
                                 "type": "DEBIT",
-                                "valueDate": "2023-06-26",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": ""
+                                "valueDate": "2023-06-26"
                             },
                             {
                                 "amount": "241.0",
@@ -2648,12 +1873,7 @@
                                 "transactionTimestamp": "2023-06-30T01:52:29+05:30",
                                 "txnId": "0",
                                 "type": "CREDIT",
-                                "valueDate": "2023-06-30",
-                                "category": "Interest",
-                                "asset_or_liab": "Asset",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": ""
+                                "valueDate": "2023-06-30"
                             },
                             {
                                 "amount": "1000.0",
@@ -2664,12 +1884,7 @@
                                 "transactionTimestamp": "2023-07-14T09:34:04+05:30",
                                 "txnId": "319509789368",
                                 "type": "CREDIT",
-                                "valueDate": "2023-07-14",
-                                "category": "Transfer in",
-                                "asset_or_liab": "Asset",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "mob"
+                                "valueDate": "2023-07-14"
                             },
                             {
                                 "amount": "2000.0",
@@ -2680,12 +1895,7 @@
                                 "transactionTimestamp": "2023-07-14T09:34:53+05:30",
                                 "txnId": "319509793169",
                                 "type": "DEBIT",
-                                "valueDate": "2023-07-14",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": ""
+                                "valueDate": "2023-07-14"
                             },
                             {
                                 "amount": "10000.0",
@@ -2696,12 +1906,7 @@
                                 "transactionTimestamp": "2023-07-16T01:26:34+05:30",
                                 "txnId": "319701363167",
                                 "type": "CREDIT",
-                                "valueDate": "2023-07-16",
-                                "category": "Transfer in",
-                                "asset_or_liab": "Asset",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "mob"
+                                "valueDate": "2023-07-16"
                             },
                             {
                                 "amount": "9590.0",
@@ -2712,12 +1917,7 @@
                                 "transactionTimestamp": "2023-07-16T10:32:57+05:30",
                                 "txnId": "0",
                                 "type": "DEBIT",
-                                "valueDate": "2023-07-16",
-                                "category": "Loan & EMI Repayment",
-                                "asset_or_liab": "Liability",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": ""
+                                "valueDate": "2023-07-16"
                             },
                             {
                                 "amount": "1.0",
@@ -2728,12 +1928,7 @@
                                 "transactionTimestamp": "2023-07-20T12:11:27+05:30",
                                 "txnId": "16898352865483924647",
                                 "type": "CREDIT",
-                                "valueDate": "2023-07-20",
-                                "category": "Transfer in",
-                                "asset_or_liab": "Asset",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": ""
+                                "valueDate": "2023-07-20"
                             },
                             {
                                 "amount": "100.0",
@@ -2744,12 +1939,7 @@
                                 "transactionTimestamp": "2023-07-29T19:33:12+05:30",
                                 "txnId": "307297822372852372",
                                 "type": "DEBIT",
-                                "valueDate": "2023-07-29",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": ""
+                                "valueDate": "2023-07-29"
                             },
                             {
                                 "amount": "150.0",
@@ -2760,12 +1950,7 @@
                                 "transactionTimestamp": "2023-07-30T19:43:04+05:30",
                                 "txnId": "307305772575687060",
                                 "type": "DEBIT",
-                                "valueDate": "2023-07-30",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": ""
+                                "valueDate": "2023-07-30"
                             },
                             {
                                 "amount": "1000.0",
@@ -2776,12 +1961,7 @@
                                 "transactionTimestamp": "2023-07-30T22:51:35+05:30",
                                 "txnId": "307309216263362411",
                                 "type": "DEBIT",
-                                "valueDate": "2023-07-30",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": ""
+                                "valueDate": "2023-07-30"
                             },
                             {
                                 "amount": "5.0",
@@ -2792,12 +1972,7 @@
                                 "transactionTimestamp": "2023-07-31T02:06:57+05:30",
                                 "txnId": "0",
                                 "type": "CREDIT",
-                                "valueDate": "2023-07-31",
-                                "category": "Interest",
-                                "asset_or_liab": "Asset",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": ""
+                                "valueDate": "2023-07-31"
                             },
                             {
                                 "amount": "9190.0",
@@ -2808,12 +1983,7 @@
                                 "transactionTimestamp": "2023-08-15T14:47:09+05:30",
                                 "txnId": "308158792806975697",
                                 "type": "CREDIT",
-                                "valueDate": "2023-08-15",
-                                "category": "Transfer in",
-                                "asset_or_liab": "Asset",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "mob"
+                                "valueDate": "2023-08-15"
                             },
                             {
                                 "amount": "290.0",
@@ -2824,12 +1994,7 @@
                                 "transactionTimestamp": "2023-08-15T14:49:32+05:30",
                                 "txnId": "308159019047130951",
                                 "type": "CREDIT",
-                                "valueDate": "2023-08-15",
-                                "category": "Transfer in",
-                                "asset_or_liab": "Asset",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "mob"
+                                "valueDate": "2023-08-15"
                             },
                             {
                                 "amount": "9590.0",
@@ -2840,12 +2005,7 @@
                                 "transactionTimestamp": "2023-08-16T10:34:09+05:30",
                                 "txnId": "0",
                                 "type": "DEBIT",
-                                "valueDate": "2023-08-16",
-                                "category": "Loan & EMI Repayment",
-                                "asset_or_liab": "Liability",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": ""
+                                "valueDate": "2023-08-16"
                             },
                             {
                                 "amount": "1.0",
@@ -2856,12 +2016,7 @@
                                 "transactionTimestamp": "2023-08-31T01:54:45+05:30",
                                 "txnId": "0",
                                 "type": "CREDIT",
-                                "valueDate": "2023-08-31",
-                                "category": "Interest",
-                                "asset_or_liab": "Asset",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": ""
+                                "valueDate": "2023-08-31"
                             },
                             {
                                 "amount": "150000.0",
@@ -2872,12 +2027,7 @@
                                 "transactionTimestamp": "2023-09-08T09:58:46+05:30",
                                 "txnId": "20232514762707",
                                 "type": "CREDIT",
-                                "valueDate": "2023-09-08",
-                                "category": "Salary",
-                                "asset_or_liab": "Asset",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": ""
+                                "valueDate": "2023-09-08"
                             },
                             {
                                 "amount": "150000.0",
@@ -2888,12 +2038,7 @@
                                 "transactionTimestamp": "2023-09-08T10:00:43+05:30",
                                 "txnId": "325110384073",
                                 "type": "DEBIT",
-                                "valueDate": "2023-09-08",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "BANDI BHANU PRAKASH"
+                                "valueDate": "2023-09-08"
                             },
                             {
                                 "amount": "10000.0",
@@ -2904,12 +2049,7 @@
                                 "transactionTimestamp": "2023-09-16T08:38:46+05:30",
                                 "txnId": "232590000075855451",
                                 "type": "CREDIT",
-                                "valueDate": "2023-09-16",
-                                "category": "Transfer in",
-                                "asset_or_liab": "Asset",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "mob"
+                                "valueDate": "2023-09-16"
                             },
                             {
                                 "amount": "9590.0",
@@ -2920,12 +2060,7 @@
                                 "transactionTimestamp": "2023-09-16T10:37:54+05:30",
                                 "txnId": "0",
                                 "type": "DEBIT",
-                                "valueDate": "2023-09-16",
-                                "category": "Loan & EMI Repayment",
-                                "asset_or_liab": "Liability",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": ""
+                                "valueDate": "2023-09-16"
                             },
                             {
                                 "amount": "200000.0",
@@ -2936,12 +2071,7 @@
                                 "transactionTimestamp": "2023-09-30T23:18:40+05:30",
                                 "txnId": "20232739989931",
                                 "type": "CREDIT",
-                                "valueDate": "2023-09-30",
-                                "category": "Salary",
-                                "asset_or_liab": "Asset",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": ""
+                                "valueDate": "2023-09-30"
                             },
                             {
                                 "amount": "200000.0",
@@ -2952,12 +2082,7 @@
                                 "transactionTimestamp": "2023-09-30T23:24:53+05:30",
                                 "txnId": "0",
                                 "type": "DEBIT",
-                                "valueDate": "2023-09-30",
-                                "category": "Fixed Deposit",
-                                "asset_or_liab": "Liability",
-                                "vendor": "",
-                                "sub_category": "Fixed Deposit",
-                                "receiver_name": "fd 10153655313 mr. bandi bhanu prakash booked via internet banking"
+                                "valueDate": "2023-09-30"
                             },
                             {
                                 "amount": "1.0",
@@ -2968,12 +2093,7 @@
                                 "transactionTimestamp": "2023-09-30T02:07:25+05:30",
                                 "txnId": "0",
                                 "type": "CREDIT",
-                                "valueDate": "2023-09-30",
-                                "category": "Interest",
-                                "asset_or_liab": "Asset",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": ""
+                                "valueDate": "2023-09-30"
                             },
                             {
                                 "amount": "9590.0",
@@ -2984,12 +2104,7 @@
                                 "transactionTimestamp": "2023-10-16T00:30:46+05:30",
                                 "txnId": "232890000198764060",
                                 "type": "CREDIT",
-                                "valueDate": "2023-10-16",
-                                "category": "Transfer in",
-                                "asset_or_liab": "Asset",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "mob"
+                                "valueDate": "2023-10-16"
                             },
                             {
                                 "amount": "9590.0",
@@ -3000,12 +2115,7 @@
                                 "transactionTimestamp": "2023-10-16T10:47:16+05:30",
                                 "txnId": "0",
                                 "type": "DEBIT",
-                                "valueDate": "2023-10-16",
-                                "category": "Loan & EMI Repayment",
-                                "asset_or_liab": "Liability",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": ""
+                                "valueDate": "2023-10-16"
                             },
                             {
                                 "amount": "400.0",
@@ -3016,12 +2126,7 @@
                                 "transactionTimestamp": "2023-10-21T18:01:19+05:30",
                                 "txnId": "232940000221028836",
                                 "type": "DEBIT",
-                                "valueDate": "2023-10-21",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": ""
+                                "valueDate": "2023-10-21"
                             },
                             {
                                 "amount": "17.0",
@@ -3032,12 +2137,7 @@
                                 "transactionTimestamp": "2023-10-22T11:44:35+05:30",
                                 "txnId": "232950000223381439",
                                 "type": "DEBIT",
-                                "valueDate": "2023-10-22",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": ""
+                                "valueDate": "2023-10-22"
                             },
                             {
                                 "amount": "1.0",
@@ -3048,12 +2148,7 @@
                                 "transactionTimestamp": "2023-10-31T01:44:30+05:30",
                                 "txnId": "0",
                                 "type": "CREDIT",
-                                "valueDate": "2023-10-31",
-                                "category": "Interest",
-                                "asset_or_liab": "Asset",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": ""
+                                "valueDate": "2023-10-31"
                             },
                             {
                                 "amount": "1.0",
@@ -3064,12 +2159,7 @@
                                 "transactionTimestamp": "2023-11-03T13:49:31+05:30",
                                 "txnId": "330713314136",
                                 "type": "CREDIT",
-                                "valueDate": "2023-11-03",
-                                "category": "Transfer in",
-                                "asset_or_liab": "Asset",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": ""
+                                "valueDate": "2023-11-03"
                             },
                             {
                                 "amount": "49999.0",
@@ -3080,12 +2170,7 @@
                                 "transactionTimestamp": "2023-11-03T13:51:36+05:30",
                                 "txnId": "330713312386",
                                 "type": "CREDIT",
-                                "valueDate": "2023-11-03",
-                                "category": "Transfer in",
-                                "asset_or_liab": "Asset",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": ""
+                                "valueDate": "2023-11-03"
                             },
                             {
                                 "amount": "50000.0",
@@ -3096,12 +2181,7 @@
                                 "transactionTimestamp": "2023-11-03T19:30:58+05:30",
                                 "txnId": "330719728438",
                                 "type": "DEBIT",
-                                "valueDate": "2023-11-03",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "K PAVAN KUMAR"
+                                "valueDate": "2023-11-03"
                             },
                             {
                                 "amount": "200607.0",
@@ -3112,12 +2192,7 @@
                                 "transactionTimestamp": "2023-11-06T11:18:19+05:30",
                                 "txnId": "0",
                                 "type": "CREDIT",
-                                "valueDate": "2023-11-06",
-                                "category": "Tax",
-                                "asset_or_liab": "Asset",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": ""
+                                "valueDate": "2023-11-06"
                             },
                             {
                                 "amount": "200000.0",
@@ -3128,12 +2203,7 @@
                                 "transactionTimestamp": "2023-11-08T17:41:07+05:30",
                                 "txnId": "331217957753",
                                 "type": "DEBIT",
-                                "valueDate": "2023-11-08",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "BANDI BHANU PRAKASH"
+                                "valueDate": "2023-11-08"
                             },
                             {
                                 "amount": "200000.0",
@@ -3144,12 +2214,7 @@
                                 "transactionTimestamp": "2023-11-09T11:18:13+05:30",
                                 "txnId": "20233139038908",
                                 "type": "CREDIT",
-                                "valueDate": "2023-11-09",
-                                "category": "Salary",
-                                "asset_or_liab": "Asset",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": ""
+                                "valueDate": "2023-11-09"
                             },
                             {
                                 "amount": "200000.0",
@@ -3160,12 +2225,7 @@
                                 "transactionTimestamp": "2023-11-09T11:18:55+05:30",
                                 "txnId": "331311316382",
                                 "type": "DEBIT",
-                                "valueDate": "2023-11-09",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "BANDI BHANU PRAKASH"
+                                "valueDate": "2023-11-09"
                             },
                             {
                                 "amount": "300.0",
@@ -3176,12 +2236,7 @@
                                 "transactionTimestamp": "2023-11-12T19:32:32+05:30",
                                 "txnId": "233160000313638531",
                                 "type": "DEBIT",
-                                "valueDate": "2023-11-12",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": ""
+                                "valueDate": "2023-11-12"
                             },
                             {
                                 "amount": "150.0",
@@ -3192,12 +2247,7 @@
                                 "transactionTimestamp": "2023-11-12T19:42:09+05:30",
                                 "txnId": "233160000313672252",
                                 "type": "DEBIT",
-                                "valueDate": "2023-11-12",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": ""
+                                "valueDate": "2023-11-12"
                             }
                         ]
                     }
@@ -3264,12 +2314,7 @@
                                 "transactionTimestamp": "2023-05-15T00:00:00.0",
                                 "txnId": "S869698",
                                 "type": "DEBIT",
-                                "valueDate": "2023-05-15",
-                                "category": "Food",
-                                "asset_or_liab": "Liability",
-                                "vendor": "NASIM AKHTAR",
-                                "sub_category": "Hotels & Restaurants",
-                                "receiver_name": "Q010575475@YBL"
+                                "valueDate": "2023-05-15"
                             },
                             {
                                 "amount": "65.38",
@@ -3280,12 +2325,7 @@
                                 "transactionTimestamp": "2023-05-20T00:00:00.0",
                                 "txnId": "S50757600",
                                 "type": "DEBIT",
-                                "valueDate": "2023-05-20",
-                                "category": "Below Min Balance",
-                                "asset_or_liab": "Negative event",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "mabchgs-mar23+gst"
+                                "valueDate": "2023-05-20"
                             },
                             {
                                 "amount": "0.01",
@@ -3296,12 +2336,7 @@
                                 "transactionTimestamp": "2023-05-20T00:00:00.0",
                                 "txnId": "S53463826",
                                 "type": "DEBIT",
-                                "valueDate": "2023-05-20",
-                                "category": "Below Min Balance",
-                                "asset_or_liab": "Negative event",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "mabchgs-apr23+gst"
+                                "valueDate": "2023-05-20"
                             },
                             {
                                 "amount": "1.0",
@@ -3312,12 +2347,7 @@
                                 "transactionTimestamp": "2023-06-30T00:00:00.0",
                                 "txnId": "S60553646",
                                 "type": "CREDIT",
-                                "valueDate": "2023-06-30",
-                                "category": "Interest",
-                                "asset_or_liab": "Asset",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": ""
+                                "valueDate": "2023-06-30"
                             },
                             {
                                 "amount": "0.99",
@@ -3328,12 +2358,7 @@
                                 "transactionTimestamp": "2023-07-13T00:00:00.0",
                                 "txnId": "S14624411",
                                 "type": "DEBIT",
-                                "valueDate": "2023-07-13",
-                                "category": "Below Min Balance",
-                                "asset_or_liab": "Negative event",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "mabchgs-jun23+gst"
+                                "valueDate": "2023-07-13"
                             },
                             {
                                 "amount": "0.01",
@@ -3344,12 +2369,7 @@
                                 "transactionTimestamp": "2023-08-14T00:00:00.0",
                                 "txnId": "S28979880",
                                 "type": "DEBIT",
-                                "valueDate": "2023-08-14",
-                                "category": "Below Min Balance",
-                                "asset_or_liab": "Negative event",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "mabchgs-jul23+gst"
+                                "valueDate": "2023-08-14"
                             },
                             {
                                 "amount": "98000.0",
@@ -3360,12 +2380,7 @@
                                 "transactionTimestamp": "2023-09-04T00:00:00.0",
                                 "txnId": "S24687105",
                                 "type": "CREDIT",
-                                "valueDate": "2023-09-04",
-                                "category": "Transfer in",
-                                "asset_or_liab": "Asset",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "paidviacred"
+                                "valueDate": "2023-09-04"
                             },
                             {
                                 "amount": "28656.0",
@@ -3376,12 +2391,7 @@
                                 "transactionTimestamp": "2023-09-04T00:00:00.0",
                                 "txnId": "S24460134",
                                 "type": "DEBIT",
-                                "valueDate": "2023-09-04",
-                                "category": "CreditCard Payment",
-                                "asset_or_liab": "Liability",
-                                "vendor": "CredClub",
-                                "sub_category": "Others",
-                                "receiver_name": "CREDCLUB@ICICI"
+                                "valueDate": "2023-09-04"
                             },
                             {
                                 "amount": "69334.0",
@@ -3392,12 +2402,7 @@
                                 "transactionTimestamp": "2023-09-04T00:00:00.0",
                                 "txnId": "S24780171",
                                 "type": "DEBIT",
-                                "valueDate": "2023-09-04",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": ""
+                                "valueDate": "2023-09-04"
                             },
                             {
                                 "amount": "35000.0",
@@ -3408,12 +2413,7 @@
                                 "transactionTimestamp": "2023-09-12T00:00:00.0",
                                 "txnId": "S8100603",
                                 "type": "CREDIT",
-                                "valueDate": "2023-09-12",
-                                "category": "Transfer in",
-                                "asset_or_liab": "Asset",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "paidviacred"
+                                "valueDate": "2023-09-12"
                             },
                             {
                                 "amount": "35000.0",
@@ -3424,12 +2424,7 @@
                                 "transactionTimestamp": "2023-09-12T00:00:00.0",
                                 "txnId": "S8098472",
                                 "type": "DEBIT",
-                                "valueDate": "2023-09-12",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "prakashbandi.da"
+                                "valueDate": "2023-09-12"
                             },
                             {
                                 "amount": "9.99",
@@ -3440,12 +2435,7 @@
                                 "transactionTimestamp": "2023-09-14T00:00:00.0",
                                 "txnId": "S20292001",
                                 "type": "DEBIT",
-                                "valueDate": "2023-09-14",
-                                "category": "Below Min Balance",
-                                "asset_or_liab": "Negative event",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "mabchgs-aug23+gst"
+                                "valueDate": "2023-09-14"
                             },
                             {
                                 "amount": "18000.0",
@@ -3456,12 +2446,7 @@
                                 "transactionTimestamp": "2023-10-11T00:00:00.0",
                                 "txnId": "S79759296",
                                 "type": "CREDIT",
-                                "valueDate": "2023-10-11",
-                                "category": "Transfer in",
-                                "asset_or_liab": "Asset",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "paidviacred"
+                                "valueDate": "2023-10-11"
                             },
                             {
                                 "amount": "18000.0",
@@ -3472,12 +2457,7 @@
                                 "transactionTimestamp": "2023-10-11T00:00:00.0",
                                 "txnId": "S79770617",
                                 "type": "DEBIT",
-                                "valueDate": "2023-10-11",
-                                "category": "Transfer out",
-                                "asset_or_liab": "Liability",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": ""
+                                "valueDate": "2023-10-11"
                             },
                             {
                                 "amount": "0.01",
@@ -3488,12 +2468,7 @@
                                 "transactionTimestamp": "2023-10-11T00:00:00.0",
                                 "txnId": "S81170424",
                                 "type": "DEBIT",
-                                "valueDate": "2023-10-11",
-                                "category": "Below Min Balance",
-                                "asset_or_liab": "Negative event",
-                                "vendor": "",
-                                "sub_category": "",
-                                "receiver_name": "mabchgs-sep23+gst"
+                                "valueDate": "2023-10-11"
                             }
                         ]
                     }
