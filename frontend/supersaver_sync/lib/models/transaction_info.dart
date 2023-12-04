@@ -23,17 +23,16 @@ class TransactionInfo {
   @JsonKey(name: "valueDate")
   DateTime valueDate;
 
-  TransactionInfo({
-    required this.amount,
-    required this.currentBalance,
-    required this.mode,
-    required this.narration,
-    required this.reference,
-    required this.transactionTimestamp,
-    required this.txnId,
-    required this.type,
-    required this.valueDate,
-  });
+  TransactionInfo(
+      {required this.amount,
+      required this.currentBalance,
+      required this.mode,
+      required this.narration,
+      required this.reference,
+      required this.transactionTimestamp,
+      required this.txnId,
+      required this.type,
+      required this.valueDate});
 
   factory TransactionInfo.fromJson(Map<String, dynamic> json) =>
       _$TransactionInfoFromJson(json);

@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
@@ -23,6 +24,10 @@ class _ViewTransactionState extends State<ViewTransaction> {
   List<TransactionInfo> _responseData = [];
   final format = DateFormat('yyyy-MM-dd HH:mm');
 
+  List tags = ["EMI", "Salary"];
+
+  Random random = Random();
+
   @override
   void initState() {
     // TODO: implement initState
@@ -34,33 +39,41 @@ class _ViewTransactionState extends State<ViewTransaction> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        appBar: AppBar(
+            leading: IconButton(
+          onPressed: () {
+            Navigator.of(context).pop();
+          },
+          icon: Icon(Icons.arrow_back_ios),
+          color: Colors.grey,
+        )),
         backgroundColor: Colors.white,
         body: Container(
           child: Padding(
             padding: EdgeInsets.symmetric(horizontal: 20),
             child:
                 Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  CircleAvatar(
-                    radius: 25.0, // Adjust the radius as needed
-                    backgroundColor: Color(0xAA004165), // Set background color
-                    child: Icon(
-                      size: 50,
-                      Icons.account_circle,
-                      color: Colors.white, // Set icon color
-                    ),
-                  ),
-                  IconButton(
-                      onPressed: () {},
-                      icon: Icon(
-                        Icons.menu,
-                        size: 60,
-                        color: Color(0xAA004165),
-                      ))
-                ],
-              ),
+              // Row(
+              //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              //   children: [
+              //     CircleAvatar(
+              //       radius: 25.0, // Adjust the radius as needed
+              //       backgroundColor: Color(0xAA004165), // Set background color
+              //       child: Icon(
+              //         size: 50,
+              //         Icons.account_circle,
+              //         color: Colors.white, // Set icon color
+              //       ),
+              //     ),
+              //     IconButton(
+              //         onPressed: () {},
+              //         icon: Icon(
+              //           Icons.menu,
+              //           size: 60,
+              //           color: Color(0xAA004165),
+              //         ))
+              //   ],
+              // ),
               Text(
                 "Transaction",
                 style: TextStyle(
@@ -75,6 +88,7 @@ class _ViewTransactionState extends State<ViewTransaction> {
                         shrinkWrap: true,
                         physics: BouncingScrollPhysics(),
                         itemBuilder: (context, index) {
+                          int randomValue = random.nextInt(2);
                           return Padding(
                             padding: EdgeInsets.symmetric(vertical: 3),
                             child: Card(
@@ -97,14 +111,44 @@ class _ViewTransactionState extends State<ViewTransaction> {
                                       fontWeight: FontWeight.w500,
                                       fontSize: 18),
                                 ),
-                                subtitle: Text(format.format(
-                                    _responseData[index].transactionTimestamp)),
+                                subtitle: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(format.format(_responseData[index]
+                                        .transactionTimestamp)),
+                                    SizedBox(
+                                      height: 2,
+                                    ),
+                                    // Row(
+                                    //   children: [
+                                    //     Padding(
+                                    //       padding: EdgeInsets.only(right: 7),
+                                    //       child: Container(
+                                    //         decoration: BoxDecoration(
+                                    //             color: Colors.white),
+                                    //         child: Padding(
+                                    //           padding:
+                                    //               const EdgeInsets.symmetric(
+                                    //                   vertical: 2,
+                                    //                   horizontal: 8),
+                                    //           child: Text(_responseData[index]
+                                    //                   .category ??
+                                    //               'EMI'),
+                                    //         ),
+                                    //       ),
+                                    //     )
+                                    //   ],
+                                    // )
+                                  ],
+                                ),
                                 trailing: Text(
-                                  _responseData[index].amount,
+                                  _responseData[index].type == "DEBIT"
+                                      ? '- ' + _responseData[index].amount
+                                      : '+ ' + _responseData[index].amount,
                                   style: TextStyle(
                                     color: _responseData[index].type == "DEBIT"
                                         ? Color(0xFFD68101)
-                                        : Color(0xFF01D623),
+                                        : Colors.green.shade700,
                                     fontWeight: FontWeight.w700,
                                     fontSize: 14,
                                   ),

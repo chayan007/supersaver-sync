@@ -75,7 +75,7 @@ class _AccountsPageState extends State<AccountsPage> {
                             style: ElevatedButton.styleFrom(
                                 shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(10)),
-                                backgroundColor: Colors.blue),
+                                backgroundColor: Color(0xAA004165)),
                           ),
                         );
                       },

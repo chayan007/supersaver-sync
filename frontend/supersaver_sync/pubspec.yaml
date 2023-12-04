@@ -25,6 +25,10 @@ dependencies:
   http:
   blur:
   awesome_card:
+  fancy_drawer:
+  clipboard:
+  toast:
+  feature_discovery:
 
 dev_dependencies:
   bloc_test: ^9.1.4

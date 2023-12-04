@@ -22,28 +22,29 @@ class _HistoryPageState extends State<HistoryPage> {
       "amount": "1200.0"
     },
     {
-      "title": "Robert John",
+      "title": "Zomato",
       "subtitle": "05 NOV 2023",
-      "image_url": "https://img.icons8.com/ios-filled/50/r.png",
+      "image_url": "https://img.icons8.com/doodle/48/zomato.png",
       "amount": "830.04"
     },
     {
-      "title": "David Ketod",
+      "title": "Flipkart",
       "subtitle": "21 OCT 2023",
-      "image_url": "https://img.icons8.com/color/48/d.png",
+      "image_url": "https://img.icons8.com/bubbles/50/flipkart.png",
       "amount": "2541"
     },
     {
-      "title": "Apple Music",
+      "title": "Spotify",
       "subtitle": "10 OCT 2023",
-      "image_url": "https://img.icons8.com/color/48/apple-music.png",
-      "amount": "99.0"
+      "image_url": "https://img.icons8.com/color/48/spotify.png",
+      "amount": "1100.0"
     },
     {
-      "title": "KFC",
+      "title": "Airtel",
       "subtitle": "17 SEP 2023",
-      "image_url": "https://img.icons8.com/color-glass/48/kfc-chicken.png",
-      "amount": "1100"
+      "image_url":
+          "https://s3-ap-southeast-1.amazonaws.com/bsy/iportal/images/airtel-logo1.png",
+      "amount": "249.0"
     }
   ];
   @override
@@ -86,7 +87,7 @@ class _HistoryPageState extends State<HistoryPage> {
                         height: 5,
                       ),
                       Text(
-                        '02-Feb-2023 to today',
+                        '01-Nov-2023 to today',
                         style: TextStyle(color: Colors.white, fontSize: 10),
                       )
                     ],
@@ -117,14 +118,14 @@ class _HistoryPageState extends State<HistoryPage> {
                       Text(
                         "5,000 ",
                         style: TextStyle(
-                          color: Color(0xFF64EDB2),
+                          color: Colors.green.shade700,
                         ),
                       ),
                       SizedBox(
                         height: 5,
                       ),
                       Text(
-                        '02-Feb-2023 to today',
+                        '01-Nov-2023 to today',
                         style:
                             TextStyle(color: Color(0xAA004165), fontSize: 12),
                       )
@@ -156,14 +157,14 @@ class _HistoryPageState extends State<HistoryPage> {
                       Text(
                         "5,000 ",
                         style: TextStyle(
-                          color: Color(0xFF64EDB2),
+                          color: Colors.green.shade700,
                         ),
                       ),
                       SizedBox(
                         height: 5,
                       ),
                       Text(
-                        '02-Feb-2023 to today',
+                        '01-Nov-2023 to today',
                         style:
                             TextStyle(color: Color(0xAA004165), fontSize: 12),
                       )
